@@ -3613,3 +3613,32 @@ Processing by HomeController#index as */*
 Completed 200 OK in 50790ms (Views: 0.4ms | ActiveRecord: 1.8ms)
 
 
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:55:49 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 203ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:55:55 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 175ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 12:03:08 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 170ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 12:03:15 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 174ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
