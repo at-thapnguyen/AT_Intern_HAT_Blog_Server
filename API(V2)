@@ -1,0 +1,230 @@
+##Users 
+
+*Login: POST /api/users/login
+
+{
+"user": 
+{
+    "email": "thap.spdn@gmail.com",
+    "username": "ThapNguyen",
+    "password": "1409"
+  } 
+}
+
+####*Get value User :GET /api/user/id
+
+{
+"user": {
+    "email": "thap.spdn@gmail.com",
+    "username": "ThapNguyen",
+    "image": "url/abc/...",
+  }
+
+}
+
+}
+
+####*Put Update User *: PUT/api/user/id
+
+{
+
+"user":{
+
+     "email":"thap.spdn@gmail.com",
+     "username": "ThapNguyen",
+     "fullname": "NguyenThiThap",
+     "password": "202cb962ac59075b964",
+     "image": "url/abc/...",
+}
+}
+
+##PROFILES :
+
+**Get Profile :**  GET /api/profiles/:username
+
+{
+"user":{
+     "email":"thap.spdn@gmail.com",
+     "username": "ThapNguyen",
+     "fullname": "NguyenThiThap",
+     "password": "202cb962ac59075b964",
+     "image": "url/abc/...",
+}
+}
+
+**Follow user** : POST /api/profiles/:username/follow
+
+**Unfollow User ** : DELETE /api/profiles/:username/follow
+
+##Articles
+
+**List Articles :** GET /api/articles
+ {
+    "articles": [{
+      "title": "Test1",
+      "category_id":"1",
+      "titleImg": ",
+      "contain": " Contain of Test2",
+      "createDay": "2017-05-01T03:22:56.637Z",
+      "updateDay": "2017-05-02T03:22:56.637Z",
+      "isLiked": false,
+      "isFollowed": false,
+      "likeCount": 0,
+      "followCount": 0,
+      "user": {
+        "userName": "anh",
+        "avatar": ""
+      }
+    },
+    {
+      "title": "Test2",
+      "category_id":"2",
+      "titleImg": "",
+      "contain": " Contain of Test2",
+      "createDay": "2017-05-01T03:22:56.637Z",
+      "updateDay": "2017-05-02T03:22:56.637Z",
+      "isLiked": false,
+      "isFollowed": true,
+      "likeCount": 0,
+      "followCount": 1,
+      "user": {
+        "userName": "anh",
+        "avatar": ""
+      }
+      
+**List Articles of Category (category1)** : GET /api/articles/category1
+
+{
+    "articles": [{
+      "title": "Test1",
+      "category_id":"1",
+      "titleImg": ",
+      "contain": " Contain of Test2",
+       "tagList": ["tag1", "tag2"],
+      "createDay": "2017-05-01T03:22:56.637Z",
+      "updateDay": "2017-05-02T03:22:56.637Z",
+      "isLiked": false,
+      "isFollowed": false,
+      "likeCount": 0,
+      "followCount": 0,
+      "user": {
+        "userName": "anh",
+        "avatar": ""
+      }
+    },
+    {
+      "title": "Test2",
+      "category_id":"1",
+      "titleImg": "",
+      "contain": " Contain of Test2",
+         "tagList": ["tag1", "tag2"],
+      "createDay": "2017-05-01T03:22:56.637Z",
+      "updateDay": "2017-05-02T03:22:56.637Z",
+      "isLiked": false,
+      "isFollowed": true,
+      "likeCount": 0,
+      "followCount": 1,
+      "user": {
+        "userName": "anh",
+        "avatar": ""
+      }
+
+**Create Article** : POST /api/articles
+
+{
+    "articles": {
+      "title": "Test3",
+      "category_id":"1",
+      "titleImg": ",
+      "contain": " Contain of Test3",
+       "tagList": ["tag1", "tag2"],
+      "createDay": "2017-05-01T03:22:56.637Z",
+      "updateDay": "2017-05-02T03:22:56.637Z",
+      "user": {
+        "userName": "Thap",
+        "avatar": ""
+      }
+      }
+      }
+
+**Details Articles :** GET/api/articlies/:name_article1
+
+{
+    "articles": {
+      "title": "Test1",
+      "category_id":"1",
+      "titleImg": ",
+      "contain": " Contain of Test2",
+       "tagList": ["tag1", "tag2"],
+      "createDay": "2017-05-01T03:22:56.637Z",
+      "updateDay": "2017-05-02T03:22:56.637Z",
+      "isLiked": false,
+      "isFollowed": false,
+      "likeCount": 0,
+      "followCount": 0,
+      "user": {
+        "userName": "anh",
+        "avatar": ""
+      }
+      }
+      }
+
+**Update Article** : PUT /api/articles/:name_article
+
+**Delete Article** : DELETE /api/articles/:name_article
+
+**List Tags in an Articles ** GET/api/articles/:name_articles/tags 
+
+
+{
+  "tags": [
+    "reactjs",
+    "angularjs"
+  ]
+}
+
+###COMMENTS
+
+
+**Add Comments in an articles** : POST /api/articles/:name_articles/comments 
+
+**Get Comments from an Article** : GET /api/articles/:name_articles/comments
+
+{
+  "comments": [{
+    "id": 1,
+    "createdAt": "2017-03-18T03:22:56.637Z",
+    "updatedAt": "2017-03-18T03:22:56.637Z",
+    "content": "Hay lắm",
+    "user": {
+      "username": "hoang",
+      "image": "https://i.stack.imgur.com/xHWG8.jpg",
+      "following": false
+    },
+    "id": 2,
+    "createdAt": "2017-04-14T03:22:56.637Z",
+    "updatedAt": "2017-04-18T03:22:56.637Z",
+	  "content": "Rất là hay ,
+    "user ": {
+      "username": "anh",
+      "image": "https://i.stack.imgur.com/xHWG8.jpg",
+      "following": false
+    }
+  }]
+}
+
+
+**Delete Comment :** DELETE /api/articles/:name_articles/comments/:id
+
+**Favorite Article** : POST /api/articles/:name_articles/favorite
+
+**Unfavorite Articles **  DELETE/api/articles/:name_articles/favorite
+
+
+ 
+
+
+
+
+
+
