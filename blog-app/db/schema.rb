@@ -12,31 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20170505025334) do
 
-  create_table "accounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user_id"
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-    t.index ["email"], name: "index_accounts_on_email", unique: true, using: :btree
-    t.index ["reset_password_token"], name: "index_accounts_on_reset_password_token", unique: true, using: :btree
-    t.index ["user_id"], name: "fk_rails_b1e30bebc8", using: :btree
-  end
-
-  create_table "article_tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "article_id"
-    t.integer "tag_id"
-    t.index ["article_id"], name: "fk_rails_646e8d3122", using: :btree
-    t.index ["tag_id"], name: "fk_rails_b651172c61", using: :btree
-  end
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
@@ -61,11 +36,20 @@ ActiveRecord::Schema.define(version: 20170505025334) do
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree
     t.index ["user_id"], name: "fk_rails_7e410e9217", using: :btree
   end
+  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
 
-  create_table "categorys", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string  "name"
     t.boolean "deleted"
   end
+
+  create_table "categories_tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "category_id"
+    t.integer "tag_id"
+    t.index ["category_id"], name: "fk_rails_105f06f133", using: :btree
+    t.index ["tag_id"], name: "fk_rails_937ed53929", using: :btree
+  end
+
+
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
@@ -78,7 +62,7 @@ ActiveRecord::Schema.define(version: 20170505025334) do
 
   create_table "follow_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
-    t.integer "followed_id"
+    t.integer "be_followed_id"
     t.boolean "isChecked"
     t.index ["user_id"], name: "fk_rails_6bfac4ba98", using: :btree
   end
@@ -91,18 +75,19 @@ ActiveRecord::Schema.define(version: 20170505025334) do
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string  "fullname"
     t.string  "username"
+    t.string  "email"
+    t.string  "password"
     t.date    "birthday"
     t.boolean "access"
     t.boolean "blocked"
   end
 
-  add_foreign_key "accounts", "users"
-  add_foreign_key "article_tags", "articles"
-  add_foreign_key "article_tags", "tags"
-  add_foreign_key "articles", "categorys"
+  add_foreign_key "articles", "categories"
   add_foreign_key "articles", "users"
   add_foreign_key "attentions", "articles"
   add_foreign_key "attentions", "users"
+  add_foreign_key "categories_tags", "categories"
+  add_foreign_key "categories_tags", "tags"
   add_foreign_key "comments", "articles"
   add_foreign_key "comments", "users"
   add_foreign_key "follow_users", "users"
