@@ -15,9 +15,9 @@ Completed 200 OK in 30ms (Views: 8.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:40:29 +0700
-  
+
 Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
-  
+
 activerecord (5.0.2) lib/active_record/connection_adapters/connection_specification.rb:176:in `rescue in spec'
 activerecord (5.0.2) lib/active_record/connection_adapters/connection_specification.rb:173:in `spec'
 activerecord (5.0.2) lib/active_record/connection_handling.rb:53:in `establish_connection'
@@ -77,9 +77,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:42:26 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"unicode"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -137,9 +137,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:43:55 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"unicode"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -197,9 +197,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:44:02 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"unicode"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -257,9 +257,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:44:11 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -317,9 +317,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.8ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:44:30 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"utf-8"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -377,9 +377,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:45:41 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -437,9 +437,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.9ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:46:44 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -497,9 +497,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:46:47 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -557,9 +557,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:46:58 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -617,9 +617,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:47:09 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -677,9 +677,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.3ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:52:30 +0700
-  
+
 ActiveRecord::NoDatabaseError (Unknown database 'blog_app'):
-  
+
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
@@ -735,9 +735,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:52:32 +0700
-  
+
 ActiveRecord::NoDatabaseError (Unknown database 'blog_app'):
-  
+
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
@@ -801,9 +801,9 @@ Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:15:28 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -839,9 +839,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (22.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.0ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:15:30 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -885,9 +885,9 @@ Completed 200 OK in 16ms (Views: 5.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 08:15:49 +0700
-  
+
 AbstractController::ActionNotFound (The action 'index' could not be found for HomesController):
-  
+
 actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
 actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
@@ -941,9 +941,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:15:52 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -979,9 +979,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:16:22 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1017,9 +1017,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.9ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:16:23 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1055,9 +1055,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.2ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:17:36 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1093,9 +1093,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.5ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:17:40 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1138,9 +1138,9 @@ Completed 200 OK in 6632ms (Views: 1900.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 08:18:35 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1241,9 +1241,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:29:04 +0700
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UserController> at /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb:2)
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1319,9 +1319,9 @@ Completed 401 Unauthorized in 197ms (Views: 0.2ms | ActiveRecord: 3.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:34:25 +0700
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1395,9 +1395,9 @@ Processing by AuthenticationController#authenticate_user as */*
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
 
 
-  
+
 NoMethodError (undefined method `valid_password?' for nil:NilClass):
-  
+
 app/controllers/authentication_controller.rb:4:in `authenticate_user'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1415,9 +1415,9 @@ Completed 401 Unauthorized in 184ms (Views: 0.2ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-03 09:38:13 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth_user"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1453,9 +1453,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.5ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:39:04 +0700
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1524,9 +1524,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.3ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:39:14 +0700
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1609,9 +1609,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-03 09:43:00 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth_user"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1667,9 +1667,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:46:06 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1705,9 +1705,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.9ms)
 Started POST "/home" for 127.0.0.1 at 2017-05-03 09:46:54 +0700
-  
+
 ActionController::RoutingError (No route matches [POST] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1743,9 +1743,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.4ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:48:11 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1911,9 +1911,9 @@ Processing by AuthenticationController#authenticate_user as */*
 Completed 500 Internal Server Error in 98051ms (Views: 0.3ms | ActiveRecord: 1.4ms)
 
 
-  
+
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
-  
+
 app/controllers/authentication_controller.rb:7:in `authenticate_user'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1937,9 +1937,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 96ms (ActiveRecord: 1.2ms)
 
 
-  
+
 NoMethodError (undefined method `payload' for #<UserController:0x00000005086df8>):
-  
+
 app/controllers/user_controller.rb:8:in `index'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3188,9 +3188,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<UserController:0x00000002ed7608>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3206,9 +3206,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 27000ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<UserController:0x0000000382a750>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3232,9 +3232,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 116205ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<UserController:0x0000000364ccf8>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3253,9 +3253,9 @@ Completed 200 OK in 3897ms (Views: 0.4ms | ActiveRecord: 1.4ms)
 
 
 Started GET "/account" for 127.0.0.1 at 2017-05-08 10:58:27 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/account"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -3298,9 +3298,9 @@ Completed 200 OK in 262ms (Views: 257.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/account" for 127.0.0.1 at 2017-05-08 10:59:00 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/account"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -3375,9 +3375,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 17122ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04bc1d8b30>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3393,9 +3393,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04b85dced8>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3410,9 +3410,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x00000004d5d2d0>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3428,9 +3428,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04bc0678f0>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3447,9 +3447,9 @@ Processing by HomeController#index as */*
 Completed 404 Not Found in 6ms (ActiveRecord: 1.4ms)
 
 
-  
+
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
-  
+
 app/controllers/application_controller.rb:42:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3473,9 +3473,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04b0104e18>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3490,9 +3490,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04b8642da0>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3503,9 +3503,9 @@ app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.3ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-08 11:17:16 +0700
-  
+
 LoadError (Unable to autoload constant ApplicationController, expected /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/application_controller.rb to define it):
-  
+
 app/controllers/home_controller.rb:1:in `<top (required)>'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3516,9 +3516,9 @@ app/controllers/home_controller.rb:1:in `<top (required)>'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.2ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-08 11:17:20 +0700
-  
+
 LoadError (Unable to autoload constant ApplicationController, expected /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/application_controller.rb to define it):
-  
+
 app/controllers/home_controller.rb:1:in `<top (required)>'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -4906,3 +4906,107 @@ FOREIGN KEY (`tag_id`)
   [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
   [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
   [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+=======
+Started GET "/home" for 127.0.0.1 at 2017-05-08 11:24:14 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/AT_Intern_HAT_Blog_Server/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:24:17 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 4938ms (Views: 1.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:25:15 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 173ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:25:26 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 185ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:26:07 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 176ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-05-08 11:26:10 +0700
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/AT_Intern_HAT_Blog_Server/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2542ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-05-08 11:26:23 +0700
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/AT_Intern_HAT_Blog_Server/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-05-08 11:26:38 +0700
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/AT_Intern_HAT_Blog_Server/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = NULL LIMIT 1[0m
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 50790ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:55:49 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 203ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 11:55:55 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 175ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 12:03:08 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 170ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 12:03:15 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 174ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+Started GET "/" for 127.0.0.1 at 2017-05-10 14:32:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 17ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`) VALUES ('huy', 'a@a.com', 'changeme')[0m
+  [1m[35m (35.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m

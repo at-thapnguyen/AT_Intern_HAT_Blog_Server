@@ -10,7 +10,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.date :birthday
       t.boolean :access
       t.boolean :blocked
-
     end
   end
 end
