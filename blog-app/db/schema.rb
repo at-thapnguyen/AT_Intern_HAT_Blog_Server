@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20170505025334) do
 
-
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
     t.text     "content",     limit: 65535
@@ -36,8 +35,8 @@ ActiveRecord::Schema.define(version: 20170505025334) do
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree
     t.index ["user_id"], name: "fk_rails_7e410e9217", using: :btree
   end
-  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
 
+  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string  "name"
     t.boolean "deleted"
   end
@@ -48,8 +47,6 @@ ActiveRecord::Schema.define(version: 20170505025334) do
     t.index ["category_id"], name: "fk_rails_105f06f133", using: :btree
     t.index ["tag_id"], name: "fk_rails_937ed53929", using: :btree
   end
-
-
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
