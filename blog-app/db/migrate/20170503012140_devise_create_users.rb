@@ -6,12 +6,15 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :fullname
       t.string :username
       t.string :email
-      t.string :password
-      t.string :avatar
-      t.string :token
+      t.string :password_digest
+      t.string :access_token
+      t.string :confirm_token
       t.date :birthday
       t.boolean :access
       t.boolean :blocked
+      t.boolean :access, default: false
+      t.boolean :blocked, default: false
+      t.boolean :email_confirmed, default: false
     end
   end
 end
