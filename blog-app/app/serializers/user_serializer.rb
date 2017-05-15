@@ -1,4 +1,4 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id,:fullname,:birthday, :email, :username , :avatar,:access
-  # has_many :articles 
+  attributes  :id, :username, :fullname, :birthday,
+              :email, :access_token, :token
 end

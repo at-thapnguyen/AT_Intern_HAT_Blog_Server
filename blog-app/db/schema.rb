@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505025334) do
+ActiveRecord::Schema.define(version: 20170505025335) do
 
   create_table "article_tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "article_id"
@@ -48,6 +48,13 @@ ActiveRecord::Schema.define(version: 20170505025334) do
     t.boolean "deleted"
   end
 
+  create_table "categories_tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "category_id"
+    t.integer "tag_id"
+    t.index ["category_id"], name: "fk_rails_105f06f133", using: :btree
+    t.index ["tag_id"], name: "fk_rails_937ed53929", using: :btree
+  end
+
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
     t.integer "article_id"
@@ -70,15 +77,18 @@ ActiveRecord::Schema.define(version: 20170505025334) do
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string  "fullname"
-    t.string  "username"
-    t.string  "email"
-    t.string  "password"
-    t.string  "avatar"
-    t.string  "token"
-    t.date    "birthday"
-    t.boolean "access"
-    t.boolean "blocked"
+    t.string   "fullname"
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "access_token"
+    t.string   "confirm_token"
+    t.date     "birthday"
+    t.boolean  "access",          default: false
+    t.boolean  "blocked",         default: false
+    t.boolean  "email_confirmed", default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
   add_foreign_key "article_tags", "articles"
@@ -87,6 +97,8 @@ ActiveRecord::Schema.define(version: 20170505025334) do
   add_foreign_key "articles", "users"
   add_foreign_key "attentions", "articles"
   add_foreign_key "attentions", "users"
+  add_foreign_key "categories_tags", "categories"
+  add_foreign_key "categories_tags", "tags"
   add_foreign_key "comments", "articles"
   add_foreign_key "comments", "users"
   add_foreign_key "follow_users", "users"

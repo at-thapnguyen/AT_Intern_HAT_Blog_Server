@@ -1,14 +1,24 @@
 require 'rails_helper'
 
-describe User, type: :model do
-  let(:user) { FactoryGirl.create(:user)}
-  describe "validations" do
-  	it { binding.pry }
-    it { should validate_presence_of(:username) }
-    it { should validate_presence_of(:email) }
-    it { should validate_presence_of(:password) }
-    it { should validate_presence_of(:access)}
-    it { should validate_presence_of(:blocked)}
-    it { should validate_length_of(:password) }
+describe User do
+  context 'Validations' do
+
+    it "username dont't must blank" do
+      should validate_presence_of(:username)
+    end
+
+    it "password don't must blank" do
+      should validate_presence_of(:password)
+    end
+
   end
+
+  context 'Create is not valid' do
+    before { @user = FactoryGirl.build(:user) }
+    subject { @user }
+    it "Create is not valid" do
+      expect(@user).to be_valid
+    end
+  end
+
 end
