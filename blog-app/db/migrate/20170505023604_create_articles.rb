@@ -11,7 +11,7 @@ class CreateArticles < ActiveRecord::Migration[5.0]
     end
 
     add_foreign_key :articles, :users
-    add_foreign_key :articles, :categorys
+    add_foreign_key :articles, :categories
 
   end
 end

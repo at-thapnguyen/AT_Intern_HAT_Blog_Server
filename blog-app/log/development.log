@@ -15,9 +15,9 @@ Completed 200 OK in 30ms (Views: 8.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:40:29 +0700
-  
+
 Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
-  
+
 activerecord (5.0.2) lib/active_record/connection_adapters/connection_specification.rb:176:in `rescue in spec'
 activerecord (5.0.2) lib/active_record/connection_adapters/connection_specification.rb:173:in `spec'
 activerecord (5.0.2) lib/active_record/connection_handling.rb:53:in `establish_connection'
@@ -77,9 +77,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:42:26 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"unicode"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -137,9 +137,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:43:55 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"unicode"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -197,9 +197,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:44:02 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"unicode"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -257,9 +257,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:44:11 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -317,9 +317,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.8ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:44:30 +0700
-  
+
 Mysql2::Error (Unsupported charset: '"utf-8"'):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `charset_name='
 mysql2 (0.4.5) lib/mysql2/client.rb:47:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -377,9 +377,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:45:41 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -437,9 +437,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.9ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:46:44 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -497,9 +497,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:46:47 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -557,9 +557,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:46:58 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -617,9 +617,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:47:09 +0700
-  
+
 Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
-  
+
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
 mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -677,9 +677,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.3ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:52:30 +0700
-  
+
 ActiveRecord::NoDatabaseError (Unknown database 'blog_app'):
-  
+
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
@@ -735,9 +735,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
 Started GET "/" for 127.0.0.1 at 2017-05-01 07:52:32 +0700
-  
+
 ActiveRecord::NoDatabaseError (Unknown database 'blog_app'):
-  
+
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
 activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
@@ -801,9 +801,9 @@ Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:15:28 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -839,9 +839,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (22.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.0ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:15:30 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -885,9 +885,9 @@ Completed 200 OK in 16ms (Views: 5.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 08:15:49 +0700
-  
+
 AbstractController::ActionNotFound (The action 'index' could not be found for HomesController):
-  
+
 actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
 actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
@@ -941,9 +941,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:15:52 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -979,9 +979,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:16:22 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1017,9 +1017,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.9ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:16:23 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1055,9 +1055,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.2ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:17:36 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1093,9 +1093,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.5ms)
 Started GET "/homes" for 127.0.0.1 at 2017-05-03 08:17:40 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/homes"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1138,9 +1138,9 @@ Completed 200 OK in 6632ms (Views: 1900.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 08:18:35 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1241,9 +1241,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:29:04 +0700
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UserController> at /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb:2)
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1319,9 +1319,9 @@ Completed 401 Unauthorized in 197ms (Views: 0.2ms | ActiveRecord: 3.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:34:25 +0700
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1395,9 +1395,9 @@ Processing by AuthenticationController#authenticate_user as */*
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
 
 
-  
+
 NoMethodError (undefined method `valid_password?' for nil:NilClass):
-  
+
 app/controllers/authentication_controller.rb:4:in `authenticate_user'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1415,9 +1415,9 @@ Completed 401 Unauthorized in 184ms (Views: 0.2ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-03 09:38:13 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth_user"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1453,9 +1453,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.5ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:39:04 +0700
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1524,9 +1524,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.3ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:39:14 +0700
-  
+
 LoadError (Unable to autoload constant HomeController, expected /home/huy/MyWork/Tutorial/Tranning/blog_app/app/controllers/home_controller.rb to define it):
-  
+
 activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -1609,9 +1609,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-03 09:43:00 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth_user"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1667,9 +1667,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:46:06 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1705,9 +1705,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.9ms)
 Started POST "/home" for 127.0.0.1 at 2017-05-03 09:46:54 +0700
-  
+
 ActionController::RoutingError (No route matches [POST] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1743,9 +1743,9 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.4ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-03 09:48:11 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/home"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -1911,9 +1911,9 @@ Processing by AuthenticationController#authenticate_user as */*
 Completed 500 Internal Server Error in 98051ms (Views: 0.3ms | ActiveRecord: 1.4ms)
 
 
-  
+
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
-  
+
 app/controllers/authentication_controller.rb:7:in `authenticate_user'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1937,9 +1937,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 96ms (ActiveRecord: 1.2ms)
 
 
-  
+
 NoMethodError (undefined method `payload' for #<UserController:0x00000005086df8>):
-  
+
 app/controllers/user_controller.rb:8:in `index'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3188,9 +3188,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<UserController:0x00000002ed7608>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3206,9 +3206,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 27000ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<UserController:0x0000000382a750>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3232,9 +3232,9 @@ Processing by UserController#index as */*
 Completed 500 Internal Server Error in 116205ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<UserController:0x0000000364ccf8>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3253,9 +3253,9 @@ Completed 200 OK in 3897ms (Views: 0.4ms | ActiveRecord: 1.4ms)
 
 
 Started GET "/account" for 127.0.0.1 at 2017-05-08 10:58:27 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/account"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -3298,9 +3298,9 @@ Completed 200 OK in 262ms (Views: 257.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/account" for 127.0.0.1 at 2017-05-08 10:59:00 +0700
-  
+
 ActionController::RoutingError (No route matches [GET] "/account"):
-  
+
 actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -3375,9 +3375,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 17122ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04bc1d8b30>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3393,9 +3393,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04b85dced8>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3410,9 +3410,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x00000004d5d2d0>):
-  
+
 app/controllers/application_controller.rb:11:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3428,9 +3428,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04bc0678f0>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3447,9 +3447,9 @@ Processing by HomeController#index as */*
 Completed 404 Not Found in 6ms (ActiveRecord: 1.4ms)
 
 
-  
+
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
-  
+
 app/controllers/application_controller.rb:42:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3473,9 +3473,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04b0104e18>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3490,9 +3490,9 @@ Processing by HomeController#index as */*
 Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `account' for #<HomeController:0x007f04b8642da0>):
-  
+
 app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3503,9 +3503,9 @@ app/controllers/application_controller.rb:10:in `authenticate_request!'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.3ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-08 11:17:16 +0700
-  
+
 LoadError (Unable to autoload constant ApplicationController, expected /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/application_controller.rb to define it):
-  
+
 app/controllers/home_controller.rb:1:in `<top (required)>'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3516,9 +3516,9 @@ app/controllers/home_controller.rb:1:in `<top (required)>'
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.2ms)
 Started GET "/home" for 127.0.0.1 at 2017-05-08 11:17:20 +0700
-  
+
 LoadError (Unable to autoload constant ApplicationController, expected /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/application_controller.rb to define it):
-  
+
 app/controllers/home_controller.rb:1:in `<top (required)>'
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3554,6 +3554,1359 @@ Processing by HomeController#index as */*
 Completed 200 OK in 1799ms (Views: 0.2ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/home" for 127.0.0.1 at 2017-05-08 18:56:54 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 18:56:58 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (1.1ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 205ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 18:57:06 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (1.0ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 4316ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-08 18:57:58 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 188ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-05-08 18:58:08 +0700
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3188ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-05-08 18:58:44 +0700
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tags` (`name`, `deleted`) VALUES ('technical', 0)[0m
+  [1m[35m (56.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  [1m[36mFollowUser Load (0.3ms)[0m  [1m[34mSELECT `follow_users`.* FROM `follow_users`[0m
+  [1m[36mAttention Load (0.3ms)[0m  [1m[34mSELECT `attentions`.* FROM `attentions`[0m
+  [1m[36mAttention Load (0.2ms)[0m  [1m[34mSELECT  `attentions`.* FROM `attentions` ORDER BY `attentions`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.4ms)[0m  [1m[33mUPDATE `accounts` SET `user_id` = 1, `updated_at` = '2017-05-08 12:37:34' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (32.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `blocked`) VALUES ('huyhuy', 'sleep1511', 0)[0m
+  [1m[35m (47.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`user_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `article_tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `categorys`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categorys'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1687.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (273.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (265.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (298.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (233.1ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (265.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (244.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (681.7ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (64.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (589.7ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (603.7ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategorys (20170505023444)
+  [1m[35m (236.3ms)[0m  [1m[35mCREATE TABLE `categorys` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (266.4ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (670.4ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (701.9ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categorys` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (245.4ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (668.4ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (637.0ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (277.8ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (691.2ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (659.8ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (322.0ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticleTags (20170505025334)
+  [1m[35m (236.3ms)[0m  [1m[35mCREATE TABLE `article_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (669.6ms)[0m  [1m[35mALTER TABLE `article_tags` ADD CONSTRAINT `fk_rails_646e8d3122`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (683.0ms)[0m  [1m[35mALTER TABLE `article_tags` ADD CONSTRAINT `fk_rails_b651172c61`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-09 04:53:12', '2017-05-09 04:53:12')[0m
+  [1m[35m (33.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `article_tags`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `categorys`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categorys'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1777.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (269.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (305.7ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (97.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (247.5ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (198.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (200.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (811.9ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (64.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (321.7ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (691.2ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategorys (20170505023444)
+  [1m[35m (277.4ms)[0m  [1m[35mCREATE TABLE `categorys` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (64.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (255.7ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (867.4ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (636.1ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categorys` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (321.3ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (603.2ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (901.7ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (232.9ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (725.4ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (714.5ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticleTags (20170505025334)
+  [1m[35m (244.1ms)[0m  [1m[35mCREATE TABLE `article_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (726.7ms)[0m  [1m[35mALTER TABLE `article_tags` ADD CONSTRAINT `fk_rails_646e8d3122`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (791.3ms)[0m  [1m[35mALTER TABLE `article_tags` ADD CONSTRAINT `fk_rails_b651172c61`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (33.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-09 04:54:33', '2017-05-09 04:54:33')[0m
+  [1m[35m (24.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `article_tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `categorys`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categorys'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mCategory Load (14.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1903.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (257.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (231.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (228.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (311.3ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (232.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (199.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (782.3ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (86.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (289.6ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (692.2ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (268.2ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (255.9ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (591.9ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (281.1ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categorys` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-09 08:55:55', '2017-05-09 08:55:55')[0m
+  [1m[35m (54.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1052.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (249.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (231.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (295.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (254.8ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (210.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (200.1ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (838.6ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (86.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (344.6ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (781.5ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (74.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (278.5ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (266.5ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (975.9ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (759.8ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (267.4ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (693.2ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (803.6ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (725.9ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (638.5ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (388.6ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticleTags (20170505025334)
+  [1m[35m (233.4ms)[0m  [1m[35mCREATE TABLE `article_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (760.6ms)[0m  [1m[35mALTER TABLE `article_tags` ADD CONSTRAINT `fk_rails_646e8d3122`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (637.0ms)[0m  [1m[35mALTER TABLE `article_tags` ADD CONSTRAINT `fk_rails_b651172c61`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-09 08:56:12', '2017-05-09 08:56:12')[0m
+  [1m[35m (26.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `article_tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `categories` (`name`) VALUES ('technical')[0m
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`) VALUES ('Huy Nguyen', 'HuyHuy')[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `title_image`, `user_id`, `category_id`, `created_at`, `updated_at`) VALUES ('Getting start with Rspec', 'My content', 'http://', 1, 1, '2017-05-09 09:13:12', '2017-05-09 09:13:12')[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`category_id` = 1[0m
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `comments` (`user_id`, `article_id`, `content`) VALUES (1, 1, 'Tks u, good for me')[0m
+  [1m[35m (38.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `comments` (`user_id`, `article_id`, `content`) VALUES (1, 1, 'Tks verry much! It is help me')[0m
+  [1m[35m (72.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `attentions` (`article_id`, `user_id`, `isLiked`, `isFollowed`, `notification_like`, `notification_follow`) VALUES (1, 1, 1, 1, 1, 1)[0m
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mAttention Load (0.5ms)[0m  [1m[34mSELECT  `attentions`.* FROM `attentions` ORDER BY `attentions`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Ruby on rails')[0m
+  [1m[35m (34.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `accounts` (`user_id`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES (1, 'a@a.com', '$2a$11$veN1Uo168vVinQx9EOSz2eSO0.KTQWvZBspdeH8OuaquJdkqzfWgK', '2017-05-09 09:59:51', '2017-05-09 09:59:51')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'aaa@a.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `accounts` (`user_id`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES (1, 'aaa@a.com', '$2a$11$lHQoYVxs.8A1NXks/wUu5uX2135hWJipH8fknIqZ07zqe2zzLypC2', '2017-05-09 10:58:15', '2017-05-09 10:58:15')[0m
+  [1m[35m (73.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (76.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1650.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (256.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (229.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (253.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (8.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (33.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (291.7ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (218.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (197.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (774.6ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (64.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (295.8ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (675.1ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (229.8ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (314.4ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (698.1ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (655.8ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (247.8ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (623.8ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (710.2ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (266.7ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (622.3ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (657.7ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (232.5ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategoryTags (20170505025334)
+  [1m[35m (243.4ms)[0m  [1m[35mCREATE TABLE `category_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `category_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (266.4ms)[0m  [1m[35mALTER TABLE `category_tags` ADD CONSTRAINT `fk_rails_89fe99b10a`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categorys` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-10 01:22:09', '2017-05-10 01:22:09')[0m
+  [1m[35m (41.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1859.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (325.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (266.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (1271.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (267.0ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (344.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (267.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (760.5ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (64.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (311.9ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (626.7ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (232.3ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (233.6ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (755.2ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (1026.3ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (53.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (275.6ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (676.1ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (764.6ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (699.0ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (744.3ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (331.9ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (52.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategoryTags (20170505025334)
+  [1m[35m (277.8ms)[0m  [1m[35mCREATE TABLE `category_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `category_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (835.0ms)[0m  [1m[35mALTER TABLE `category_tags` ADD CONSTRAINT `fk_rails_89fe99b10a`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (811.4ms)[0m  [1m[35mALTER TABLE `category_tags` ADD CONSTRAINT `fk_rails_cb15921e89`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-10 01:22:28', '2017-05-10 01:22:28')[0m
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `category_tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Ruby on rails')[0m
+  [1m[35m (70.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Programing')[0m
+  [1m[35m (73.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `categories` (`name`) VALUES ('technical')[0m
+  [1m[35m (36.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1633.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (229.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (267.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (295.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (29.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (265.8ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (210.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (200.1ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (748.2ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (86.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (390.8ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (703.6ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (268.4ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (244.5ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (759.0ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (827.9ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (322.0ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (748.8ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (850.3ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (233.6ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (692.3ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (749.9ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (266.3ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (43.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategoriesTags (20170505025334)
+  [1m[35m (245.1ms)[0m  [1m[35mCREATE TABLE `categories_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `category_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (636.8ms)[0m  [1m[35mALTER TABLE `categories_tags` ADD CONSTRAINT `fk_rails_105f06f133`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (782.0ms)[0m  [1m[35mALTER TABLE `categories_tags` ADD CONSTRAINT `fk_rails_937ed53929`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-10 01:33:32', '2017-05-10 01:33:32')[0m
+  [1m[35m (34.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `categories_tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Ruby on rails')[0m
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Programing language')[0m
+  [1m[35m (62.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `categories` (`name`) VALUES ('Technical')[0m
+  [1m[35m (44.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT  `tags`.* FROM `tags` WHERE `tags`.`id` = 1 LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` INNER JOIN `categories_tags` ON `categories`.`id` = `categories_tags`.`category_id` WHERE `categories_tags`.`tag_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories` INNER JOIN `categories_tags` ON `categories`.`id` = `categories_tags`.`category_id` WHERE `categories_tags`.`tag_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1425.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (238.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (231.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (229.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (42.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateAccounts (20170503012150)
+  [1m[35m (480.2ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (198.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_email`  ON `accounts` (`email`) [0m
+  [1m[35m (199.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_accounts_on_reset_password_token`  ON `accounts` (`reset_password_token`) [0m
+  [1m[35m (703.9ms)[0m  [1m[35mALTER TABLE `accounts` ADD CONSTRAINT `fk_rails_b1e30bebc8`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012150')[0m
+  [1m[35m (64.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (256.3ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (747.8ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (233.1ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (277.1ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (737.0ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (747.5ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (53.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (223.5ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (625.2ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (670.8ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (266.3ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (635.7ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (637.0ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (233.6ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategoriesTags (20170505025334)
+  [1m[35m (266.7ms)[0m  [1m[35mCREATE TABLE `categories_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `category_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (604.3ms)[0m  [1m[35mALTER TABLE `categories_tags` ADD CONSTRAINT `fk_rails_105f06f133`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (771.7ms)[0m  [1m[35mALTER TABLE `categories_tags` ADD CONSTRAINT `fk_rails_937ed53929`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (32.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-10 01:57:42', '2017-05-10 01:57:42')[0m
+  [1m[35m (25.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `accounts`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'accounts'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `categories_tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`) VALUES ('Technical')[0m
+  [1m[35m (34.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Ruby')[0m
+  [1m[35m (35.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `tags` (`name`) VALUES ('Rails')[0m
+  [1m[35m (74.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories_tags`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories_tags`[0m
+  [1m[36mCategoriesTag Load (0.2ms)[0m  [1m[34mSELECT  `categories_tags`.* FROM `categories_tags` ORDER BY `categories_tags`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories_tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories_tags`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories_tags`[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `tags` INNER JOIN `categories_tags` ON `tags`.`id` = `categories_tags`.`tag_id` WHERE `categories_tags`.`category_id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mAccount Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `users` (`username`) VALUES ('huy')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAccount Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `accounts` (`user_id`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES (1, 'a@a.com', '$2a$11$TBbuPMQG5LwrEWsN9v3UbO6lfPSiPjYVL8qEnwthKUaXHrehbNsWy', '2017-05-10 03:17:37', '2017-05-10 03:17:37')[0m
+  [1m[35m (242.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Started GET "/home" for 127.0.0.1 at 2017-05-10 10:20:37 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/blog-app/app/controllers/home_controller.rb:2)
+Processing by HomeController#index as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 23ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth_user?email=a@a.com&password=[FILTERED]" for 127.0.0.1 at 2017-05-10 10:20:40 +0700
+Processing by AuthenticationController#authenticate_user as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 203ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-10 10:48:23 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 56ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2017-05-10 10:48:41 +0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 293ms (Views: 291.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1823.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (261.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (232.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6617535630868360695', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170503012140)
+  [1m[35m (229.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `email` varchar(255), `password` varchar(255), `birthday` date, `access` tinyint(1), `blocked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170503012140')[0m
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFollowUsers (20170505015416)
+  [1m[35m (200.2ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `be_followed_id` int, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (604.2ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505015416')[0m
+  [1m[35m (64.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20170505023444)
+  [1m[35m (272.8ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023444')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20170505023604)
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (604.3ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (649.0ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505023604')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20170505024313)
+  [1m[35m (233.8ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `isChecked` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (625.7ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (660.5ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024313')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttentions (20170505024829)
+  [1m[35m (278.2ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1), `isFollowed` tinyint(1), `notification_like` tinyint(1), `notification_follow` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (759.1ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_7e410e9217`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (681.3ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505024829')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20170505025154)
+  [1m[35m (233.4ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025154')[0m
+  [1m[35m (42.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategoriesTags (20170505025334)
+  [1m[35m (201.7ms)[0m  [1m[35mCREATE TABLE `categories_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `category_id` int, `tag_id` int) ENGINE=InnoDB[0m
+  [1m[35m (988.5ms)[0m  [1m[35mALTER TABLE `categories_tags` ADD CONSTRAINT `fk_rails_105f06f133`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (917.9ms)[0m  [1m[35mALTER TABLE `categories_tags` ADD CONSTRAINT `fk_rails_937ed53929`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170505025334')[0m
+  [1m[35m (87.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-10 06:56:19', '2017-05-10 06:56:19')[0m
+  [1m[35m (79.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6617535630868360695')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `attentions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `categories_tags`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'comments'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `follow_users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `tags`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tags'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+=======
 Started GET "/home" for 127.0.0.1 at 2017-05-08 11:24:14 +0700
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HomeController> at /home/huy/MyWork/Tutorial/Tranning/AT_Intern_HAT_Blog_Server/blog-app/app/controllers/home_controller.rb:2)
@@ -3641,4 +4994,19 @@ Processing by AuthenticationController#authenticate_user as */*
   [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`email` = 'a@a.com' ORDER BY `accounts`.`id` ASC LIMIT 1[0m
 Completed 401 Unauthorized in 174ms (Views: 0.3ms | ActiveRecord: 0.4ms)
 
+Started GET "/" for 127.0.0.1 at 2017-05-10 14:32:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 17ms (Views: 8.1ms | ActiveRecord: 0.0ms)
 
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`) VALUES ('huy', 'a@a.com', 'changeme')[0m
+  [1m[35m (35.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
