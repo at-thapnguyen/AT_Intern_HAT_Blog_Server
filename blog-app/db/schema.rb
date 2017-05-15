@@ -77,16 +77,18 @@ ActiveRecord::Schema.define(version: 20170505025335) do
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string  "fullname"
-    t.string  "username"
-    t.string  "email"
-    t.string  "password_digest"
-    t.string  "access_token"
-    t.string  "confirm_token"
-    t.date    "birthday"
-    t.boolean "access",          default: false
-    t.boolean "blocked",         default: false
-    t.boolean "email_confirmed", default: false
+    t.string   "fullname"
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "access_token"
+    t.string   "confirm_token"
+    t.date     "birthday"
+    t.boolean  "access",          default: false
+    t.boolean  "blocked",         default: false
+    t.boolean  "email_confirmed", default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
   add_foreign_key "article_tags", "articles"

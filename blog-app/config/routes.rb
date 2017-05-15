@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       post '/signup', to: 'users#create'
       post '/signin', to: 'authorizations#create'
       delete '/signout', to: 'authorizations#destroy'
-      resources :users, only: [:index, :create] do
+      resources :users do
         member do
           get :confirm_email
         end
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       resources :categories
 
       #Thap developer
-      resources :users
+      # resources :users
       resources :articles
 
     end

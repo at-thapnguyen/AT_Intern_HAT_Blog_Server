@@ -15,6 +15,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.boolean :access, default: false
       t.boolean :blocked, default: false
       t.boolean :email_confirmed, default: false
+      t.timestamps
     end
   end
 end
