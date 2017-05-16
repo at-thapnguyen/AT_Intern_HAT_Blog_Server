@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       post '/signup', to: 'users#create'
       post '/signin', to: 'authorizations#create'
       delete '/signout', to: 'authorizations#destroy'
+      put '/reset_password', to: 'authorizations#update'
       resources :users do
         member do
           get :confirm_email

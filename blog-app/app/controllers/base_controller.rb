@@ -9,9 +9,9 @@ class BaseController < ApplicationController
   def check_login id, access_token
     user = User.find(id)
     if user.blank?
-      return false
+      return nil
     else
-      return (user.access_token == access_token)? true : false
+      return (user.access_token == access_token)? user : nil
     end
   end
 
@@ -22,7 +22,7 @@ class BaseController < ApplicationController
   # 3 * 24 * 60 * 60 = 259200(s) : 3 days. Setup default time to user use this session
 
   def check_time_access id
-    (User.find(id).update_at + 259200 == Time.current.utc) ? true : false
+    (User.find(id).updated_at + 259200 == Time.current.utc) ? true : false
   end
 
 end

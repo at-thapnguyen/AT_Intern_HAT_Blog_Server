@@ -43,3 +43,1691 @@
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'cecil.hills@hammes.name' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rogers_weimann@emmerichkonopelski.biz' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'hiram_schumm@streichdeckow.io' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Cheyenne Hammes DVM', 'hiram_schumm@streichdeckow.io', '$2a$04$FpUyrGlwNdE8fzEk.us97uBYYLHA3Cy8KIlaF0/a96GXulCD0EDoC', 'Ti2husWQ9kAVr8r86skDAg', 1, 1, '2017-05-16 02:57:56', '2017-05-16 02:57:56')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.36ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (66.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'giovanna_robel@okeefe.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Chaya Zieme', 'giovanna_robel@okeefe.co', '$2a$04$.CcGixuCIUyyk4EGp1mVR.8B8rvjusT/8q57E9LPp5mgm7zyTverW', 'P7RD4dUc6YtukCACZ7zYAg', 1, 1, '2017-05-16 02:57:56', '2017-05-16 02:57:56')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.34ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (89.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"grant.kuvalis@kirlinvolkman.org", "password"=>"[FILTERED]", "username"=>"Cali Kuvalis"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'grant.kuvalis@kirlinvolkman.org' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Cali Kuvalis', 'grant.kuvalis@kirlinvolkman.org', '$2a$04$PZEHSB6Nm5/.n6Xtv0nWve5vnmF/g4k2khNbRtR6NDnxeHNWQbSRy', '-I97Zrz5Y19Sv7KUtgEsCA', '2017-05-16 02:57:56', '2017-05-16 02:57:56')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'grant.kuvalis@kirlinvolkman.org' AND (`users`.`id` != 3) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (3.5ms)
+UserMailer#registration_confirmation: processed outbound mail in 18.5ms
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 2.4ms)
+  [1m[35m (34.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"adaline@turcotte.biz", "password"=>"[FILTERED]", "username"=>"Jennyfer Kerluke DVM"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'adaline@turcotte.biz' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Jennyfer Kerluke DVM', 'adaline@turcotte.biz', '$2a$04$e09LevIaA3c3X1sOQ2c8U.c3b/2wHMwlLTS7RzcYH7DsdgahSada6', '7neL9fEPC50nNRKRAvRe2w', '2017-05-16 02:57:56', '2017-05-16 02:57:56')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'adaline@turcotte.biz' AND (`users`.`id` != 4) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (1.0ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.7ms
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.2ms)
+  [1m[35m (31.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'devin.stehr@kaulke.biz' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Elenora Harber IV', 'devin.stehr@kaulke.biz', '$2a$04$08HFqC9IdzEPST36120sqOaB3zZ.178a6Zx8WgYYIZ2X0LY60TS7C', 'Ov5ECsqh_Z-2E8hy6mt42w', 1, 1, '2017-05-16 02:57:56', '2017-05-16 02:57:56')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (35.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'elisabeth@batzbahringer.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Oleta O\'Hara', 'elisabeth@batzbahringer.co', '$2a$04$JkX7ZPFYTE9q85/e55zKW.0.Yes.IIbMrb9/5i82oPAYUhKMEb/me', 'jNYmfMoDDL9mXIzf9JihJA', 1, 1, '2017-05-16 02:57:56', '2017-05-16 02:57:56')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (24.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'arnaldo_wilkinson@mayerhahn.io' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Mireille Herzog', 'arnaldo_wilkinson@mayerhahn.io', '$2a$04$vRTCrSOMr9R6ANF1ZsKKU.mmS/1rKsXrePL5610i6BUPF.cShofJu', 'iynoukc_lMGwSr98Hn2jdQ', 1, 1, '2017-05-16 02:57:57', '2017-05-16 02:57:57')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (35.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'roscoe.wisozk@ryanbaumbach.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Gillian Torp', 'roscoe.wisozk@ryanbaumbach.co', '$2a$04$Xj3698T42hJuC/IXsrAjweQRLE1Y25/Wte8MBctrjlhKbnWSCNXUS', 'Dcxx-qvV7fyRDysuf75FXw', 1, 1, '2017-05-16 02:57:57', '2017-05-16 02:57:57')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (35.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jazmin@goyettemacejkovic.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Madeline Stamm', 'jazmin@goyettemacejkovic.co', '$2a$04$CFGAXcdmWzf0S27ShhFgCehFujo59cxFXqXpyePuCnyX03KcDbGE.', 'RF3kWYgL-7GYkE8slDmY8Q', 1, 1, '2017-05-16 02:57:57', '2017-05-16 02:57:57')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (24.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'richie@eichmannkirlin.name' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Megane Altenwerth', 'richie@eichmannkirlin.name', '$2a$04$tAOmwVOYs3peTL/uFm79i.PPlfIJtpP560BE5vz0.H26uraZU5MNS', 'Jm_Tb6ekcV_nkvQcXK37bw', 1, 1, '2017-05-16 02:57:57', '2017-05-16 02:57:57')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (85.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"santino@dickimacejkovic.name", "password"=>"[FILTERED]", "username"=>"Reva Ritchie"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'santino@dickimacejkovic.name' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Reva Ritchie', 'santino@dickimacejkovic.name', '$2a$04$4.meCgEos.F0Ei7UjQKxSekyrdcOHxNq49uWI8nFTMTaRoLWlQObS', 'POfZngOscQgsK3pdfJL3IQ', '2017-05-16 03:07:36', '2017-05-16 03:07:36')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'santino@dickimacejkovic.name' AND (`users`.`id` != 11) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (3.0ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.3ms
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 2.1ms)
+  [1m[35m (77.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"sally@langosh.name", "password"=>"[FILTERED]", "username"=>"Mr. Gerald Turner"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sally@langosh.name' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Mr. Gerald Turner', 'sally@langosh.name', '$2a$04$H/Ro2C9Pvgws70lmXKZL4.MsPx4aXMdcmUyqZUR3s1sERq4Jnr95S', '6xMNNlsGrg4gm7OnbJOgWg', '2017-05-16 03:07:36', '2017-05-16 03:07:36')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sally@langosh.name' AND (`users`.`id` != 12) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.5ms
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.2ms)
+  [1m[35m (152.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 13ms (Views: 5.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"antwon.kerluke@boganmraz.org", "password"=>"[FILTERED]", "username"=>"Marcos Stokes"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'antwon.kerluke@boganmraz.org' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Marcos Stokes', 'antwon.kerluke@boganmraz.org', '$2a$04$QSJmhOwtVsCQCHhf3mV1U.QBXBEwFtzXl/rDfLOX5OozZq2DsbFMa', 'Q837jpHeeVpsWiM1lkJmIA', '2017-05-16 03:09:13', '2017-05-16 03:09:13')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'antwon.kerluke@boganmraz.org' AND (`users`.`id` != 13) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (3.6ms)
+UserMailer#registration_confirmation: processed outbound mail in 11.0ms
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 2.6ms)
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"antwon.kerluke@boganmraz.org", "password"=>"[FILTERED]", "username"=>"Marcos Stokes"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'antwon.kerluke@boganmraz.org' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'antwon.kerluke@boganmraz.org' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.7ms)
+  [1m[35m (55.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"jordan@wiza.name", "password"=>"[FILTERED]", "username"=>"Dannie Mann"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jordan@wiza.name' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Dannie Mann', 'jordan@wiza.name', '$2a$04$iBEoIbA8qFCgdMotgZpzWeCYY/Q2EjkA8Sq9I2Q3CYNYCXQOcNV4e', 't0CiCue7oP1_qoyX496yQA', '2017-05-16 03:09:37', '2017-05-16 03:09:37')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jordan@wiza.name' AND (`users`.`id` != 14) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.5ms
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms)
+  [1m[35m (145.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"emerson.flatley@adams.biz", "password"=>"[FILTERED]", "username"=>"Miss Hallie Fay"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'emerson.flatley@adams.biz' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Miss Hallie Fay', 'emerson.flatley@adams.biz', '$2a$04$jLbSWPVyEfW45oSZqvIuwe6.uyOc/6aBHuaUrKeb8Jl6EQFEkz76u', '0ymEJ7NmiZXqSRVlJFs4mA', '2017-05-16 03:10:00', '2017-05-16 03:10:00')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'emerson.flatley@adams.biz' AND (`users`.`id` != 15) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (3.3ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.7ms
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 2.5ms)
+  [1m[35m (34.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"sherwood@barrows.info", "password"=>"[FILTERED]", "username"=>"Catalina Marquardt Sr."}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sherwood@barrows.info' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Catalina Marquardt Sr.', 'sherwood@barrows.info', '$2a$04$A0f8GAdYmfbZpIaAn32Og.TFjRjcicdXRsS8mdK.QbJSgikRFU9la', 'sonVPUPcxbIH96pciGiahQ', '2017-05-16 03:19:55', '2017-05-16 03:19:55')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sherwood@barrows.info' AND (`users`.`id` != 16) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.9ms)
+UserMailer#registration_confirmation: processed outbound mail in 2.0ms
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+  [1m[35m (136.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"sheridan@hammeswilderman.io", "password"=>"[FILTERED]", "username"=>"Lily Effertz"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sheridan@hammeswilderman.io' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Lily Effertz', 'sheridan@hammeswilderman.io', '$2a$04$LfsmRIdbTHPSywvdn0QHOu0UqRSmHyEwBPdyuUEJsstP.BX1M3RYO', 'qoa3lf-JO8XdBzhm7XPyWw', '2017-05-16 03:19:59', '2017-05-16 03:19:59')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sheridan@hammeswilderman.io' AND (`users`.`id` != 17) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (3.0ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.2ms
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 1.9ms)
+  [1m[35m (53.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"vita@feilwolff.net", "password"=>"[FILTERED]", "username"=>"Isom Braun"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vita@feilwolff.net' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Isom Braun', 'vita@feilwolff.net', '$2a$04$/epCNRiyoWHvmBECkwP5d.u1Nw18sB3RMVom2.gfjlg3q2j0YXSgi', 'rSzfxZveL83Je48wBd_7Yw', '2017-05-16 03:19:59', '2017-05-16 03:19:59')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'vita@feilwolff.net' AND (`users`.`id` != 18) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.4ms
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms)
+  [1m[35m (32.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 14ms (Views: 5.2ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"susanna@satterfieldfisher.io", "password"=>"[FILTERED]", "username"=>"Buford Willms"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'susanna@satterfieldfisher.io' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Buford Willms', 'susanna@satterfieldfisher.io', '$2a$04$1Rpd8rftGK4T/lHNhS3T5.OCczOub.3d49Bi6aNmFWFlsv25kGLau', 'jyW8RyNFwGCS193stTpIVQ', '2017-05-16 03:20:56', '2017-05-16 03:20:56')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'susanna@satterfieldfisher.io' AND (`users`.`id` != 19) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (2.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.4ms
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 2.6ms)
+  [1m[35m (25.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"jarvis.denesik@treutel.io", "password"=>"[FILTERED]", "username"=>"Cassie Will"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jarvis.denesik@treutel.io' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Cassie Will', 'jarvis.denesik@treutel.io', '$2a$04$y2d2IM6cmY/eGmxiHWB/jO/X/dnxkX7kjGjwOhwAu6Wl2RBiTo1by', '2wZ0Rg12-02q9-Q5-bKqlw', '2017-05-16 03:20:56', '2017-05-16 03:20:56')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jarvis.denesik@treutel.io' AND (`users`.`id` != 20) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.9ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.7ms
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.2ms)
+  [1m[35m (97.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 12ms (Views: 4.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"stephen.rempel@spencer.io", "password"=>"[FILTERED]", "username"=>"Heaven Leffler"}}
+Unpermitted parameters: access, blocked
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'stephen.rempel@spencer.io' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Heaven Leffler', 'stephen.rempel@spencer.io', '$2a$04$/zv/hoEkAwlHXPGKUc7rauSW5Co8b1ot2UCkTC296Xgbl37LjDPKa', 'sXijFYQtw5Voth_3lb6Pkw', '2017-05-16 03:24:48', '2017-05-16 03:24:48')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'stephen.rempel@spencer.io' AND (`users`.`id` != 21) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (3.6ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.8ms
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'stephen.rempel@spencer.io' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'stephen.rempel@spencer.io' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 205045ms (Views: 4.9ms | ActiveRecord: 5.3ms)
+  [1m[35m (27.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"wiley_price@rolfsonhammes.co", "password"=>"[FILTERED]", "username"=>"Mr. Murray Jacobi"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wiley_price@rolfsonhammes.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Mr. Murray Jacobi', 'wiley_price@rolfsonhammes.co', '$2a$04$D4ThCzSHd8xHTYKmga2MdOamN6eMJlFZCEgdoj9mEfIBQVIcp2Bb2', 'qDqe_PXsSWCK1MKHyF54kg', '2017-05-16 03:26:32', '2017-05-16 03:26:32')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wiley_price@rolfsonhammes.co' AND (`users`.`id` != 22) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.9ms)
+UserMailer#registration_confirmation: processed outbound mail in 2.1ms
+Completed 500 Internal Server Error in 7876ms (ActiveRecord: 1.0ms)
+  [1m[35m (124.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2918ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 2274ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 1760ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"nhuy387@gmail.com", "password"=>"[FILTERED]", "username"=>"Orin Hammes"}}
+Unpermitted parameters: access, blocked
+UserMailer#registration_confirmation: processed outbound mail in 1.4ms
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Orin Hammes', 'nhuy387@gmail.com', '$2a$04$OaLaTv4S9/NJbL6J0Ga0mODADatZNzd83VDI5rLk/E6mXfta4dGjK', 'cJLmOgj3xelmxBOt5sT5IA', '2017-05-16 03:27:41', '2017-05-16 03:27:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND (`users`.`id` != 23) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (2.9ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.2ms
+Completed 500 Internal Server Error in 41299ms (ActiveRecord: 3.6ms)
+  [1m[35m (43.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"nhuy387@gmail.com", "password"=>"[FILTERED]", "username"=>"Rosina Thompson"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Rosina Thompson', 'nhuy387@gmail.com', '$2a$04$vvmHyN0PCmrcdWgL8.XhFudy603wbxsbiPk1K3QdsoKgZ5xIL63Ye', 'QB9uFrKdt1fQ6X6qK8bQ5g', '2017-05-16 03:27:42', '2017-05-16 03:27:42')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND (`users`.`id` != 24) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (0.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.5ms
+Completed 500 Internal Server Error in 840ms (ActiveRecord: 1.0ms)
+  [1m[35m (119.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 51ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 161ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 254ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"nhuy387@gmail.com", "fullname"=>"Herminia Gorczany DDS", "password"=>"[FILTERED]", "username"=>"Brady Ebert MD"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Herminia Gorczany DDS', 'Brady Ebert MD', 'nhuy387@gmail.com', '$2a$04$dt8KSzNBMUnzmUk.HHPItOnRwPL1Sskmhmni.SSEifL/chj9wbuYW', 'X7yfH_HVImJXABuoRQcQ1A', '2017-05-16 03:28:08', '2017-05-16 03:28:08')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND (`users`.`id` != 25) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (2.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.1ms
+Completed 500 Internal Server Error in 12341ms (ActiveRecord: 2.4ms)
+  [1m[35m (57.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"nhuy387@gmail.com", "fullname"=>"Susanna Oberbrunner", "password"=>"[FILTERED]", "username"=>"Pamela Boehm"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Susanna Oberbrunner', 'Pamela Boehm', 'nhuy387@gmail.com', '$2a$04$UEulb1/yu2OmJZVlXJ2oqetU8HdP.ioWEPEXeACW.IJFxe/yc.a9u', 'xhFhIeHeE7Mbcb5PBpAcYg', '2017-05-16 03:28:08', '2017-05-16 03:28:08')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND (`users`.`id` != 26) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (1.1ms)
+UserMailer#registration_confirmation: processed outbound mail in 1.9ms
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.1ms)
+  [1m[35m (94.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 211ms (Views: 10.0ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 604ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 2043ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"nhuy387@gmail.com", "fullname"=>"Lourdes Beahan", "password"=>"[FILTERED]", "username"=>"Daniella Kertzmann"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Lourdes Beahan', 'Daniella Kertzmann', 'nhuy387@gmail.com', '$2a$04$.oAU/DthExvOlmNVDwnr4.4zV0dTlPwQqBPcdHWVD/2N8iGMVPSbe', 'vIwowwlnZzG6dkQAZ_NeQQ', '2017-05-16 03:28:43', '2017-05-16 03:28:43')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND (`users`.`id` != 27) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (2.9ms)
+UserMailer#registration_confirmation: processed outbound mail in 10.1ms
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (2.2ms)
+UserMailer#registration_confirmation: processed outbound mail in 3.9ms
+Completed 500 Internal Server Error in 495861ms (ActiveRecord: 2.7ms)
+  [1m[35m (57.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"access"=>"true", "blocked"=>"true", "email"=>"nhuy387@gmail.com", "fullname"=>"Jarrod Cremin", "password"=>"[FILTERED]", "username"=>"Mr. Marley Connelly"}}
+Unpermitted parameters: access, blocked
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Jarrod Cremin', 'Mr. Marley Connelly', 'nhuy387@gmail.com', '$2a$04$7zyeZYqxjTEjZWvrdjnpXOvR/B2sOh/e8T5P3QjxsNyENl.GGt.rO', 'HiZNAhHa4kak-Usm6G7dOg', '2017-05-16 03:36:59', '2017-05-16 03:36:59')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND (`users`.`id` != 28) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (1.8ms)
+UserMailer#registration_confirmation: processed outbound mail in 3.1ms
+Completed 500 Internal Server Error in 2992ms (ActiveRecord: 1.1ms)
+  [1m[35m (52.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 13ms (Views: 5.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Giles Turner', 'Iva Schmidt Sr.', 'nhuy387@gmail.com', '$2a$04$XE7OnZQwIuWBtYA5rwl9Y.t9Edh8YLWQ4aKskQJkSkIjGbEz45Qgy', 'aYV4lklbyPSdueeYBbXIZw', 1, 1, '2017-05-16 03:37:07', '2017-05-16 03:37:07')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 29 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.34ms)
+Completed 200 OK in 19137ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (86.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Dortha Kuvalis', 'Casimir Marquardt', 'nhuy387@gmail.com', '$2a$04$4vsgrpEFF4IhS4nkZBK80epWRIEA5bY.b3yX8ANrTAKYiaRj/W1Iu', '3nY9tDNiR-hBFiIMKUVIzQ', 1, 1, '2017-05-16 03:37:26', '2017-05-16 03:37:26')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 30 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.33ms)
+Completed 200 OK in 6376ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (64.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Camilla Waelchi', 'Abner Graham Jr.', 'nhuy387@gmail.com', '$2a$04$wS3BzuQXBUYYK7ISjpFswOtqxsNaR1Br79rdoo/2DGhfFNHBu2Bz6', '75nDFK3Zdr9lWljaC6DIUA', 1, 1, '2017-05-16 03:38:17', '2017-05-16 03:38:17')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 31 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 31 LIMIT 1[0m
+Completed 500 Internal Server Error in 2521ms (ActiveRecord: 0.8ms)
+  [1m[35m (53.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Orpha Schowalter IV', 'Mrs. Valerie Schulist', 'nhuy387@gmail.com', '$2a$04$9.8cV2CRH4HlC20.6TBcReY6wCV.D3bsn.JHVK1rKgv/ZK93s4uuC', 'y7hAwT2Xeg2a784WfV1RZA', 1, 1, '2017-05-16 03:38:19', '2017-05-16 03:38:19')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 32 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 32 LIMIT 1[0m
+Completed 500 Internal Server Error in 1156ms (ActiveRecord: 0.8ms)
+  [1m[35m (58.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Alene Rath DDS', 'Marjory Hills', 'nhuy387@gmail.com', '$2a$04$0tm4ED.R.xXcXg/RsshDTuJDulbpC098sYuC3HRjWIe5zuq0rMniS', 'bq9cRDNkoVS5hYq4tU4dWA', 1, 1, '2017-05-16 03:46:42', '2017-05-16 03:46:42')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 33 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.44ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (63.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Athena Rowe', 'Kiara Lehner III', 'nhuy387@gmail.com', '$2a$04$iPS0CrvYKNcPeBfTyn0tL.Oonnt.JRIFDd5a0aCH54W63MQ6OWI1u', 'WkqtFqqSNyBf-UwUmBaYjQ', 1, 1, '2017-05-16 03:46:42', '2017-05-16 03:46:42')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.31ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (90.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Tatyana Parker Jr.', 'Felipe Dooley', 'nhuy387@gmail.com', '$2a$04$BLYBP28idsRzidlN.YVGgOtWa3VdUARV2/m2coPLTAsFBwRYfqU/e', 'LOUBT3XfZRR7ANG_gco-LQ', 1, 1, '2017-05-16 03:47:04', '2017-05-16 03:47:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.74ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (66.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Micheal Huels', 'Robert McLaughlin', 'nhuy387@gmail.com', '$2a$04$sdFRFcyXxIRIyB5IWR/u3uSi/CzQPpvbZomb3g3TP17COk.1AwXvK', '26rrgEBxPt0nQwQX1Wm0Ug', 1, 1, '2017-05-16 03:47:04', '2017-05-16 03:47:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 36 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.31ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (90.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Jadon Kerluke', 'Stephanie Howe', 'nhuy387@gmail.com', '$2a$04$IHHs9LCmGrFKqN3rYI3dmOg6/bS8RDSFARs6aLPs6VBSaA0bvCQq2', 'x3ZSPktOnYf5qw1bLPXyhQ', 1, 1, '2017-05-16 03:47:10', '2017-05-16 03:47:10')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 37 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.4ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (40.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Lavon Johnston', 'Mrs. Norwood Kub', 'nhuy387@gmail.com', '$2a$04$aqrrRdLmZZ7m72RbmBuGLulkNOTV1P7lLv9RpgrihDqLeAfc4Ffiq', 'EoffMqKdSBIotR46ge2KMA', 1, 1, '2017-05-16 03:47:10', '2017-05-16 03:47:10')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 38 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.36ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (33.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Axel Lowe', 'Era Cummerata', 'nhuy387@gmail.com', '$2a$04$0InuLds/DiCctqhrXs1hAON74mU5//dUfW73IG7CUGxvbpW4t4XKm', 'DpunxP2xQxsRZkF8eYFiMA', 1, 1, '2017-05-16 03:48:16', '2017-05-16 03:48:16')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 39 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.65ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (77.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Rowena Hartmann', 'Ms. Hal Schmidt', 'nhuy387@gmail.com', '$2a$04$8Kj8dRYPzOrTn2F5XH2p5eI5Kw9Tj6Vpt1ObcsvNXb9/iyvES/0US', 'q4bXcqNarL1MOtoGqOyQ6w', 1, 1, '2017-05-16 03:48:16', '2017-05-16 03:48:16')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 40 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.76ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (200.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Mikayla MacGyver', 'Devan Heidenreich', 'nhuy387@gmail.com', '$2a$04$MognM206cS96gZoi8GG8ieDFEjlYK5.5/HOGWu1yI7t/VVZTy6Hj.', 'BPmsus32o7st5SH2jQfoAg', 1, 1, '2017-05-16 03:48:50', '2017-05-16 03:48:50')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 41 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.33ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (32.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Stuart Gibson', 'Savion Stokes', 'nhuy387@gmail.com', '$2a$04$zn2tHq5vcWAFqHvxjQb.XOu168SSs7mZ5x3MF9snh8Ize/Kp6uuty', '2IWRGSBYPqkp6m9kcIDndw', 1, 1, '2017-05-16 03:49:07', '2017-05-16 03:49:07')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 42 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.62ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (127.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Zander Morar', 'Lurline Waters II', 'nhuy387@gmail.com', '$2a$04$Ne4yVF0XPHN2PqMRIEK6GO2Ux6DgzVDUiIZGaZlniJMScOxqiGnj6', 'lWTB7ENmdw7lzR7BUV9ViQ', 1, 1, '2017-05-16 03:49:20', '2017-05-16 03:49:20')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 43 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.37ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (34.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Mallory Daniel Jr.', 'Dr. Shirley Wisoky', 'nhuy387@gmail.com', '$2a$04$KEEcsojJXScQkv.JV6epQOJXIKXW1fL/xxLNdcvkewx5mJUu/.EDq', '2DjTaJtiAHmf5VFYtRXfOg', 1, 1, '2017-05-16 03:49:35', '2017-05-16 03:49:35')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 44 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.65ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (110.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Johnathan Hintz', 'Nicholaus Yundt', 'nhuy387@gmail.com', '$2a$04$oc3oKWff2LPqWhDyGbHfT.Oyj2Owwo.f8CN/eKRP2Rt3V6joAf3I.', '1fILlwvg5dR3xwxQpkxbSQ', 1, 1, '2017-05-16 03:50:06', '2017-05-16 03:50:06')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 45 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.46ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (63.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Shanel Friesen', 'Price Mayert', 'nhuy387@gmail.com', '$2a$04$8K/0emxHN3k4tBcYlNuDVOAmNB2juXnKkNzX0ZMIv9eD6xEWqYGye', 'UfotfkMb72UF6YocUGtjTg', 1, 1, '2017-05-16 03:53:23', '2017-05-16 03:53:23')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 46 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.42ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (111.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Napoleon Corwin', 'Korey Tillman', 'nhuy387@gmail.com', '$2a$04$P9LTSCnWKRasulphyPapvuf2G.3WvNfFmiwp38yycRLf8v.jjJkkO', 'zOJ8eh3WY0e9gduJFlbpNg', 1, 1, '2017-05-16 03:54:09', '2017-05-16 03:54:09')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 47 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.78ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (43.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Bobby McCullough', 'Ms. Green Rau', 'nhuy387@gmail.com', '$2a$04$LuRib.540r/7s7WUxbwpJO5NQ2FV7LV8MnYfAXbozg5zhyoYamfKy', 'JthiDbA568WycqxmAjPBfQ', 1, 1, '2017-05-16 04:00:22', '2017-05-16 04:00:22')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 48 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.3ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (77.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Gideon Collier', 'Justice Klocko', 'nhuy387@gmail.com', '$2a$04$9QdGWv5HHS7xmvqVYNjhl.xwjf86BNLd.jNIFSRGWMUObCn.6xUpq', '610hWCK4GcTPH9n287v6Ag', 1, 1, '2017-05-16 04:00:38', '2017-05-16 04:00:38')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 49 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.41ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (59.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Elva O\'Kon', 'Janice Bailey', 'nhuy387@gmail.com', '$2a$04$dldVAYvXefyhiqoFMgN1y.nJu3UAOL1TJ/KXC7tqv5uaFz9/wYWGK', 'xgyuTgjq1F5mqFOn6xkazw', 1, 1, '2017-05-16 04:05:34', '2017-05-16 04:05:34')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 50 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.5ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (55.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Nicolette Gleason', 'Richard Ruecker', 'nhuy387@gmail.com', '$2a$04$bcRpbd7OBR9.spMPBQRkLujOQP/xu6KaCTmWMLBukNoFDM3YVUhOK', '-6kGFMStN7abjo3H6u8B7g', 1, 1, '2017-05-16 04:07:23', '2017-05-16 04:07:23')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 51 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.39ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (66.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Rebeka Ward V', 'Austen Johnson', 'nhuy387@gmail.com', '$2a$04$9aX1vxjI81Dby4SetkI28uFIgQOm0rZGdgvsWGLEgwPONzYai3TEy', 'HQBryXB7o8RZqhWbgzB86Q', 1, 1, '2017-05-16 04:18:14', '2017-05-16 04:18:14')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 52 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.61ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (75.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Rasheed Schowalter', 'Mr. Madonna Marquardt', 'nhuy387@gmail.com', '$2a$04$krynrklsrcKUS4xqJW67X.T.GPsZxXMgf/bSRQzRixC5JNtcIo8z6', 'tJmD6apdDYEEsGN8LfuF3A', 1, 1, '2017-05-16 04:25:58', '2017-05-16 04:25:58')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 53 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.27ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (34.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Arch Stiedemann', 'Syble Kertzmann', 'nhuy387@gmail.com', '$2a$04$NTnK0yjKooj0CerP2fGoEuKRb37URVnaWropKAodx0nauxiZAJVLq', 'pYB--WERtc9SVhbnKvshrg', 1, 1, '2017-05-16 04:31:30', '2017-05-16 04:31:30')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 54 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.58ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (54.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Gisselle Ullrich Sr.', 'Lavonne Russel IV', 'nhuy387@gmail.com', '$2a$04$g6TTy09ltRu8pWeZf562SuYpUO5NbUkdnCoh..7taucxwfnS1lU86', 'MLC3kJuCDWmfoKi45oevnQ', 1, 1, '2017-05-16 04:34:38', '2017-05-16 04:34:38')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 55 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.34ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (57.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Graham Shanahan Sr.', 'Ivah Johns', 'nhuy387@gmail.com', '$2a$04$cQEB1WquDFxeWQDr9koN1.m7BSGudXiL3sp1szut4wyxNH8ZSnRs6', '454affsdf454hoisdfaadfk', '1nWcph9DCOAv6CtQAvPk8Q', 'Faker::Date', '2017-05-16 06:39:11', '2017-05-16 06:39:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Tyrel Prohaska', 'Chanel Reichert', 'nhuy387@gmail.com', '$2a$04$x.AjkdvJDNqxJ1hTqrgnSudDaelQeuVMHSp1kjzl1CoIx.Y6nABde', '454affsdf454hoisdfaadfk', 'OWtM9XeNHbSYKBrkISWLiQ', '2017-05-16 06:39:52', '2017-05-16 06:39:52')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 56 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.38ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (33.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Virgie Padberg Sr.', 'Jaron Ullrich', 'nhuy387@gmail.com', '$2a$04$1gKl9cnYz3sWWK/Una2HXejlr/enW0MCQ3ttRH6Eh9lp4k9rmOaUa', '454affsdf454hoisdfaadfk', 'DOLY-LMb_AyG8WBea34R1w', '2017-05-16 06:45:27', '2017-05-16 06:45:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"57"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 57 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.18ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (48.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Sidney Leannon', 'Elisa Hessel', 'nhuy387@gmail.com', '$2a$04$sPO8Bc/o6Xcrv8PFaPDaKe5J8ClerGd8rDbsgW3nvQUOsTqpBHRqO', '454affsdf454hoisdfaadfk', '1EeY3bIM_KYBd0GZRzb22Q', '2017-05-16 06:49:17', '2017-05-16 06:49:17')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 58 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.82ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (28.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Tobin Abshire PhD', 'Mr. Connie Smitham', 'nhuy387@gmail.com', '$2a$04$H6GVMecOsp9UAwZ8YbAC/uJaMcXuUgCgNfn8VW.69Mv4htVf8DKZu', '454affsdf454hoisdfaadfk', '_ZtxlaQ50j9qBP_32XLe0A', '2017-05-16 06:51:35', '2017-05-16 06:51:35')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (33.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Daryl Oberbrunner DVM', 'Laura Steuber', 'nhuy387@gmail.com', '$2a$04$Zoyjm0/90CkSLexNmkRIbub2HHkN8K/ih1j..Bu3YxWci5ZumVMci', '454affsdf454hoisdfaadfk', '5xWFHRvYVqY0jfztUeK8cA', '2017-05-16 07:00:58', '2017-05-16 07:00:58')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"60"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 60 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.6ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (32.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Janick Nolan', 'Mr. Brando Schamberger', 'nhuy387@gmail.com', '$2a$04$g6swpZRJ20.DkOfj7wwBmeiFhPovjStqQvGJkIgboJBV9txjqFX/i', '454affsdf454hoisdfaadfk', 'RTrTHZgj48w5qWhN79IHdQ', '2017-05-16 07:01:19', '2017-05-16 07:01:19')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 61 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.13ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (33.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Hershel Carroll MD', 'Melyssa Smith V', 'nhuy387@gmail.com', '$2a$04$inp8OLKIpK8C4DNYZjXt7OG0VDZNU1CFrPm6GEdc6ptQ3ufwX7m8G', '454affsdf454hoisdfaadfk', '05SqJFaRvNV_a7EVriLEKA', '2017-05-16 07:03:32', '2017-05-16 07:03:32')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 62 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.18ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (49.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Yessenia O\'Connell', 'Muhammad Flatley', 'nhuy387@gmail.com', '$2a$04$yOWZNjI7KaM3xnx11ZgGqO9oH5lniSIQbdm8oIHPAt.7HL9qyVZFS', '454affsdf454hoisdfaadfk', '8Zxn5GXyW8iJsE5m633WvA', '2017-05-16 07:03:51', '2017-05-16 07:03:51')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"63"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 63 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.14ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (40.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Liam Swift', 'Daisha Jones', 'nhuy387@gmail.com', '$2a$04$u0V4BolA7buyzOeb.Pzna.xEYrSx5sqKJbak5nkTLQSRYX.BytUTy', '454affsdf454hoisdfaadfk', 'Sz9OrWVbH7JmvEalDd19pA', '2017-05-16 07:07:45', '2017-05-16 07:07:45')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 64 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.07ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (104.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Henry Wuckert', 'Annie Schowalter', 'nhuy387@gmail.com', '$2a$04$.FWWiCM8HT9Lno6/5O7PA.wr9JPFJ630yplEMXjfUPIi98j2zPS7G', '454affsdf454hoisdfaadfk', 'y3PyqAakgc18tzfx-ozAMA', '2017-05-16 07:08:01', '2017-05-16 07:08:01')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 65 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.65ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (45.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Antoinette Quitzon', 'Johnson Kuhlman', 'nhuy387@gmail.com', '$2a$04$K5JZylO5Z5MnDc.b0de7JexfKUWXaJcPk2yxCiW.mWQRFApoeQDNS', '454affsdf454hoisdfaadfk', 'Bid5qPdTU6uHiE5YFbaXMQ', '2017-05-16 07:11:18', '2017-05-16 07:11:18')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"66"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 66 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.93ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (76.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Emery Wisoky', 'Jessy Jast', 'nhuy387@gmail.com', '$2a$04$YbAA9pa95mk0xVBniXcavu4fwm9YTh4vMPo.0sLmNgeTCnpBRG55q', '454affsdf454hoisdfaadfk', 'YNSpihEmh9zvB54vEG7YTw', '2017-05-16 07:12:27', '2017-05-16 07:12:27')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 67 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.1ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (35.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Eladio Homenick', 'Phyllis Stanton PhD', 'nhuy387@gmail.com', '$2a$04$S6DJ0vSJLncpCUmwZyf9.eVbFYhfwNSI.jICNhbs7R5Z.kWXQrko.', '454affsdf454hoisdfaadfk', '0BHwcx0Pp7RTiAFe-1n_KQ', '2017-05-16 07:13:46', '2017-05-16 07:13:46')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 68 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.99ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (43.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Lamar Jast IV', 'Eliezer Quigley', 'nhuy387@gmail.com', '$2a$04$RD1w9ky1QyyW66vR6NCLp.yhnagzV/a82WpvOeIbB0qpC1DVE4x1m', '454affsdf454hoisdfaadfk', '_higOygapv2Wq-e1GeVp9g', '2017-05-16 07:15:13', '2017-05-16 07:15:13')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 69 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.41ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (43.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Jaylen Pfeffer', 'Karolann O\'Reilly', 'nhuy387@gmail.com', '$2a$04$ydoGtzp0V4z.UI4iYqObl.oPYcvDRsxfhfsDxflSjgNv13rwMrf/.', '454affsdf454hoisdfaadfk', 'mpjHb6_MQRJ6HuNQBWxQVA', '2017-05-16 07:15:17', '2017-05-16 07:15:17')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 70 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.39ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (27.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Darron Bechtelar', 'Graham Herzog', 'nhuy387@gmail.com', '$2a$04$79LHZbtUNzYtVgomDaIQBefdXAbfCRRBc.TiDvRnuStEzdyFciMli', '454affsdf454hoisdfaadfk', '1ksLpQA0KP2ii2GWUqEAPA', '2017-05-16 07:15:19', '2017-05-16 07:15:19')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 71 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.32ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (34.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'modesto_labadie@schroedergorczany.io' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Sam Nienow', 'Keagan Bogisich', 'modesto_labadie@schroedergorczany.io', '$2a$04$lMyNbHJmeLZz142VG0S42ut7O3BKoyxDcA03vUTkVi1P3PUtcr6am', '454affsdf454hoisdfaadfk', 'woDkQZsmXpKYHkcP0hu2FA', 'Faker::Date', '2017-05-16 07:16:17', '2017-05-16 07:16:17')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'roderick@purdywisoky.biz' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Cletus Spencer DVM', 'Clifford Ortiz', 'roderick@purdywisoky.biz', '$2a$04$60yYjpbojgnLVVc1ObZfneFtEwuLZBoRzdGaZjXGBtzL7ORx18cYi', '454affsdf454hoisdfaadfk', 'HIWc0HWfQXJvLgLmxifr8Q', 'Faker::Date', '2017-05-16 07:16:17', '2017-05-16 07:16:17')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'roselyn.hansen@mraz.co' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Ms. Matteo Moore', 'Cade Spencer', 'roselyn.hansen@mraz.co', '$2a$04$C8Zi/jfMAWKC62IpEkTS8OkI1ixLvToIBkGpXjNQEnS7RYBiNEZ.u', '454affsdf454hoisdfaadfk', 'RUUimb7H6RQaGGEF5PuY2w', '2017-05-16 07:16:47', '2017-05-16 07:16:47')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 72 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.92ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (109.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dianna@schoen.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Dayton Schneider', 'Lela Thiel', 'dianna@schoen.com', '$2a$04$3nEAWfkkbr6SsQ9/AwduzunWPfTR0USFjKkpvN9oQ8bsrBoIsECvS', '454affsdf454hoisdfaadfk', 'ZNiIAIUGNvHwSg1K2smFhg', '2017-05-16 07:16:47', '2017-05-16 07:16:47')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 73 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.36ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (42.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'zella@treutel.name' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Jamie Bruen', 'Daisha Klein DVM', 'zella@treutel.name', '$2a$04$Y2cHlKzntxRUkEbQKi18Wel9fi6HpWEFQc9pK.dkfuvlwShDoQWS.', '454affsdf454hoisdfaadfk', '7mqPVxyHT0E1P_4dMXtEZw', 'Faker::Date', '2017-05-16 07:17:16', '2017-05-16 07:17:16')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'gabriella.gleason@zieme.co' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Viola Jaskolski', 'Marta Mayer', 'gabriella.gleason@zieme.co', '$2a$04$Tm2BgRldBsu/jXttpDWmiOlkJu4QcolkzaHrYji3w6p0kBRUXlB7O', '454affsdf454hoisdfaadfk', 'KR47UOocyxKLLPsstgDGFw', 'Faker::Date', '2017-05-16 07:17:16', '2017-05-16 07:17:16')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'darrin.hodkiewicz@blickwilliamson.biz' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Taylor Kassulke III', 'Gianni Cruickshank I', 'darrin.hodkiewicz@blickwilliamson.biz', '$2a$04$eM83epHs4kua3rzb5vNU4OEgQkNVdK3h6jJrW3br9ai0va.qL.G9O', '454affsdf454hoisdfaadfk', 'DwW43-9DTFkDnqO4rxh9Dw', 'Faker::Date', '2017-05-16 07:18:33', '2017-05-16 07:18:33')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'randy@spencer.org' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Alta Rowe', 'Esta Gulgowski', 'randy@spencer.org', '$2a$04$Wx5/vu6X0ntz13rRao1pz.BxM1.FeFQqMUEWXoBaP4rlh/0NNsC0.', '454affsdf454hoisdfaadfk', 'aQnfsDgjP8_qjGy8E_rVfQ', 'Faker::Date', '2017-05-16 07:18:33', '2017-05-16 07:18:33')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'richard_huels@westupton.biz' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Demetrius Tromp', 'Zachariah Schmeler', 'richard_huels@westupton.biz', '$2a$04$X0Cw2JcTwlpUlPXJMkhil..7fGsPlCURxcWPIvTCOdigXLH8PrXDu', '454affsdf454hoisdfaadfk', 'c1F45LDgetJ73RXjLVrX3g', '2017-05-16 07:19:04', '2017-05-16 07:19:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 74 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.05ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (27.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nicholas@murphysatterfield.net' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Mrs. Alden Gerlach', 'Elmo Moore', 'nicholas@murphysatterfield.net', '$2a$04$8Pij95nEuSrVQY7077cJW.YFrq3mMIauLoTvhbctgtFsjYCMJ0uQi', '454affsdf454hoisdfaadfk', 'm6BE1Nweo3cPE5SeNfqTDw', '2017-05-16 07:19:24', '2017-05-16 07:19:24')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 75 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.29ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (31.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'donnie@okeefeschmidt.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Emilie Aufderhar', 'Raymond Hoeger', 'donnie@okeefeschmidt.com', '$2a$04$Oqus97ermi7h9iFgTg1iQOdq6Sy7ZsXfIdwkWFN/GxQQLMK6cxo/y', '454affsdf454hoisdfaadfk', 'JedPZG2E3MfZHdrgk8wNGg', '2017-05-16 07:19:29', '2017-05-16 07:19:29')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 76 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.13ms)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+  [1m[35m (46.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dolores.zemlak@weberwaters.biz' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `created_at`, `updated_at`) VALUES ('Roma Stanton', 'Mr. Edwina Conroy', 'dolores.zemlak@weberwaters.biz', '$2a$04$UpWdXmVf6/27mhwO3CNd1OAGb7OwlyP5hhratvTCXMjIbj9v5X3bC', '454affsdf454hoisdfaadfk', 'h4v6s3S1QPDSOYpkn5yIAA', '2017-05-16 07:20:41', '2017-05-16 07:20:41')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 77 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.64ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (40.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rory.huel@quigley.biz' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Octavia Padberg', 'Angie Prosacco', 'rory.huel@quigley.biz', '$2a$04$r5WhkYwPw39AW4kxMmrTYur1dsprNaFKj2K6Vb.Yv.kxdMgk00IpW', '454affsdf454hoisdfaadfk', 'lN5rnk4pUYbcUedPXChgig', '1971-12-03', '2017-05-16 07:20:45', '2017-05-16 07:20:45')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 78 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.17ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (32.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'josiah.wiza@witting.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Vito Pacocha', 'Angie Bechtelar Sr.', 'josiah.wiza@witting.com', '$2a$04$fype0DCx.tTgm7YCxSiB7ewCHBh4EwCgD0ML.qy.sY0uJb.DjyNEy', '454affsdf454hoisdfaadfk', 'TQC1q6g16C_kZVArYcKENw', '1969-06-15', '2017-05-16 07:21:01', '2017-05-16 07:21:01')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 79 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.34ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (30.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'trea@hoppe.co' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Rhiannon Maggio', 'Susanna Muller', 'trea@hoppe.co', '$2a$04$GIykEfAZsKL7gHBQn4PpR.VupQRFvE3jcbsJGvXV/1UlcwbqiwDlm', '454affsdf454hoisdfaadfk', '4-7s5Qj5ZyJAXbnU1IsVBg', '1976-12-01', '2017-05-16 07:21:31', '2017-05-16 07:21:31')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 80 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.34ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (69.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'darron_berge@weberdeckow.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Dillon Zulauf', 'Kasey Padberg', 'darron_berge@weberdeckow.com', '$2a$04$iS0iOwGIssnsTU8SLEvQYO9cRiIEc18Dtdfi0jsCogUfiJbwB1Hce', '454affsdf454hoisdfaadfk', 'VENyrNEfUot_kk3sY-xg6g', '1980-10-31', '2017-05-16 07:21:31', '2017-05-16 07:21:31')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"81"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 81 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.43ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (31.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'brycen.okuneva@skiles.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Kiana Stroman', 'Wendy Grady', 'brycen.okuneva@skiles.com', '$2a$04$ujoeRkxQbzM2j9AJsc7jEOfLG2gDx3htTs4H4G9J12zs5FzvRxrmS', '454affsdf454hoisdfaadfk', 'PcLCux4CRgQfCjXxEN3ftg', '1980-10-11', '2017-05-16 07:21:44', '2017-05-16 07:21:44')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"82"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 82 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.36ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (29.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'quinton_senger@champlinhettinger.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Mrs. Wilbert McGlynn', 'Mr. Rene Konopelski', 'quinton_senger@champlinhettinger.co', '$2a$04$OwiPwfxfni8VXeVQxk.hYe2coG4H1ZFCKF18F3Ra0qtK2GhrD3Y2W', '454affsdf454hoisdfaadfk', 'hqpP6_tMW-9r0TgUWCzhHA', '1991-05-13', '2017-05-16 07:22:15', '2017-05-16 07:22:15')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"83"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 83 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.38ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (33.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'joe@herzog.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Wilhelmine Lindgren', 'Mr. Eddie Jaskolski', 'joe@herzog.com', '$2a$04$aexUYiHbpxRsWZd3xeJgGu1HT66VuPqoAPCRqf9hPeaUAHVvoDzrW', '454affsdf454hoisdfaadfk', 'HyBiLupBXb0Dpwcg15Y0IQ', '1971-12-08', '2017-05-16 07:22:20', '2017-05-16 07:22:20')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"84"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 84 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.91ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (25.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'lucie_mosciski@ricealtenwerth.info' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Janet Fisher', 'Stacey Deckow I', 'lucie_mosciski@ricealtenwerth.info', '$2a$04$UWqrNhupSKyyE.g34NmMreHpHSHrMMXLeWbCi.eMOLhbOXZcPSQVm', '454affsdf454hoisdfaadfk', 'gviF_cvMiNYMIYhJtLH3Wg', '1995-06-06', '2017-05-16 07:23:00', '2017-05-16 07:23:00')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"85"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 85 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.43ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (30.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'melany@swaniawskibauch.name' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Oma Mitchell', 'Mr. Orie Stark', 'melany@swaniawskibauch.name', '$2a$04$NMISIArcQD2MM5P0ufonke.0VYEkeEah6CmUtXJDwyH/iujvH4Efe', '454affsdf454hoisdfaadfk', 'O5-J0HNfrYI66IJfnyw89Q', '1988-01-28', '2017-05-16 07:23:04', '2017-05-16 07:23:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"86"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 86 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.37ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (46.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'elizabeth@smith.info' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Woodrow Haley', 'Dee West Jr.', 'elizabeth@smith.info', '$2a$04$XfFyfOblms5vukLazUgpju1550exxQ.KanL273OFMB2Glw/ldlpxW', '454affsdf454hoisdfaadfk', 'Aw_AhCMtvR9oLnBf1m2pvA', '1990-10-31', '2017-05-16 07:27:24', '2017-05-16 07:27:24')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"87"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 87 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.36ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (29.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'pascale_marks@smitham.name' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Jonathan Schiller', 'Antonette White', 'pascale_marks@smitham.name', '$2a$04$wSCEs3mUEBmZPq9oiY1a1ebKxijjKG/SFz6zJwh0QpV5v57fnb9XW', '454affsdf454hoisdfaadfk', 'PFRigDlWvdFEajWkui92QQ', '1961-05-23', '2017-05-16 07:27:28', '2017-05-16 07:27:28')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 88 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.07ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (181.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'yasmin.von@haag.biz' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Americo Blick I', 'Vida Oberbrunner', 'yasmin.von@haag.biz', '$2a$04$Pwg.jZbfLnR3COR8XzZO7uA046KY9aYagM.WPuAJoI8MntUL5bStm', '454affsdf454hoisdfaadfk', 'ziuaBuWXzU1_XeTyrFb2GQ', '1963-06-13', '2017-05-16 07:27:28', '2017-05-16 07:27:28')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 89 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.93ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (53.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'treva_donnelly@lindgren.net' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Alexa Rosenbaum', 'Eloisa Effertz II', 'treva_donnelly@lindgren.net', '$2a$04$lX8BEimiAhpdiwtp9kca/OLVQpIzXkmeagfPnK8oRXmREAGtv6fge', '454affsdf454hoisdfaadfk', 'dnRxdoXLf_8tIHIpaIiXsw', '1991-03-04', '2017-05-16 07:27:43', '2017-05-16 07:27:43')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 90 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.71ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (81.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'camille@durgan.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Dr. Ova Hickle', 'Dr. Loma Carroll', 'camille@durgan.com', '$2a$04$le7B6RPC6FQHHcDRMS06AuhDtPBLPla0k1pthy4zngrGCW4G7gHGm', '454affsdf454hoisdfaadfk', 'PRdS_OO4SMJTbLEnZ-fGJQ', '1962-05-30', '2017-05-16 07:27:44', '2017-05-16 07:27:44')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 91 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.53ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (32.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dedrick.stehr@hettinger.info' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Mr. Alicia Gleichner', 'Brennan Metz', 'dedrick.stehr@hettinger.info', '$2a$04$Aes10CkDnYgkP7BaswkyrOmvZvQvj0CgAc8Ax2b1hCLirIFBjk0X6', '454affsdf454hoisdfaadfk', 'j6Uxm2XKRUPdUiPF_SUwYw', '1979-04-17', '2017-05-16 07:28:00', '2017-05-16 07:28:00')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 92 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.46ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (30.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'lenore.luettgen@satterfield.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Mr. Max Nienow', 'Annabelle Homenick', 'lenore.luettgen@satterfield.com', '$2a$04$9b8A0yWI/Qm2vSFqTHv/RekWq54OAiTr3cjY6e.YGnX4/aIRuYeRK', '454affsdf454hoisdfaadfk', 'cEpo05-khJi8BJ6FSJfAaQ', '1986-12-18', '2017-05-16 07:30:08', '2017-05-16 07:30:08')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 93 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.34ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (31.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'spencer@swaniawskiking.co' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Rebecca Corwin', 'Elvis O\'Connell', 'spencer@swaniawskiking.co', '$2a$04$Bb/8PbSVTb2yOfF5QVWfhu4xmYQoTyg1lyLmGm09IruBfKq4cnTD6', '454affsdf454hoisdfaadfk', 'fBpc_mpX32YLGRj80nJQEQ', '1970-10-26', '2017-05-16 07:30:16', '2017-05-16 07:30:16')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"94"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 94 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.09ms)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (106.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'delaney.funk@lockmanbraun.biz' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `created_at`, `updated_at`) VALUES ('Kayleigh Ernser', 'Ena Ankunding', 'delaney.funk@lockmanbraun.biz', '$2a$04$U5zgQT4mjXVzhOrOJA9F8eP8BnJrkkJsqOp3riHAm9A3jZ2jUayiC', '454affsdf454hoisdfaadfk', 'rWJdBjpm5Ut6J_ivawG2zA', '1979-05-10', '2017-05-16 07:30:16', '2017-05-16 07:30:16')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 95 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.77ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (27.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rocio.bednar@gutmann.info' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Nellie Stoltenberg', 'Ernestina Monahan MD', 'rocio.bednar@gutmann.info', '$2a$04$/mIUr1mNIK.RrJ/sctEm2OAwBk1LN002cPmU6tvmtpLELCxCizrI2', '454affsdf454hoisdfaadfk', '4g5lY8R-RE1RoouDSyKlIQ', '1980-08-15', 1, 1, '2017-05-16 07:32:52', '2017-05-16 07:32:52')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 96 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.41ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (92.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'delphine@price.io' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Bridget Goldner V', 'Titus Hintz', 'delphine@price.io', '$2a$04$GDeTJG5g2D0KAL1LuEU6EuZYL.DoOkCyNRxZ/96AeCvnVaXguNCxe', '454affsdf454hoisdfaadfk', 'YnpHYcN128FAYNQBeNEkZw', '1989-03-13', 1, 1, '2017-05-16 07:32:52', '2017-05-16 07:32:52')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 97 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.34ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (30.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jerrold@macgyver.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Adolphus Pouros', 'Kade Wehner', 'jerrold@macgyver.com', '$2a$04$ldarYpoiYqVuafjYBsQ6ReWrRaQqv4bBaZDYoaLRjHSJU1q/hsOMu', '454affsdf454hoisdfaadfk', 'OLzOH_idl_puUyxBvl90bQ', 'Faker::Date', 1, 1, '2017-05-16 07:33:37', '2017-05-16 07:33:37')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'morgan@mullerparisian.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `birthday`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Edyth Zemlak', 'Katrina Johnson', 'morgan@mullerparisian.com', '$2a$04$eZDIJ9iq1jY9fsx57lniMedEXOhHhuWqTDQAIIow5/56ugyhsogAm', '454affsdf454hoisdfaadfk', 'SIt7RLZ39ENKTNNyL9hlKw', 'Faker::Date', 1, 1, '2017-05-16 07:33:37', '2017-05-16 07:33:37')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'evie@romaguera.net' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Agustina Ratke', 'Sidney Hoppe', 'evie@romaguera.net', '$2a$04$14u1nSA/eySDPeDvk7Pp9u2UXtBgi/XthZvjbw9GVAd53Yfr3WyeK', '454affsdf454hoisdfaadfk', 'zdKsqcdfFHvPZYJWkIlFog', 1, 1, '2017-05-16 07:33:48', '2017-05-16 07:33:48')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 98 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.09ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (109.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'eliezer@brownrosenbaum.name' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Mr. Althea Abernathy', 'Ms. Reva Wiza', 'eliezer@brownrosenbaum.name', '$2a$04$1NKM9v9VcyLVYwX4RJDJluyc62y/0g8gs1GsdarjcYRslDjG70x0O', '454affsdf454hoisdfaadfk', 'e88PfLYzZF4ha2RY2gPBtg', 1, 1, '2017-05-16 07:33:48', '2017-05-16 07:33:48')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 99 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.52ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (43.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'zula_pouros@mayer.io' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Miss Dahlia Greenholt', 'Blanca Stiedemann', 'zula_pouros@mayer.io', '$2a$04$4CkaRx/UAVXFExNNTPciTOvJ0QxMjJUaReJZqNxYgnHX0sKl/qtaC', '454affsdf454hoisdfaadfk', 'F6Y0O0Uuwb6_oHX9SEopVQ', 1, 1, '2017-05-16 07:41:46', '2017-05-16 07:41:46')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 100 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.7ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (84.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'london.mohr@friesenmayer.info' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `access_token`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Naomie Ratke', 'John Waters', 'london.mohr@friesenmayer.info', '$2a$04$xJTdTcaGysl1VXHCo4KIFuhmt70k16K4buMjGGBjkz9UgK8LVFVOy', '454affsdf454hoisdfaadfk', 'nCNyf7Z1uPeQzK4h1uJIGQ', 1, 1, '2017-05-16 07:41:46', '2017-05-16 07:41:46')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 101 LIMIT 1[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.39ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (33.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ignatius_kulas@rippinhagenes.io' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'bria_schuppe@starkblock.info' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
