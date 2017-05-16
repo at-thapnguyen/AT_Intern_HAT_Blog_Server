@@ -6,13 +6,9 @@ class BaseController < ApplicationController
   # => id: user_id
   # => access_token: access_token
 
-  def check_login id, access_token
-    user = User.find(id)
-    if user.blank?
-      return nil
-    else
-      return (user.access_token == access_token)? user : nil
-    end
+  def check_login access_token
+    user = User.find_by access_token: access_token
+    return ( !user.blank? )? user : nil
   end
 
   # check_time_access: use to check user's access use did limited?

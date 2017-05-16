@@ -7,7 +7,6 @@ class Api::V1::UsersController < BaseController
   def create
     user = User.create(user_params)
     if user.valid?
-      # binding.pry
       UserMailer.registration_confirmation(user).deliver
       render json: user, meta: { message: "register success", status: 400 }
     else
