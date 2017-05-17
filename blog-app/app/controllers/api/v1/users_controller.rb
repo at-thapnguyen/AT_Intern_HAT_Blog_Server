@@ -22,6 +22,7 @@ class Api::V1::UsersController < BaseController
       token = SecureRandom.hex
       user.token = token
       user.update_attribute("access_token", token)
+      user.update_columns(blocked: false)
       msg = { status: "success", message: "Activated", code: 200}
       render json: user, meta: { message: "register success", status: 400 }
     else

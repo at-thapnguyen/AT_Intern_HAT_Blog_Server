@@ -6,8 +6,8 @@ class BaseController < ApplicationController
   # => id: user_id
   # => access_token: access_token
 
-  def check_login access_token
-    user = User.find_by access_token: access_token
+  def check_login
+    user = User.find_by access_token: response.request.env['HTTP_ACCESS_TOKEN']
     return ( !user.blank? )? user : nil
   end
 

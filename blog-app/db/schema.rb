@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(version: 20170505025335) do
   create_table "attentions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "article_id"
     t.integer "user_id"
-    t.boolean "isLiked"
-    t.boolean "isFollowed"
-    t.boolean "notification_like"
-    t.boolean "notification_follow"
+    t.boolean "isLiked",             default: false
+    t.boolean "isFollowed",          default: false
+    t.boolean "notification_like",   default: false
+    t.boolean "notification_follow", default: false
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree
     t.index ["user_id"], name: "fk_rails_7e410e9217", using: :btree
   end
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20170505025335) do
   create_table "follow_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
     t.integer "be_followed_id"
-    t.boolean "isChecked"
+    t.boolean "isChecked",      default: false
     t.index ["user_id"], name: "fk_rails_6bfac4ba98", using: :btree
   end
 
@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 20170505025335) do
     t.string   "confirm_token"
     t.date     "birthday"
     t.boolean  "access",          default: false
-    t.boolean  "blocked",         default: false
+    t.boolean  "blocked",         default: true
     t.boolean  "email_confirmed", default: false
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
