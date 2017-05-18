@@ -8,8 +8,9 @@ class User < ActiveRecord::Base
   has_many :follow_user
 
   validates :username, presence: true
-  validates :password, presence: true, length: { in: 6..15 }
+  validates :password, presence: true, length: { in: 6..15 }, on: :create
   validates :email, presence: true, uniqueness: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i , message: "Email don't validated" }
+
   has_secure_password
 
   # enum email: [:unpublished, :published]
@@ -20,6 +21,9 @@ class User < ActiveRecord::Base
   # end
 
   acts_as_paranoid column: :blocked, sentinel_value: false
+
+  mount_uploader :avatar, AvatarUploader
+
 
   def email_activate
     self.email_confirmed = true

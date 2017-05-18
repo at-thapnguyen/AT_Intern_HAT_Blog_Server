@@ -80,6 +80,8 @@ ActiveRecord::Schema.define(version: 20170505025335) do
     t.string   "fullname"
     t.string   "username"
     t.string   "email"
+    t.string   "avatar"
+    t.string   "description"
     t.string   "password_digest"
     t.string   "access_token"
     t.string   "confirm_token"
