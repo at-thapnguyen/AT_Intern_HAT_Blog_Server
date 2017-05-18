@@ -6,17 +6,21 @@ Rails.application.routes.draw do
       post '/signup', to: 'users#create'
       post '/signin', to: 'authorizations#create'
       delete '/signout', to: 'authorizations#destroy'
-      resources :users do
+      put '/reset_password', to: 'authorizations#update'
+      resources :attentions, only: [:index]
+      get '/follower', to: 'followers#index'
+      delete '/follower', to: 'followers#destroy'
+      resources :users, only: [:index, :create, :update, :show, :destroy] do
         member do
           get :confirm_email
         end
       end
-      resources :tags
-      resources :categories
+      resources :tags, only: [:index, :create, :update, :show, :destroy]
+      resources :categories, only: [:index, :create, :update, :show, :destroy]
 
       #Thap developer
       # resources :users
-      resources :articles
+      resources :articles, only: [:index, :create, :update, :show, :destroy]
 
     end
   end

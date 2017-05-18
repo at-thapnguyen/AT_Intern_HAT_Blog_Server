@@ -4,28 +4,42 @@ class Api::V1::AuthorizationsController < BaseController
   def create
     user = User.find_by(email: params[:email])
     if user.blank?
-      render json: { errors: ['Not match email']}, status: :unauthorized
+      render json: { errors: [ status: 400, message: [{ valid: "Not match email" }] ]}
     else
       if user.authenticate(params[:password]).blank?
-        render json: { errors: ['Not match password']}, meta: {status: 400 }
+        render json: { errors: [ status: 400, message: [{ valid: "Not match password" }] ]}
       else
-        token = SecureRandom.hex
-        user.token = token
+        token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
+        user.access_token = token
         user.update_attribute("access_token", token)
         render json: user
       end
     end
   end
 
-  #user Logout
-
-  def destroy
-    if check_login (params[:id], params[:access_token]) && (!check_time_access)
-      User.find(params[:id]).update_columns(access_token: nil)
-      msg = { status: 200 }
-      render json: msg
+  def update
+    user = check_login
+    if !user.blank?
+      if user.authenticate(params[:password_old])
+        user.password = params[:password_new]
+        user.save!
+        render json: { status: 200 }
+      else
+        render json: { errors: ['Not match password']}, meta: {status: 400 }
+      end
     else
-      render json: { errors: ['Authorization for this user!']}
+      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+    end
+  end
+
+  #user Logout
+  def destroy
+    user = check_login
+    if !check_login.blank?
+      user.access_token = nil
+      user.save
+    else
+      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
     end
   end
 

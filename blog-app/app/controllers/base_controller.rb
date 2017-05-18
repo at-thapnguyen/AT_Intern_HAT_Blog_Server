@@ -6,13 +6,9 @@ class BaseController < ApplicationController
   # => id: user_id
   # => access_token: access_token
 
-  def check_login id, access_token
-    user = User.find(id)
-    if user.blank?
-      return false
-    else
-      return (user.access_token == access_token)? true : false
-    end
+  def check_login
+    user = User.find_by access_token: response.request.env['HTTP_ACCESS_TOKEN']
+    return ( !user.blank? )? user : nil
   end
 
   # check_time_access: use to check user's access use did limited?
@@ -22,7 +18,7 @@ class BaseController < ApplicationController
   # 3 * 24 * 60 * 60 = 259200(s) : 3 days. Setup default time to user use this session
 
   def check_time_access id
-    (User.find(id).update_at + 259200 == Time.current.utc) ? true : false
+    (User.find(id).updated_at + 259200 == Time.current.utc) ? true : false
   end
 
 end

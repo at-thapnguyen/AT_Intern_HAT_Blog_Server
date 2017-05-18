@@ -1,4 +1,4 @@
-class User < ApplicationRecord
+class User < ActiveRecord::Base
 
   attr_accessor :token
   before_create :confirmation_token
@@ -8,9 +8,8 @@ class User < ApplicationRecord
   has_many :follow_user
 
   validates :username, presence: true
-  validates :password, presence: true, length: { in: 6..15 }
-  # uniqueness: true,
-  validates :email, presence: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i , message: "Email don't validated" }
+  validates :password, presence: true, length: { in: 6..15 }, on: :create
+  validates :email, presence: true, uniqueness: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i , message: "Email don't validated" }
 
   has_secure_password
 
@@ -20,6 +19,11 @@ class User < ApplicationRecord
   #   we expect this method to fail first
   #   where(nil)
   # end
+
+  acts_as_paranoid column: :blocked, sentinel_value: false
+
+  mount_uploader :avatar, AvatarUploader
+
 
   def email_activate
     self.email_confirmed = true
