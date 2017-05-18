@@ -13941,3 +13941,147 @@ Processing by Api::V1::UsersController#update as JSON
 Completed 200 OK in 3054ms (Views: 8.1ms | ActiveRecord: 55.7ms)
 
 
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:43:11 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '426085e0ac0283cc01e6fcd9ccd5ebde14950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '426085e0ac0283cc01e6fcd9ccd5ebde14950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "426085e0ac0283cc01e6fcd9ccd5ebde14950283033"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:43:37 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '426085e0ac0283cc01e6fcd9ccd5ebde14950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '426085e0ac0283cc01e6fcd9ccd5ebde14950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "426085e0ac0283cc01e6fcd9ccd5ebde14950283033"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 19ms (Views: 5.1ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:43:54 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '426085e0ac0283cc01e6fcd9ccd5ebde14950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '426085e0ac0283cc01e6fcd9ccd5ebde14950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "426085e0ac0283cc01e6fcd9ccd5ebde14950283033"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 21292ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/signin" for 127.0.0.1 at 2017-05-18 10:44:21 +0700
+Processing by Api::V1::AuthorizationsController#create as JSON
+  Parameters: {"email"=>"nhuy387@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`email` = 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `access_token` = 'fa2e56fcaf4bdfc900263b4eb8763c7e14950283033', `updated_at` = '2017-05-18 03:44:21' WHERE `users`.`id` = 3[0m
+  [1m[35m (62.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.52ms)
+Completed 200 OK in 171ms (Views: 2.8ms | ActiveRecord: 63.2ms)
+
+
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:44:29 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = 'fa2e56fcaf4bdfc900263b4eb8763c7e14950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = 'fa2e56fcaf4bdfc900263b4eb8763c7e14950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "fa2e56fcaf4bdfc900263b4eb8763c7e14950283033"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = 'fa2e56fcaf4bdfc900263b4eb8763c7e14950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "fa2e56fcaf4bdfc900263b4eb8763c7e14950283033"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy387@gmail.com' AND `users`.`blocked` = 0 AND (`users`.`id` != 3) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `access_token` = NULL, `updated_at` = '2017-05-18 03:44:38' WHERE `users`.`id` = 3[0m
+  [1m[35m (36.3ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::V1::AuthorizationsController#destroy, rendering head :no_content
+Completed 204 No Content in 9486ms (ActiveRecord: 37.8ms)
+
+
+Started POST "/api/v1/signin" for 127.0.0.1 at 2017-05-18 10:46:00 +0700
+Processing by Api::V1::AuthorizationsController#create as JSON
+  Parameters: {"email"=>"nhuy387@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`email` = 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `access_token` = '27f0ac644f733f328f29ea955c55cfe214950283033', `updated_at` = '2017-05-18 03:46:00' WHERE `users`.`id` = 3[0m
+  [1m[35m (33.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.82ms)
+Completed 200 OK in 149ms (Views: 3.3ms | ActiveRecord: 34.5ms)
+
+
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:46:12 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '27f0ac644f733f328f29ea955c55cfe214950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '27f0ac644f733f328f29ea955c55cfe214950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "27f0ac644f733f328f29ea955c55cfe214950283033"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `access_token` = NULL, `updated_at` = '2017-05-18 03:46:12' WHERE `users`.`id` = 3[0m
+  [1m[35m (44.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 57ms (Views: 5.7ms | ActiveRecord: 45.2ms)
+
+
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:46:13 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '27f0ac644f733f328f29ea955c55cfe214950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = '27f0ac644f733f328f29ea955c55cfe214950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "27f0ac644f733f328f29ea955c55cfe214950283033"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/signin" for 127.0.0.1 at 2017-05-18 10:46:54 +0700
+Processing by Api::V1::AuthorizationsController#create as JSON
+  Parameters: {"email"=>"nhuy387@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`email` = 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `access_token` = 'd7ea8d6be2603208f04de2111cedd86e14950283033', `updated_at` = '2017-05-18 03:46:54' WHERE `users`.`id` = 3[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.53ms)
+Completed 200 OK in 147ms (Views: 2.9ms | ActiveRecord: 32.1ms)
+
+
+Started DELETE "/api/v1/signout" for 127.0.0.1 at 2017-05-18 10:47:04 +0700
+Processing by Api::V1::AuthorizationsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = 'd7ea8d6be2603208f04de2111cedd86e14950283033' LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` = 'd7ea8d6be2603208f04de2111cedd86e14950283033' LIMIT 1[0m  [["blocked", false], ["access_token", "d7ea8d6be2603208f04de2111cedd86e14950283033"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `access_token` = NULL, `updated_at` = '2017-05-18 03:47:04' WHERE `users`.`id` = 3[0m
+  [1m[35m (66.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 79ms (Views: 6.1ms | ActiveRecord: 67.4ms)
+
+
+Started POST "/api/v1/signin" for 127.0.0.1 at 2017-05-18 11:42:07 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Api::V1::AuthorizationsController#create as JSON
+  Parameters: {"email"=>"nhuy387@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`email` = 'nhuy387@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `access_token` = '38095b390364d2ddc273b0ea598f598614950283033', `updated_at` = '2017-05-18 04:42:07' WHERE `users`.`id` = 3[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.03ms)
+Completed 200 OK in 173ms (Views: 8.9ms | ActiveRecord: 40.6ms)
+
+
+Started POST "/api/v1/signup" for 127.0.0.1 at 2017-05-18 11:42:45 +0700
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"huy-huy", "fullname"=>"Huy Nguyen", "email"=>"nhuy399@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "text/plain"=>[""]}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy399@gmail.com' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `password_digest`, `confirm_token`, `blocked`, `created_at`, `updated_at`) VALUES ('Huy Nguyen', 'huy-huy', 'nhuy399@gmail.com', '$2a$10$RXCYsa/f3A19E6ndN4KBEeaIZHm3NGP8YUyqlQX68.6GDXtXXfLSG', 'tj2QnzflQRUOnuHUsAfm7g', 0, '2017-05-18 04:42:45', '2017-05-18 04:42:45')[0m
+  [1m[35m (39.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nhuy399@gmail.com' AND `users`.`blocked` = 0 AND (`users`.`id` != 6) LIMIT 1[0m
+  Rendering user_mailer/registration_confirmation.text.erb within layouts/mailer
+  Rendered user_mailer/registration_confirmation.text.erb within layouts/mailer (1.6ms)
+UserMailer#registration_confirmation: processed outbound mail in 196.3ms
+Sent mail to nhuy399@gmail.com (4590.1ms)
+Date: Thu, 18 May 2017 11:42:45 +0700
+From: me@mydomain.com
+To: Huy Nguyen <nhuy399@gmail.com>
+Message-ID: <591d2645ecf32_2f893176e7c6109d@huy-X550LB.mail>
+Subject: Registration Confirmation
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi huy-huy,
+
+Thanks for registering! To confirm your registration click the URL below.
+
+http://localhost:3000/api/v1/users/tj2QnzflQRUOnuHUsAfm7g/confirm_email
+
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.35ms)
+Completed 200 OK in 5059ms (Views: 1.1ms | ActiveRecord: 40.7ms)
+
+
