@@ -11,7 +11,7 @@ class Api::V1::AuthorizationsController < BaseController
       else
         token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
         user.access_token = token
-        user.update_attribute("access_token", token)
+        user.update_attribute "access_token", token
         render json: user
       end
     end
@@ -21,8 +21,7 @@ class Api::V1::AuthorizationsController < BaseController
     user = check_login
     if !user.blank?
       if user.authenticate(params[:password_old])
-        user.password = params[:password_new]
-        user.save!
+        user.update_attribute "access_token", params[:password_new]
         render json: { status: 200 }
       else
         render json: { errors: ['Not match password']}, meta: {status: 400 }
@@ -36,8 +35,8 @@ class Api::V1::AuthorizationsController < BaseController
   def destroy
     user = check_login
     if !check_login.blank?
-      user.access_token = nil
-      user.save
+      user.update_attribute "access_token", nil
+      render json: { status: 200 }
     else
       render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
     end
