@@ -1,7 +1,7 @@
 class Api::V1::ArticlesController < BaseController 
   
   def index
-    # binding.pry
+    binding.pry
     articles = Article.all.includes(:comments, :attentions, :user)
     render json: articles, each_serializer: Article::ArticleSerializer, meta: { total: articles.count, limit: 10 }
   end
