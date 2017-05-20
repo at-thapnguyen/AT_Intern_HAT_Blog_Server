@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505025335) do
-
-  create_table "article_tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "article_id"
-    t.integer "tag_id"
-    t.index ["article_id"], name: "fk_rails_646e8d3122", using: :btree
-    t.index ["tag_id"], name: "fk_rails_b651172c61", using: :btree
-  end
+ActiveRecord::Schema.define(version: 20170518133110) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
@@ -35,12 +28,8 @@ ActiveRecord::Schema.define(version: 20170505025335) do
   create_table "attentions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "article_id"
     t.integer "user_id"
-    t.boolean "isLiked",             default: false
-    t.boolean "isFollowed",          default: false
-    t.boolean "notification_like",   default: false
-    t.boolean "notification_follow", default: false
+    t.boolean "types",      default: true
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree
-    t.index ["user_id"], name: "fk_rails_7e410e9217", using: :btree
   end
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -71,6 +60,15 @@ ActiveRecord::Schema.define(version: 20170505025335) do
     t.index ["user_id"], name: "fk_rails_6bfac4ba98", using: :btree
   end
 
+  create_table "notifications", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "notificationable_id"
+    t.string  "notificationable_type"
+    t.integer "user_id"
+    t.string  "message"
+    t.boolean "isTrue"
+    t.boolean "isChecked",             default: true
+  end
+
   create_table "tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string  "name"
     t.boolean "deleted"
@@ -93,12 +91,9 @@ ActiveRecord::Schema.define(version: 20170505025335) do
     t.datetime "updated_at",                      null: false
   end
 
-  add_foreign_key "article_tags", "articles"
-  add_foreign_key "article_tags", "tags"
   add_foreign_key "articles", "categories"
   add_foreign_key "articles", "users"
   add_foreign_key "attentions", "articles"
-  add_foreign_key "attentions", "users"
   add_foreign_key "categories_tags", "categories"
   add_foreign_key "categories_tags", "tags"
   add_foreign_key "comments", "articles"

@@ -1,14 +1,19 @@
 class Api::V1::UsersController < BaseController
+
+  before_action :authentication!, only: [:update]
+
   def index
     # render json: JSONAPI::Serializer.serialize(users, is_collection: true)
     render json: User.all
   end
 
   def create
-    user = User.create(user_params)
-    if user.valid?
-      UserMailer.registration_confirmation(user).deliver
-      render json: user
+    @user = User.create(user_params)
+    if @user.valid?
+      UserMailer.registration_confirmation(@user).deliver
+      token = SecureRandom.hex
+      @user.access_token = token
+      render json: @user
     else
       render json: { errors: [ status: 400, message: [{ valid: "Email uniqueness" }] ]}
     end
@@ -18,9 +23,7 @@ class Api::V1::UsersController < BaseController
     user = User.find_by_confirm_token(params[:id])
     if !user.blank?
       user.email_activate
-      token = SecureRandom.hex
-      user.token = token
-      user.update_attribute("access_token", token)
+
       user.update_columns(blocked: false)
       msg = { status: "success", message: "Activated", code: 200}
       render json: user
@@ -36,18 +39,17 @@ class Api::V1::UsersController < BaseController
   end
 
   def update
-    user = check_login
-    if !user.blank?
+    if current_user.present?
       #Handle rename filename uploaded to user_id.typefile
-      params[:user][:avatar].original_filename = rename_file params[:user][:avatar].original_filename, user.id
-      user.fullname = params[:user][:fullname]
-      user.username = params[:user][:username]
-      user.description = params[:user][:description]
-      user.avatar = params[:user][:avatar]
-      user.save
+      params[:user][:avatar].original_filename = rename_file params[:user][:avatar].original_filename, current_user.id
+      current_user.fullname = params[:user][:fullname]
+      current_user.username = params[:user][:username]
+      current_user.description = params[:user][:description]
+      current_user.avatar = params[:user][:avatar]
+      current_user.save
       render json: { status: 200 }
     else
-      render json: { status: "unsuccess", message: "You must cofirm email", code: 406 }
+      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
     end
   end
 
@@ -59,7 +61,6 @@ class Api::V1::UsersController < BaseController
   # => change_name: Name then you want rename (user_id.*)
 
   def rename_file filename, change_name
-    binding.pry
     change_name.to_s + filename[filename.rindex(/\./)..filename.size].downcase
   end
 

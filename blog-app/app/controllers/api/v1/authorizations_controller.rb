@@ -1,6 +1,7 @@
 class Api::V1::AuthorizationsController < BaseController
-
   #User Login
+  before_action :authentication, only: [:update, :destroy]
+
   def create
     user = User.find_by(email: params[:email])
     if user.blank?
@@ -18,8 +19,7 @@ class Api::V1::AuthorizationsController < BaseController
   end
 
   def update
-    user = check_login
-    if !user.blank?
+    if current_user.present?
       if user.authenticate(params[:password_old])
         user.update_attribute "access_token", params[:password_new]
         render json: { status: 200 }
@@ -33,9 +33,8 @@ class Api::V1::AuthorizationsController < BaseController
 
   #user Logout
   def destroy
-    user = check_login
-    if !check_login.blank?
-      user.update_attribute "access_token", nil
+    if current_user.present?
+      current_user.update_attribute "access_token", nil
       render json: { status: 200 }
     else
       render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}

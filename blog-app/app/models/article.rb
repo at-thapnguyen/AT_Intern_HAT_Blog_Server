@@ -1,3 +1,23 @@
+# == Schema Information
+#
+# Table name: articles
+#
+#  id          :integer          not null, primary key
+#  title       :string(255)
+#  content     :text(65535)
+#  title_image :string(255)
+#  user_id     :integer
+#  category_id :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  deleted     :boolean
+#
+# Indexes
+#
+#  fk_rails_3d31dad1cc  (user_id)
+#  fk_rails_af09d53ead  (category_id)
+#
+
 class Article < ApplicationRecord
   has_many :comments
   has_many :attentions

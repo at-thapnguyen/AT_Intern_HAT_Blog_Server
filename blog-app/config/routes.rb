@@ -7,9 +7,17 @@ Rails.application.routes.draw do
       post '/signin', to: 'authorizations#create'
       delete '/signout', to: 'authorizations#destroy'
       put '/reset_password', to: 'authorizations#update'
-      resources :attentions, only: [:index]
-      get '/follower', to: 'followers#index'
-      delete '/follower', to: 'followers#destroy'
+      # resources :attentions, only: [:index]
+      post '/likes', to: 'likes#create'
+      delete '/likes:id', to: 'likes#destroy'
+
+      post '/follows', to: 'follows#create'
+      delete '/follows:id', to: 'follows#destroy'
+
+      post '/followers', to: 'followers#create'
+      delete '/followers', to: 'followers#destroy'
+
+      post '/suggests', to: 'suggests#create'
       resources :users, only: [:index, :create, :update, :show, :destroy] do
         member do
           get :confirm_email
