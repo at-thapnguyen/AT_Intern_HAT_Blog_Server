@@ -1,6 +1,14 @@
+# == Schema Information
+#
+# Table name: tags
+#
+#  id      :integer          not null, primary key
+#  name    :string(255)
+#  deleted :boolean
+#
+
 class Tag < ApplicationRecord
   has_many :categories_tags, foreign_key: :tag_id
   has_many :categories, :through => :categories_tags
 
-  validated_associated :categories
 end

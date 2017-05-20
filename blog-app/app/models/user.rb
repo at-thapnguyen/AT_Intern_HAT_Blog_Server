@@ -1,9 +1,32 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  fullname        :string(255)
+#  username        :string(255)
+#  email           :string(255)
+#  avatar          :string(255)
+#  description     :string(255)
+#  password_digest :string(255)
+#  access_token    :string(255)
+#  confirm_token   :string(255)
+#  birthday        :date
+#  access          :boolean          default("0")
+#  blocked         :boolean          default("1")
+#  email_confirmed :boolean          default("0")
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ActiveRecord::Base
 
   attr_accessor :token
+  acts_as_paranoid column: :blocked, sentinel_value: false
+
   before_create :confirmation_token
 
-  has_many :articles
+  has_many :articles, dependent: :destroy
   has_many :attentions
   has_many :follow_user
 
@@ -20,23 +43,19 @@ class User < ActiveRecord::Base
   #   where(nil)
   # end
 
-  acts_as_paranoid column: :blocked, sentinel_value: false
-
   mount_uploader :avatar, AvatarUploader
 
-
   def email_activate
-    self.email_confirmed = true
-    self.confirm_token = nil
-    save!(:validate => false)
+    email_confirmed = true
+    confirm_token = nil
+    save! validate: false
   end
 
   private
   def confirmation_token
-    if self.confirm_token.blank?
-        self.confirm_token = SecureRandom.urlsafe_base64.to_s
-    end
+    self.confirm_token = SecureRandom.urlsafe_base64.to_s if confirm_token.blank?
   end
+
 end
 
 

@@ -1,5 +1,5 @@
-class Api::V1::ArticlesController < BaseController 
-  
+class Api::V1::ArticlesController < BaseController
+
   def index
     binding.pry
     articles = Article.all.includes(:comments, :attentions, :user)
@@ -10,18 +10,18 @@ class Api::V1::ArticlesController < BaseController
     render json: Article.find(params[:id]), serializer: ShowArticleSerializer
   end
 
-  def create  
+  def create
     user = check_login response.request.env["HTTP_ACCESS_TOKEN"]
     if !user.blank?
       article = Article.new(article_params)
-      # params[:article][:title_image].original_filename = rename_file params[:article][:title_image].original_filename
+      # params[:article][:titletle_image].original_filename = rename_file params[:article][:title_image].original_filename
       article.title = params[:article][:title]
       article.content = params[:article][:content]
       article.title_image = params[:article][:title_image]
       article.category_id = params[:article][:category_id]
-      
+
       article.user_id = user.id
-       article.save 
+       article.save
         render json: {status: 200}
         else
         render json: { status: "unsuccess",message:"you must confirm email",code: 406 }
@@ -41,7 +41,7 @@ class Api::V1::ArticlesController < BaseController
           render json: {status: 200}
       else
           render json: { status: "unsuccess",message:"you must confirm email",code: 406 }
-      end  
+      end
     end
 
   private

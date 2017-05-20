@@ -1,21 +1,21 @@
 class Api::V1::AttentionsController < BaseController
 
-  def index
-    #Like button response.request.env["HTTP_ACCESS_TOKEN"]
-    user = check_login
-    if !user.blank?
-      attention = Attention.find_by user_id: user.id, article_id: params[:article_id]
-      if !attention.blank?
-        attention.update isLiked: attention.isLiked ? false : true if !params[:isLiked].blank?
-        attention.update isFollowed: attention.isFollowed ? false : true if !params[:isFollowed].blank?
+  def create
+    if current_user.present?
+      #kiem tra record attention da xuat hien chua? neu co thi tao moi. khong thi xoa di
+      attention = Attention.find_by article_id: params[:article_id], user_id: current_user.id, types: 1
+      if attention.blank?
+        attention = Attention.create article_id: params[:article_id], user_id: current_user.id
+        # message = "<span class='notifice'>#{ current_user.username }</span> liked your post <b> #{ attention.article.content[0..10] }</b>"
+        message = "<span class='notifice'>#{ current_user.username }</span> started following you"
+        user_id_be_followed = Article.find(params[:article_id]).user_id
+        attention.notifications.create user_id: user_id_be_followed, message: message
       else
-        Attention.create user_id: user.id, article_id: params[:article_id], isLiked: true, notification_like: true if !params[:isLiked].blank?
-        Attention.create user_id: user.id, article_id: params[:article_id], isFollowed: true, notification_follow: true if !params[:isFollowed].blank?
+        attention.destroy
       end
-      msg = { status: 200 }
-      render json: msg
+      render json: { status: 200 }
     else
-      render json: { errors: [ status: 400, message: [{ valid: "You are not logged in" }] ]}
+      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
     end
   end
 

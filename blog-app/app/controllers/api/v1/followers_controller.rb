@@ -1,27 +1,20 @@
 class Api::V1::FollowersController < BaseController
   #User follow. When user click button follow
-  def index
-    user = check_login
-    if !user.blank?
-      #Check user did follow this people
-      isFollowed = FollowUser.find_by user_id: params[:id], be_followed_id: user.id
-      FollowUser.create user_id: params[:id], be_followed_id: user.id if isFollowed.blank?
+  before_action :authentication!
+  def create
+    if current_user.present?
+      follower = FollowUser.find_by user_id: params[:user_id], be_followed_id: current_user.id
+      if follower.blank?
+        #be_followed_id is people go follow orther people (current_user)
+        follow_user = FollowUser.create user_id: params[:user_id], be_followed_id: current_user.id
+        message = "<span class='notifice'>#{ current_user.username }</span> started following you"
+        follow_user.notifications.create user_id: params[:user_id], message: message
+      else
+        follower.destroy
+      end
       render json: { status: 200 }
     else
       render json: { errors: ['Authorization for this user!']}
     end
   end
-
-  #User unfollow. When user click button unfollow
-  def destroy
-    user = check_login
-    if !user.blank?
-      follower = FollowUser.find_by user_id: params[:id], be_followed_id: user.id
-      follower.destroy if !follower.blank?
-      render json: { status: 200 }
-    else
-      render json: { errors: ['Authorization for this user!']}
-    end
-  end
-
 end
