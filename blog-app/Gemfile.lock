@@ -45,6 +45,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arel (7.1.4)
     bcrypt (3.1.11)
     bindex (0.5.0)
@@ -57,6 +60,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (1.1.0)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     case_transform (0.2)
       activesupport
     coderay (1.1.1)
@@ -111,6 +118,8 @@ GEM
     nio4r (2.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    paranoia (2.3.1)
+      activerecord (>= 4.0, < 5.2)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -118,6 +127,7 @@ GEM
     public_suffix (2.0.5)
     puma (3.8.2)
     rack (2.0.1)
+    rack-cors (0.4.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.2)
@@ -213,9 +223,11 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  annotate
   bcrypt (~> 3.1.7)
   byebug
   capybara
+  carrierwave (~> 1.0)
   coffee-rails (~> 4.2)
   factory_girl_rails (~> 4.0)
   faker (~> 1.6, >= 1.6.3)
@@ -225,8 +237,10 @@ DEPENDENCIES
   jsonapi-serializers
   listen (~> 3.0.5)
   mysql2
+  paranoia (~> 2.2)
   pry
   puma (~> 3.0)
+  rack-cors
   rails (~> 5.0.2)
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)

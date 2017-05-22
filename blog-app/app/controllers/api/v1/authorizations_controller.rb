@@ -1,30 +1,43 @@
-class Api::V1::AuthorizationsController < ApplicationController
+class Api::V1::AuthorizationsController < BaseController
+  #User Login
+  before_action :authentication, only: [:update, :destroy]
 
   def create
     user = User.find_by(email: params[:email])
     if user.blank?
-      render json: { errors: ['Not match email']}, status: :unauthorized
+      render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]}
     else
       if user.authenticate(params[:password]).blank?
-        render json: { errors: ['Not match password']}, meta: {status: 400 }
+        render json: { errors: [ status: 400, message: [{ password: "Not match password" }] ]}
       else
-        token = SecureRandom.hex
-        user.token = token
-        user.update_columns(access_token: token)
+        token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
+        user.access_token = token
+        user.update_attribute "access_token", token
         render json: user
       end
     end
   end
 
-  def destroy
-    user = User.find params[:user][:id]
-    binding.pry
-    if user.access_token == params[:user][:access_token]
-      user.update_columns(access_token: nil)
-      msg = { status: 200 }
-      render json: msg
+  def update
+    if current_user.present?
+      if user.authenticate(params[:password_old])
+        user.update_attribute "access_token", params[:password_new]
+        render json: { status: 200 }
+      else
+        render json: { errors: ['Not match password']}, meta: {status: 400 }
+      end
     else
-      render json: { errors: ['Authorization for this user!']}
+      render json: auth_error
+    end
+  end
+
+  #user Logout
+  def destroy
+    if current_user.present?
+      current_user.update_attribute "access_token", nil
+      render json: { status: 200 }
+    else
+      render json: auth_error
     end
   end
 
@@ -33,6 +46,5 @@ class Api::V1::AuthorizationsController < ApplicationController
     render json: resource, status: status, adapter: :json_api,
            serializer: ActiveModel::Serializer::ErrorSerializer
   end
-
 
 end

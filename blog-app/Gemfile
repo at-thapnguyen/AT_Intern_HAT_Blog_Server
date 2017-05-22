@@ -6,12 +6,23 @@ git_source(:github) do |repo_name|
 end
 
 # My setting
+# Use to connect to database mysql 2
 gem 'mysql2'
+# Debug
 gem 'pry'
+# json stand of serializers
 gem 'active_model_serializers'
 gem 'jsonapi-serializers'
+# encode for password
 gem 'bcrypt', '~> 3.1.7'
-
+# connect muilti marchine
+gem 'rack-cors'
+# soft-delete
+gem "paranoia", "~> 2.2"
+# upload
+gem 'carrierwave', '~> 1.0'
+# commnet for model
+gem "annotate"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'

@@ -2,7 +2,7 @@ class CreateCategories < ActiveRecord::Migration[5.0]
   def change
     create_table :categories do |t|
       t.string :name
-      t.boolean :deleted
+      t.boolean :deleted, default: false
     end
   end
 end

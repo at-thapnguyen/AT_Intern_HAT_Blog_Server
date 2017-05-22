@@ -1,19 +1,22 @@
+# == Schema Information
+#
+# Table name: attentions
+#
+#  id         :integer          not null, primary key
+#  article_id :integer
+#  user_id    :integer
+#  types      :boolean          default("1")
+#
+# Indexes
+#
+#  fk_rails_f8c0064c5c  (article_id)
+#
+
 class Attention < ApplicationRecord
   belongs_to :article
   belongs_to :user
 
   validates :article_id, presence: true
   validates :user_id, presence: true
-  validates :isLiked, presence: true
-  validates :isFollowed, presence: true
-  validates :notification_like, presence: true
-  validates :notification_follow, presence: true
-
-  validates_inclusion_of :isLiked, :in => [true, false]
-  validates_inclusion_of :isFollowed, :in => [true, false]
-  validates_inclusion_of :notification_like, :in => [true, false]
-  validates_inclusion_of :notification_follow, :in => [true, false]
-
-  validates_associated :articles, :user
-
+  has_many :notifications, as: :notificationable, dependent: :destroy
 end
