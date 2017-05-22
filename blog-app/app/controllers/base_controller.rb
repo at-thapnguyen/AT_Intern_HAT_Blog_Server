@@ -11,6 +11,10 @@ class BaseController < ApplicationController
     User.find_by access_token: response.request.env['HTTP_ACCESS_TOKEN']
   end
 
+  def auth_error
+    { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+  end
+
   def authentication!
     current_user
   end

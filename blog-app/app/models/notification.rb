@@ -7,6 +7,7 @@
 #  notificationable_type :string(255)
 #  user_id               :integer
 #  message               :string(255)
+#  image                 :string(255)
 #  isTrue                :boolean
 #  isChecked             :boolean          default("1")
 #

@@ -1,2 +1,0 @@
-class Follow < Atttention
-end

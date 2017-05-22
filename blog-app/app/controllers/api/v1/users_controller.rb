@@ -7,24 +7,25 @@ class Api::V1::UsersController < BaseController
     render json: User.all
   end
 
+
   def create
-    @user = User.create(user_params)
+    @user = User.new user_params
     if @user.valid?
-      UserMailer.registration_confirmation(@user).deliver
-      token = SecureRandom.hex
+      token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
       @user.access_token = token
+      @user.blocked = true
+      @user.save
+      UserMailer.registration_confirmation(@user).deliver
       render json: @user
     else
-      render json: { errors: [ status: 400, message: [{ valid: "Email uniqueness" }] ]}
+      render json: { errors: [ status: 400, message: [ @user.errors.messages ]]}
     end
   end
 
   def confirm_email
-    user = User.find_by_confirm_token(params[:id])
+    user = User.with_deleted.find_by_confirm_token(params[:id])
     if !user.blank?
       user.email_activate
-
-      user.update_columns(blocked: false)
       msg = { status: "success", message: "Activated", code: 200}
       render json: user
     else
@@ -49,7 +50,7 @@ class Api::V1::UsersController < BaseController
       current_user.save
       render json: { status: 200 }
     else
-      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+      render json: auth_error
     end
   end
 
@@ -65,7 +66,7 @@ class Api::V1::UsersController < BaseController
   end
 
   def user_params
-    params.require(:user).permit(:fullname, :username, :email, :password, :password_confirmation)
+    params.require(:user).permit(:username, :email, :password, :password_confirmation)
   end
 
 end

@@ -28,6 +28,9 @@ class Article < ApplicationRecord
 
   validates :title_image, presence: true
   validates :content, presence: true
+
+  acts_as_paranoid column: :deleted, sentinel_value: false
+
   # validates :deleted, presence: true
   # validates_inclusion_of :deleted, :in => [true, false]
 

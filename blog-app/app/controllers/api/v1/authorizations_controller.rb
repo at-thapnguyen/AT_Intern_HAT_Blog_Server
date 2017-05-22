@@ -5,10 +5,10 @@ class Api::V1::AuthorizationsController < BaseController
   def create
     user = User.find_by(email: params[:email])
     if user.blank?
-      render json: { errors: [ status: 400, message: [{ valid: "Not match email" }] ]}
+      render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]}
     else
       if user.authenticate(params[:password]).blank?
-        render json: { errors: [ status: 400, message: [{ valid: "Not match password" }] ]}
+        render json: { errors: [ status: 400, message: [{ password: "Not match password" }] ]}
       else
         token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
         user.access_token = token
@@ -27,7 +27,7 @@ class Api::V1::AuthorizationsController < BaseController
         render json: { errors: ['Not match password']}, meta: {status: 400 }
       end
     else
-      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+      render json: auth_error
     end
   end
 
@@ -37,7 +37,7 @@ class Api::V1::AuthorizationsController < BaseController
       current_user.update_attribute "access_token", nil
       render json: { status: 200 }
     else
-      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+      render json: auth_error
     end
   end
 
