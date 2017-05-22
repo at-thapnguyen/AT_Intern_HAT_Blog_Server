@@ -1,14 +1,14 @@
 class Api::V1::LikesController < BaseController
   before_action :authentication!
 
-  def create
+  def show
     if current_user.present?
       #Check user liked this article? If not yet then create new, opposite
-      attention = Attention.find_by article_id: params[:article_id], user_id: current_user.id, types: 1
+      attention = Attention.find_by article_id: params[:id], user_id: current_user.id, types: 1
       if attention.blank?
-        attention = Attention.create article_id: params[:article_id], user_id: current_user.id
+        attention = Attention.create article_id: params[:id], user_id: current_user.id
         message = "<span class='notifice'>#{ current_user.username }</span> liked your post <b> #{ attention.article.content[0..10] }</b>"
-        user_be_followed_id = Article.find(params[:article_id]).user_id
+        user_be_followed_id = Article.find(params[:id]).user_id
         attention.notifications.create user_id: user_be_followed_id, message: message
       else
         attention.destroy

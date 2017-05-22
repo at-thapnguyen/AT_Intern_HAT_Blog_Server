@@ -46,9 +46,10 @@ class User < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
 
   def email_activate
-    email_confirmed = true
-    confirm_token = nil
-    save! validate: false
+    self.email_confirmed = true
+    self.blocked = false
+    self.confirm_token = nil
+    self.save! validate: false
   end
 
   private

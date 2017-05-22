@@ -15,7 +15,7 @@ class Api::V1::AttentionsController < BaseController
       end
       render json: { status: 200 }
     else
-      render json: { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+      render json: auth_error
     end
   end
 
