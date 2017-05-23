@@ -5,8 +5,6 @@ class Api::V1::CategoriesController < BaseController
     render json: Category.all
   end
 
-  def show
-  end
 
   def create
     if current_user.present?

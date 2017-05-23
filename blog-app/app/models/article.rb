@@ -28,7 +28,7 @@ class Article < ApplicationRecord
 
   validates :title_image, presence: true
   validates :content, presence: true
-
+   mount_uploader :title_image, ImageUploader
   acts_as_paranoid column: :deleted, sentinel_value: false
 
   # validates :deleted, presence: true
