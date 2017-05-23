@@ -1,26 +1,63 @@
 require 'rails_helper'
 
 describe Api::V1::UsersController do
+
+  describe "GET #index" do
+    before(:each) do
+      @user = FactoryGirl.build :user
+      get :index
+    end
+
+    # it "returns the list users" do
+      # user_response = JSON.parse(response.body)
+      # binding.pry
+      # expect(user_response['user'].except('birthday')).to eql @user.attributes.except(
+      #   'blocked', 'created_at', 'updated_at', 'password_digest',
+      #   'email_confirmed', 'confirm_token', 'birthday')
+    # end
+
+    it { expect(response.status).to eql 200 }
+
+  end
+
   describe "GET #show" do
     before(:each) do
       @user = FactoryGirl.create :user
       get :show, id: @user.id
     end
 
-    it "returns the information about a reporter on a hash" do
+    it "returns the information personal" do
       user_response = JSON.parse(response.body)
-      expect(user_response['user'].except('birthday')).to eql @user.attributes.except('access', 'blocked', 'created_at', 'updated_at', 'password_digest', 'email_confirmed', 'confirm_token', 'birthday')
+      expect(user_response['user'].except('birthday')).to eql @user.attributes.except(
+        'blocked', 'created_at', 'updated_at', 'password_digest',
+        'email_confirmed', 'confirm_token', 'birthday')
     end
 
     it { expect(response.status).to eql 200 }
 
   end
 
+  describe "POST #create" do
+    before(:each) do
+      @user = FactoryGirl.attributes_for :user
+      @user =  @user.slice(:username, :email, :password, :password_confirmation)
+      post :create, { user: @user }
+    end
+
+    context "when user is successfully created" do
+      it "returns the information personal" do
+        user_response = JSON.parse(response.body)
+      end
+    end
+
+  end
+
   # describe "POST #create" do
 
-  #   context "when is successfully created" do
+  #   context "when user is successfully created" do
   #     before(:each) do
   #       @user_attributes = FactoryGirl.attributes_for :user
+  #       @user_attributes =  @user_attributes.slice(:username, :password, :password_confirmation)
   #       post :create, { user: @user_attributes }
   #     end
   #     it "renders the json representation for the user record just created" do
@@ -28,7 +65,7 @@ describe Api::V1::UsersController do
   #       expect(user_response[:email]).to eql @user_attributes[:email]
   #     end
 
-  #     it { should respond_with 201 }
+  #     it { should respond_with 200 }
   #   end
 
   #   context "when is not created" do

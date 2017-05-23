@@ -5,7 +5,8 @@
 #  id         :integer          not null, primary key
 #  article_id :integer
 #  user_id    :integer
-#  types      :boolean          default("1")
+#  isLiked    :boolean
+#  isFollowed :boolean
 #
 # Indexes
 #

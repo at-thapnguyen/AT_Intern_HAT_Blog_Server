@@ -5,11 +5,12 @@ FactoryGirl.define do
 		id { Faker::Code }
 	  username { Faker::Name.unique.name }
     fullname { Faker::Name.name }
-    token "hihi"
-    description "no thing"
     avatar { Faker::Avatar}
-	  password "changeme"
-	  email { Faker::Internet.email }
+    email { Faker::Internet.email }
+    password "changeme"
+    password_confirmation "changeme"
+    description "no thing"
+    token "hihi"
 	  access "true"
 	  blocked "false"
 	end

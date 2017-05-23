@@ -13,11 +13,8 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   # my setting
 
-  # process resize_to_fit: [800, 800]
-
-  # version :thumb do
-  #   process resize_to_fill: [200,200]
-  # end
+  include CarrierWave::MiniMagick
+  process resize_to_limit: [500, 500]
 
 
   def store_dir
