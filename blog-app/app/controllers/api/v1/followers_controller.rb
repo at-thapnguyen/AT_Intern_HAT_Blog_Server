@@ -1,14 +1,14 @@
 class Api::V1::FollowersController < BaseController
   #User follow. When user click button follow
   before_action :authentication!
-  def create
+  def show
     if current_user.present?
-      follower = FollowUser.find_by user_id: params[:user_id], be_followed_id: current_user.id
+      follower = FollowUser.find_by user_id: params[:id], be_followed_id: current_user.id
       if follower.blank?
         #be_followed_id is people go follow orther people (current_user)
-        follow_user = FollowUser.create user_id: params[:user_id], be_followed_id: current_user.id
+        follow_user = FollowUser.create user_id: params[:id], be_followed_id: current_user.id
         message = "<span class='notifice'>#{ current_user.username }</span> started following you"
-        follow_user.notifications.create user_id: params[:user_id], message: message
+        follow_user.notifications.create user_id: params[:id], message: message
       else
         follower.destroy
       end

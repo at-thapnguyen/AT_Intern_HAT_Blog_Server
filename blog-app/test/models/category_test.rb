@@ -4,7 +4,7 @@
 #
 #  id      :integer          not null, primary key
 #  name    :string(255)
-#  deleted :boolean
+#  deleted :boolean          default("0")
 #
 
 require 'test_helper'

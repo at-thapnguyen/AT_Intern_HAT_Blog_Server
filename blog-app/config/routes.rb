@@ -8,14 +8,9 @@ Rails.application.routes.draw do
       delete '/signout', to: 'authorizations#destroy'
       put '/reset_password', to: 'authorizations#update'
       # resources :attentions, only: [:index]
-      post '/likes', to: 'likes#create'
-      delete '/likes:id', to: 'likes#destroy'
-
-      post '/follows', to: 'follows#create'
-      delete '/follows:id', to: 'follows#destroy'
-
-      post '/followers', to: 'followers#create'
-      delete '/followers', to: 'followers#destroy'
+      get '/likes', to: 'likes#show'
+      get '/follows', to: 'follows#show'
+      get '/followers', to: 'followers#show'
 
       post '/suggests', to: 'suggests#create'
       resources :users, only: [:index, :create, :update, :show, :destroy] do
@@ -29,7 +24,6 @@ Rails.application.routes.draw do
       #Thap developer
       # resources :users
       resources :articles, only: [:index, :create, :update, :show, :destroy]
-
     end
   end
 end

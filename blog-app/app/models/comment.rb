@@ -6,7 +6,6 @@
 #  user_id    :integer
 #  article_id :integer
 #  content    :text(65535)
-#  isChecked  :boolean
 #
 # Indexes
 #
