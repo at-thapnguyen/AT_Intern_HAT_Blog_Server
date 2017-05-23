@@ -24,7 +24,7 @@ Rails.application.routes.draw do
       #Thap developer
       # resources :users
       resources :articles,only: [:index, :create, :update, :show, :destroy] do
-        resources :comments,only: [:index,:create,:show,:destroy]
+        resources :comments,only: [:index,:create,:show,:update,:destroy]
       end
     end
   end
