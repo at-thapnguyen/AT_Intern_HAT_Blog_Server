@@ -11,7 +11,7 @@ class Api::V1::UsersController < BaseController
   def create
     @user = User.new user_params
     if @user.valid?
-      token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
+      token = SecureRandom.hex  + @user.created_at.to_i.to_s + @user.id.to_s
       @user.access_token = token
       @user.blocked = true
       @user.save
