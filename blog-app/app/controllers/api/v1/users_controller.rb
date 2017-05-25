@@ -33,7 +33,7 @@ class Api::V1::UsersController < BaseController
       @current_user.fullname = params[:user][:fullname]
       @current_user.description = params[:user][:description]
       @current_user.birthday = params[:user][:birthday]
-      @current_user.avatar = "http://localhost:3000/uploads/avatar/"+ params[:user][:avatar].original_filename
+      @current_user.avatar = "/uploads/avatar/"+ params[:user][:avatar].original_filename
       if @current_user.valid?
         @current_user.save
         uploader = AvatarUploader.new
