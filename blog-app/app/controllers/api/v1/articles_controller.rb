@@ -21,7 +21,7 @@ class Api::V1::ArticlesController < BaseController
       @tag= Tag.find_or_create_by(name: f)          
       article.articles_tags.create(tag_id: @tag.id)
       end
-      render json: {status: 200}
+      render json: {status: 200,message:"article was sucessfully create"}
     else
         render json: { status: "unsuccess",message:"you must confirm email",code: 406 }
         end
