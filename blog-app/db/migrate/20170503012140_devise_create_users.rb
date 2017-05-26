@@ -4,7 +4,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :fullname
       t.string :username
       t.string :email
-      t.string :avatar
+      t.string :avatar 
       t.string :description
       t.string :password_digest
       t.string :access_token

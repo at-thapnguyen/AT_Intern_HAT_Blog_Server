@@ -1,8 +1,10 @@
 class Api::V1::ArticlesController < BaseController
 
   def index
-    articles = Article.all.includes(:comments, :attentions, :user,:tags)
-    render json: articles, each_serializer: Article::IndexSerializer, meta: { total: articles.count, limit: 10 }
+   
+    articles = Article.all.includes(:comments, :attentions, :user,:tags).limit(params[:limit] || 10)
+    render json: articles, each_serializer: Article::IndexSerializer, meta: { total: articles.count}
+  
   end
 
   def show
@@ -21,19 +23,18 @@ class Api::V1::ArticlesController < BaseController
       @tag= Tag.find_or_create_by(name: f)          
       article.articles_tags.create(tag_id: @tag.id)
       end
-      render json: {status: 200,message:"article was sucessfully create"}
+      render json: {id: article.id ,slug: article.slug,status: 200,message:"article was sucessfully create"}
     else
         render json: { status: "unsuccess",message:"you must confirm email",code: 406 }
         end
     end
 
     def update
-      binding.pry
     if current_user
       article = Article.friendly.find(params[:id])
       if article.update title: params[:title], content:params[:content],
       title_image: params[:title_image]  , category_id: params[:category_id], user_id: current_user.id
-            article.save
+      article.save
             @tags= params[:tags].split(',')        
             articles_tags = article.tags.map{ |tag| tag.name }
             (@tags - articles_tags).each do |f|
@@ -49,7 +50,8 @@ class Api::V1::ArticlesController < BaseController
                 article.articles_tags.find_by(tag_id: @tag.id).destroy
               end
             end
-          render json: {status: 200}
+            binding.pry
+          render json: { id: article.id ,slug: article.slug,status: 200, message:"article was sucessfully update article"}
           end
       else
           render json: { status: "unsuccess",message:"you must confirm email",code: 406 }

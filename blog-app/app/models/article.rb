@@ -24,6 +24,7 @@ class Article < ApplicationRecord
   extend FriendlyId
   friendly_id :title,  use: [:slugged]
   # attr_accessor :attentions_count
+  has_many :articles,dependent: :destroy
   has_many :comments
   has_many :attentions
   belongs_to :category

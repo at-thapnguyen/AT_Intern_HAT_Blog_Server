@@ -4,6 +4,7 @@ class Article::ShowSerializer < ActiveModel::Serializer
   belongs_to :category, serializer: CategorySerializer
   belongs_to :comments,serializer: CommentSerializer
   has_many :tags,through: :articles_tags
+  belongs_to :attentions, serializer: AttentionSerializer
 
   def count_like
   return object.attentions.where(isLiked: 1).size
