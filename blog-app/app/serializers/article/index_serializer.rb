@@ -1,5 +1,5 @@
 class Article::IndexSerializer < ActiveModel::Serializer
-  attributes :id, :title,:content,:title_image,:content, :created_at, :updated_at,:count_like,:count_comment
+  attributes :id, :title,:content,:title_image,:content,:slug, :created_at, :updated_at,:count_like,:count_comment
   # belongs_to :category, serializer: CategorySerializer
   belongs_to :user,serializer: User::UserArticleSerializer
   belongs_to :attentions, serializer: AttentionSerializer
@@ -10,4 +10,5 @@ class Article::IndexSerializer < ActiveModel::Serializer
   def count_like
   	object.attentions.where(isLiked: 1).size
   end
+
 end
