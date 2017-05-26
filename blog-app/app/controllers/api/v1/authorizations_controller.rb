@@ -3,6 +3,7 @@ class Api::V1::AuthorizationsController < BaseController
   before_action :authentication, only: [:update, :destroy]
 
   def create
+    
     user = User.find_by(email: params[:email])
     if user.blank?
       render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]}

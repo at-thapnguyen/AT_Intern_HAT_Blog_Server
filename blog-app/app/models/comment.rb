@@ -6,8 +6,8 @@
 #  user_id    :integer
 #  article_id :integer
 #  content    :text(65535)
-#  created_at :datetime
-#  updated_at :datetime
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 # Indexes
 #

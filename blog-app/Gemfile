@@ -23,6 +23,9 @@ gem "paranoia", "~> 2.2"
 gem 'carrierwave', '~> 1.0'
 # commnet for model
 gem "annotate"
+# friendly_url 
+gem "friendly_id", "~> 5.1.0"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'

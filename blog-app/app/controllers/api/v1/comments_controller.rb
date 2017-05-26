@@ -4,9 +4,11 @@ class Api::V1::CommentsController < BaseController
     render json: comments = Comment.all
   end
   def create
+    binding.pry
     if current_user
       comment = Comment.new(comment_params)
       comment.user_id = current_user.id
+      comment.article_id = params[:article_id]
       comment.save
       render json: {status: 200}
     else
@@ -17,6 +19,7 @@ class Api::V1::CommentsController < BaseController
     if current_user
       comment = Comment.find(params[:id])
       comment.update(comment_params)
+       comment.article_id = params[:article_id]
       render json: {status: 200}
     else
       render json: { status: "unsuccess",message: "you should login",code: 406}
@@ -35,6 +38,6 @@ class Api::V1::CommentsController < BaseController
     end
   private
   def comment_params
-    params.require(:comments).permit(:content,:article_id)
+    params.require(:comments).permit(:content)
   end
 end

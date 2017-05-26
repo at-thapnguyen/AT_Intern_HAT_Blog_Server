@@ -8,7 +8,7 @@ class BaseController < ApplicationController
   helper_method :current_user
 
   def current_user
-    User.find_by access_token: response.request.env['HTTP_ACCESS_TOKEN']
+    @current_user ||= User.find_by access_token: response.request.env['HTTP_ACCESS_TOKEN']
   end
 
   def auth_error

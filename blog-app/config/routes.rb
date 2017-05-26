@@ -18,7 +18,7 @@ Rails.application.routes.draw do
           get :confirm_email
         end
       end
-      resources :tags, only: [:index, :create, :update, :show, :destroy]
+      
       resources :categories, only: [:index, :create, :update, :show, :destroy]
 
       #Thap developer
@@ -26,6 +26,7 @@ Rails.application.routes.draw do
       resources :articles,only: [:index, :create, :update, :show, :destroy] do
         resources :comments,only: [:index,:create,:show,:update,:destroy]
       end
+      resources :tags
     end
   end
 end
