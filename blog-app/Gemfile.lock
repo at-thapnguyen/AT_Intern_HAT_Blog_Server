@@ -87,6 +87,8 @@ GEM
       i18n (~> 0.5)
     ffaker (2.5.0)
     ffi (1.9.18)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.1)
@@ -233,6 +235,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   faker (~> 1.6, >= 1.6.3)
   ffaker
+  friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
   jsonapi-serializers

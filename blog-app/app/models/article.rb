@@ -11,15 +11,21 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  deleted     :boolean
+#  slug        :string(255)
 #
 # Indexes
 #
-#  fk_rails_3d31dad1cc  (user_id)
-#  fk_rails_af09d53ead  (category_id)
+#  fk_rails_3d31dad1cc     (user_id)
+#  fk_rails_af09d53ead     (category_id)
+#  index_articles_on_slug  (slug)
 #
 
 class Article < ApplicationRecord
   class_attribute :user_id
+  extend FriendlyId
+  friendly_id :title,  use: [:slugged]
+  # attr_accessor :attentions_count
+  has_many :articles,dependent: :destroy
   has_many :comments
   has_many :attentions
   belongs_to :category
@@ -34,16 +40,6 @@ class Article < ApplicationRecord
 
   acts_as_paranoid column: :deleted, sentinel_value: false
 
-  # scope :article_user, -> (user_id) do
-  #   joins("LEFT JOIN attentions on articles.id = attentions.article_id and attentions.user_id = #{user_id}")
-  # end
-  # scope :article_user, ->{ joins(:attentions).where}
-
-  # scope :with_count_attentions, -> {joins("LEFT JOIN attentions ON attentions.article_id = articles.id AND isliked = 1").select("articles.* ,count(attentions.id) AS attentions_count").group("articles.id")}
-
-  # validates :deleted, presence: true
-  # validates_inclusion_of :deleted, :in => [true, false]
-
-  # validates_associated :comments, :attentions, :category, :user
-
+  mount_uploader :title_image, ImageUploader
+  acts_as_paranoid column: :deleted, sentinel_value: false
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170518133110) do
+ActiveRecord::Schema.define(version: 20170523103519) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
@@ -21,7 +21,9 @@ ActiveRecord::Schema.define(version: 20170518133110) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.boolean  "deleted"
+    t.string   "slug"
     t.index ["category_id"], name: "fk_rails_af09d53ead", using: :btree
+    t.index ["slug"], name: "index_articles_on_slug", using: :btree
     t.index ["user_id"], name: "fk_rails_3d31dad1cc", using: :btree
   end
 
@@ -35,8 +37,9 @@ ActiveRecord::Schema.define(version: 20170518133110) do
   create_table "attentions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "article_id"
     t.integer "user_id"
-    t.boolean "isLiked"
-    t.boolean "isFollowed"
+
+    t.boolean "isLiked",    default: false
+    t.boolean "isFollowed", default: false
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree
   end
 
@@ -46,9 +49,11 @@ ActiveRecord::Schema.define(version: 20170518133110) do
   end
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "user_id"
-    t.integer "article_id"
-    t.text    "content",    limit: 65535
+    t.integer  "user_id"
+    t.integer  "article_id"
+    t.text     "content",    limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.index ["article_id"], name: "fk_rails_3bf61a60d3", using: :btree
     t.index ["user_id"], name: "fk_rails_03de2dc08c", using: :btree
   end

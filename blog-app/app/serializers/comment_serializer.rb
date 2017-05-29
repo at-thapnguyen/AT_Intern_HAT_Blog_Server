@@ -1,7 +1,4 @@
 class CommentSerializer < ActiveModel::Serializer
-  attributes :id,:content,:user_id #, if: :count_comments
-  belongs_to :user
-  # def count_comments
-
-  # end
+  attributes :content
+  belongs_to :user,serializer: User::UserArticleSerializer
 end

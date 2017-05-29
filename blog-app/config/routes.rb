@@ -11,9 +11,13 @@ Rails.application.routes.draw do
       resources :likes, only: [:show]
       resources :follows, only: [:show]
       resources :follow_users, only: [:index, :show]
+
       #Thap developer
       # resources :users
-      resources :articles, only: [:index, :create, :update, :show, :destroy]
+      resources :articles,only: [:index, :create, :update, :show, :destroy] do
+        resources :comments,only: [:index,:create,:show,:update,:destroy]
+      end
+      resources :tags
     end
   end
 end
