@@ -21,6 +21,7 @@ describe Api::V1::AuthorizationsController do
         request.headers["HTTP_ACCESS_TOKEN"] = get_access_token user[:email]
         post :create, user
         json_response = JSON.parse(response.body)
+        binding.pry
         # expect(json_response)
       end
     end

@@ -16,7 +16,7 @@ class Api::V1::UsersController < BaseController
     if @user.valid?
       token = SecureRandom.hex  + @user.created_at.to_i.to_s + @user.id.to_s
       @user.access_token = token
-      @user.avatar = "http://localhost:3000/uploads/avatar/default-avatar.png"
+      @user.avatar = "/uploads/avatar/default-avatar.png"
       @user.blocked = true
       @user.save
       UserMailer.registration_confirmation(@user).deliver
@@ -33,6 +33,7 @@ class Api::V1::UsersController < BaseController
       @current_user.fullname = params[:user][:fullname]
       @current_user.description = params[:user][:description]
       @current_user.birthday = params[:user][:birthday]
+      binding.pry
       @current_user.avatar = "/uploads/avatar/"+ params[:user][:avatar].original_filename
       if @current_user.valid?
         @current_user.save
@@ -47,13 +48,16 @@ class Api::V1::UsersController < BaseController
     end
   end
 
-  private
+  def detroy
+    blocked_user = User.with_deleted.find params[:id]
+    blocked_user.update_columns blocked: 1
+  end
 
+  private
   # rename_file: rename file upload to user_id.*
   # params:
   # => filename: filename uploaded
   # => change_name: Name then you want rename (user_id.*)
-
   def rename_file filename, change_name
     change_name.to_s + filename[filename.rindex(/\./)..filename.size].downcase
   end

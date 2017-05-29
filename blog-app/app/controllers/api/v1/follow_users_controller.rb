@@ -2,6 +2,7 @@ class Api::V1::FollowUsersController < BaseController
   #User follow. When user click button follow
   before_action :authentication!
   def index
+    binding.pry
     render json: FollowUser.where be_followed_id: current_user.id
   end
 

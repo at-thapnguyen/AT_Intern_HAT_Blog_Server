@@ -31,19 +31,20 @@ describe Api::V1::UsersController do
     end
   end
 
-  describe "POST /api/v1/users" do
-    describe "when create new user is successfully" do
-      let!(:user) { FactoryGirl.attributes_for :user }
-      it "Status 200" do
-        post :create, { user: user }
-        expect(response).to be_success
-      end
+  # describe "POST /api/v1/users" do
+  #   describe "when create new user is successfully" do
+  #     let!(:user) { FactoryGirl.attributes_for :user }
+  #     it "Status 200" do
+  #       post :create, { user: user }
+  #       expect(response).to be_success
+  #     end
 
-      it "returns the information personal" do
-        post :create, { user: user }
-        user_response = JSON.parse(response.body)
-        expect(user_response["user"].slice("username", "email").symbolize_keys).to eql user.slice(:username, :email)
-      end
-    end
-  end
+  #     it "returns the information personal" do
+  #       post :create, { user: user }
+  #       user_response = JSON.parse(response.body)
+  #       expect(user_response["user"].slice("username", "email").symbolize_keys).to eql user.slice(:username, :email)
+  #     end
+  #   end
+  # end
+
 end
