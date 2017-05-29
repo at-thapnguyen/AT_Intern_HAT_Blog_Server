@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
   #   where(nil)
   # end
 
-  mount_uploader :avatar, AvatarUploader
+  # mount_uploader :avatar, AvatarUploader
 
   def email_activate
     self.email_confirmed = true

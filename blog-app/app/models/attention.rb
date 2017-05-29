@@ -5,6 +5,7 @@
 #  id         :integer          not null, primary key
 #  article_id :integer
 #  user_id    :integer
+
 #  isLiked    :boolean          default("0")
 #  isFollowed :boolean          default("0")
 #
@@ -14,7 +15,6 @@
 #
 
 class Attention < ApplicationRecord
-	# attr_accessor :attentions_count
   belongs_to :article
   belongs_to :user
 

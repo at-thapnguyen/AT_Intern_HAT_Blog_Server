@@ -5,12 +5,12 @@ class Api::V1::FollowsController < BaseController
   def show
     if current_user.present?
       #Check user followed this article? If not yet then create new, opposite
-      attention = Attention.find_by article_id: params[:id], user_id: current_user.id, types: 0
+      attention = Attention.find_by article_id: params[:id], user_id: current_user.id, isFollowed: 1
       if attention.blank?
-        attention = Attention.create article_id: params[:id], user_id: current_user.id, types: 0
-        message = "<span class='notifice'>#{ current_user.username }</span> followed your article"
-        user_be_followed_id = Article.find(params[:id]).user_id
-        attention.notifications.create user_id: user_be_followed_id, message: message
+        attention = Attention.create article_id: params[:id], user_id: current_user.id, isFollowed: 1
+        article = Article.find(params[:id])
+        message = "#{ current_user.username } followed your #{ article.title }"
+        attention.notifications.create user_id: article.user_id, message: message, image: article.title_image
       else
         attention.destroy
       end

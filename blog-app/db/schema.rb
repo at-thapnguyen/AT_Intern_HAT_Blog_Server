@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20170523103519) do
   create_table "attentions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "article_id"
     t.integer "user_id"
+
     t.boolean "isLiked",    default: false
     t.boolean "isFollowed", default: false
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree

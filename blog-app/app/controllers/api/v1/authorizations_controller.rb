@@ -2,6 +2,19 @@ class Api::V1::AuthorizationsController < BaseController
   #User Login
   before_action :authentication, only: [:update, :destroy]
 
+  # confirm email for register
+  def show
+    user = User.with_deleted.find_by_confirm_token(params[:id])
+    if !user.blank?
+      user.email_activate
+      msg = { status: "success", message: "Activated", code: 200}
+      render json: user
+    else
+      msg = { status: "unsuccess", message: "You must cofirm email", code: 406 }
+      render json: msg
+    end
+  end
+
   def create
     
     user = User.find_by(email: params[:email])

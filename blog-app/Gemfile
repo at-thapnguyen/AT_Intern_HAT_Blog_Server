@@ -19,8 +19,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors'
 # soft-delete
 gem "paranoia", "~> 2.2"
-# upload
+# upload file
 gem 'carrierwave', '~> 1.0'
+# resize image
+gem 'mini_magick'
 # commnet for model
 gem "annotate"
 # friendly_url 

@@ -3,23 +3,14 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       #Huy developer
-      post '/signup', to: 'users#create'
-      post '/signin', to: 'authorizations#create'
-      delete '/signout', to: 'authorizations#destroy'
-      put '/reset_password', to: 'authorizations#update'
-      # resources :attentions, only: [:index]
-      get '/likes', to: 'likes#show'
-      get '/follows', to: 'follows#show'
-      get '/followers', to: 'followers#show'
-
-      post '/suggests', to: 'suggests#create'
-      resources :users, only: [:index, :create, :update, :show, :destroy] do
-        member do
-          get :confirm_email
-        end
-      end
-      
-      resources :categories, only: [:index, :create, :update, :show, :destroy]
+      resources :authorizations, except: [:index, :new, :edit]
+      resources :users, except: [:new, :edit]
+      resources :tags, except: [:new, :edit]
+      resources :categories, except: [:new, :edit]
+      resources :notifications, only: [:show]
+      resources :likes, only: [:show]
+      resources :follows, only: [:show]
+      resources :follow_users, only: [:index, :show]
 
       #Thap developer
       # resources :users

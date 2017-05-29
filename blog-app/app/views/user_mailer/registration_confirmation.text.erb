@@ -1,4 +1,4 @@
 Hi <%= @user.username %>,
 
 Thanks for registering! To confirm your registration click the URL below.
-<%= confirm_email_api_v1_user_url @user.confirm_token %>
+<%= api_v1_authorization_url @user.confirm_token %>

@@ -6,6 +6,8 @@ class CreateAttentions < ActiveRecord::Migration[5.0]
       t.boolean :isLiked, default: 0
       t.boolean :isFollowed, default: 0
     end
+
     add_foreign_key :attentions, :articles
+
   end
 end
