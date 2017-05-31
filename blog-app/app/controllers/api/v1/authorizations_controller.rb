@@ -16,7 +16,7 @@ class Api::V1::AuthorizationsController < BaseController
   end
 
   def create
-    
+    binding.pry
     user = User.find_by(email: params[:email])
     if user.blank?
       render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]}

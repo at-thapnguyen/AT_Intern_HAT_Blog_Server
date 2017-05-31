@@ -1,9 +1,8 @@
-
 default: &default
   adapter: mysql2
   encoding: utf8
   username: root
-  password: 14091995
+  password: huy10573987
   host: localhost
   port: 5432
   # For details on connection pooling, see rails configuration guide
@@ -46,7 +45,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: blog
+  database: blog_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -71,4 +70,4 @@ production:
   <<: *default
   database: blog_production
   username: root
-  password: <%= ENV['RAILS_PSQL_DATABASE_PASSWORD'] %>
+password: <%= ENV['RAILS_PSQL_DATABASE_PASSWORD'] %>
