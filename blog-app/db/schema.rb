@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170523103519) do
+ActiveRecord::Schema.define(version: 20170523085143) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 20170523103519) do
     t.string   "title_image"
     t.integer  "user_id"
     t.integer  "category_id"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.integer  "count_like",                default: 0
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
     t.boolean  "deleted"
     t.string   "slug"
     t.index ["category_id"], name: "fk_rails_af09d53ead", using: :btree
@@ -37,7 +38,6 @@ ActiveRecord::Schema.define(version: 20170523103519) do
   create_table "attentions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "article_id"
     t.integer "user_id"
-
     t.boolean "isLiked",    default: false
     t.boolean "isFollowed", default: false
     t.index ["article_id"], name: "fk_rails_f8c0064c5c", using: :btree

@@ -5,7 +5,7 @@ class Article::IndexSerializer < ActiveModel::Serializer
   belongs_to :attentions, serializer: AttentionSerializer
   def count_comment
   	object.comments.size
-  	
+
   end
   def count_like
   	object.attentions.where(isLiked: 1).size

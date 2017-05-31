@@ -11,6 +11,9 @@ Rails.application.routes.draw do
       resources :likes, only: [:show]
       resources :follows, only: [:show]
       resources :follow_users, only: [:index, :show]
+      namespace :articles do
+        resources :hot_articles, only: [:index]
+      end
 
       #Thap developer
       # resources :users

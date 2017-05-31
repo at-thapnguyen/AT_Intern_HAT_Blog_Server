@@ -81,7 +81,7 @@ class Api::V1::ArticlesController < BaseController
        article = Article.find(params[:id])
        article.update_columns deleted: true
        render json: {status: 200 ,message:"deleted success"}
-       else
+      else
        render json: {status: "unsuccess",message:"you must confirm email"}
        end
     end

@@ -4,7 +4,5 @@ class ArticleSerializer < ActiveModel::Serializer
   belongs_to :attentions
   belongs_to :category, serializer: CategorySerializer
   belongs_to :comments
-  # belongs_to :tags
 
-  # 
 end
