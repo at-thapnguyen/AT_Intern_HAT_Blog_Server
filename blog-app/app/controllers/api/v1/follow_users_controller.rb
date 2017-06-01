@@ -3,8 +3,8 @@ class Api::V1::FollowUsersController < BaseController
   before_action :authentication!
 
   def index
-    idFollower = FollowUser.where(be_followed_id: current_user.id).pluck(:user_id)
-    render json: User.where(id: idFollower)
+    follower_ids = FollowUser.where(be_followed_id: current_user.id).pluck(:user_id)
+    render json: User.where(id: follower_ids)
   end
   # On click follow user
   def show

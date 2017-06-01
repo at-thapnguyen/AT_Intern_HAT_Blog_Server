@@ -14,7 +14,7 @@ class Api::V1::ArticlesController < BaseController
     page = params[:current_page].to_i - 1
     limit_item = params[:limit].to_i
     page = 1 if params[:current_page].to_i <= 0
-    limit_item = 10 if params[:limit].to_i <= 0
+    limit_item = Const::LIMIT_ITEMS_DEFAULT if params[:limit].to_i <= 0
     articles = Article
     articles = articles.filter_category_tag_is_login params[:category_id], params[:tag_id], current_user
     render json: articles.offset(page*limit_item).limit(limit_item), each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: articles.size, limit: limit_item }
