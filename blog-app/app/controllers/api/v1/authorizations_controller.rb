@@ -1,6 +1,6 @@
 class Api::V1::AuthorizationsController < BaseController
   #User Login
-  before_action :authentication, only: [:update, :destroy]
+  before_action :authentication!, only: [:update, :destroy]
 
   # confirm email for register
   def show
@@ -16,7 +16,6 @@ class Api::V1::AuthorizationsController < BaseController
   end
 
   def create
-    binding.pry
     user = User.find_by(email: params[:email])
     if user.blank?
       render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]}
@@ -33,26 +32,18 @@ class Api::V1::AuthorizationsController < BaseController
   end
 
   def update
-    if current_user.present?
-      if user.authenticate(params[:password_old])
-        user.update_attribute "access_token", params[:password_new]
-        render json: { status: 200 }
-      else
-        render json: { errors: ['Not match password']}, meta: {status: 400 }
-      end
+    if @current_user.authenticate(params[:password_old])
+      @current_user.update_attribute "password", params[:password_new]
+      render json: { status: 200 }
     else
-      render json: auth_error
+      render json: { errors: ['Not match password']}, meta: {status: 400 }
     end
   end
 
   #user Logout
   def destroy
-    if current_user.present?
-      current_user.update_attribute "access_token", nil
-      render json: { status: 200 }
-    else
-      render json: auth_error
-    end
+    @current_user.update_attribute "access_token", nil
+    render json: { status: 200 }
   end
 
   private
