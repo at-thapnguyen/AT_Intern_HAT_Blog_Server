@@ -33,7 +33,6 @@ class Article < ApplicationRecord
   has_many :attentions
   belongs_to :category
   belongs_to :user
-  # belongs_to :user, -> { joins('LEFT JOIN follow_users ON users.id = follow_users.user_id').where('follow_users.be_followed_id = 2')}
   has_many :articles_tags
   has_many :tags,through: :articles_tags
 
@@ -42,15 +41,39 @@ class Article < ApplicationRecord
 
   has_one :attention,-> {where(user_id: Article.user_id)}
 
-  # has_one :user, -> { joins('JOIN follow_users ON users.id = follow_users.user_id')}
-
   acts_as_paranoid column: :deleted, sentinel_value: false
 
   mount_uploader :title_image, ImageUploader
   acts_as_paranoid column: :deleted, sentinel_value: false
 
+  scope :filter_category_tag_is_login, ->(category_id, tag_id, current_user){
+    if current_user.blank?
+      filter_category_tag category_id, tag_id
+    else
+      self.user_id = current_user.id
+      filter_category_tag category_id, tag_id
+    end
+  }
+
+  scope :filter_category_tag, -> (category_id, tag_id) {
+    if category_id.present? && tag_id.blank?
+      self.filter_category(category_id)
+    elsif category_id.blank? && tag_id.present?
+      self.filter_tag(tag_id)
+    elsif category_id.present? && tag_id.present?
+      self.filter_category(category_id).filter_tag(tag_id) if category_id.present?
+    else
+      self.all
+    end
+  }
+
+  scope :filter_category, -> (id) { where(category_id: id) }
+  scope :filter_tag, -> (id){ joins(:articles_tags).where("articles_tags.tag_id = ?", id)}
+  # scope :filter_tag, lambda{|id| joins(:articles_tags).where("articles_tags.tag_id = ?", id)}
+
   private
   def count_comment
     self.comments.size
   end
+
 end

@@ -1,6 +1,6 @@
 class Api::V1::ArticlesController < BaseController
 
-  before_action :authentication!
+  before_action :authentication! , except: [:index]
 
   def index
     # Kiem tra use dang nhap
@@ -11,18 +11,13 @@ class Api::V1::ArticlesController < BaseController
     # => Neu params[:tag_id], va params[:category_id] is present? => thi loc theo category
     # Viet ham phan trang skip and take dua vao tham so params[:limit] va params[:current_page]
     # => list = Article.offset(params[:current_page]*params[:limit]).limit(params[:limit])
-    current_page = params[:current_page].to_i-1
+    page = params[:current_page].to_i - 1
     limit_item = params[:limit].to_i
-    if limit_item < 0 || current_page < 0
-      render json: { errors: [ status: 404, message: [{ valid: "Page not found!" }] ]}
-    else
-      if current_user.blank?
-        handle_action_index current_page, limit_item, params[:category_id], params[:tag_id]
-      else
-        Article.user_id = current_user.id
-        handle_action_index current_page, limit_item, params[:category_id], params[:tag_id]
-      end
-    end
+    page = 1 if params[:current_page].to_i <= 0
+    limit_item = 10 if params[:limit].to_i <= 0
+    articles = Article
+    articles = articles.filter_category_tag_is_login params[:category_id], params[:tag_id], current_user
+    render json: articles.offset(page*limit_item).limit(limit_item), each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: articles.size, limit: limit_item }
   end
 
   def show
@@ -87,25 +82,6 @@ class Api::V1::ArticlesController < BaseController
     end
 
   private
-
-  def handle_action_index current_page, limit_item, category_id, tag_id
-    if category_id.blank? && tag_id.blank?
-        articles = Article.offset(current_page*limit_item).limit(limit_item).includes(:comments)
-        render json: articles, each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: Article.all.size, limit: limit_item }
-      elsif category_id.present? && tag_id.blank?
-        # articles = Article.all.where(category_id: category_id.to_i)
-        articles = Article.all.where(category_id: category_id.to_i).includes(:comments)
-        render json: articles.offset(current_page*limit_item).limit(limit_item), each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: articles.size, limit: limit_item }
-      elsif category_id.blank? && tag_id.present?
-        tag = Tag.find tag_id.to_i
-        articles = tag.articles.includes(:comments)
-        render json: articles.offset(current_page*limit_item).limit(limit_item), each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: articles.size, limit: limit_item }
-      else
-        tag = Tag.find tag_id.to_i
-        articles = tag.articles.where(category_id: category_id.to_i).includes(:comments)
-        render json: articles.offset(current_page*limit_item).limit(limit_item), each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: articles.size, limit: limit_item }
-      end
-  end
 
   def article_params
     params.require(:article).permit :title,:content,:title_image,

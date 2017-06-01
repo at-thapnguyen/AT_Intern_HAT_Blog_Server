@@ -28,5 +28,4 @@ class Attention < ApplicationRecord
   validates :article_id, presence: true
   validates :user_id, presence: true
   has_many :notifications, as: :notificationable, dependent: :destroy
-  # scope :with_count_like, -> {joins("LEFT JOIN attentions ON attentions.article_id = articles.id AND isliked = 1").select("articles.* ,count(attentions.id) AS attentions_count").group("articles.id")}
 end

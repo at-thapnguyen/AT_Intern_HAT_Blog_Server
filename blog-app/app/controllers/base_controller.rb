@@ -12,11 +12,11 @@ class BaseController < ApplicationController
   end
 
   def auth_error
-    { errors: [ status: 400, message: [{ valid: "Authorization for this user!" }] ]}
+    { errors: [ status: 400, message: [{ valid: "Authentications for this user!" }] ]}
   end
 
   def authentication!
-    current_user
+    render json: auth_error if current_user.blank?
   end
   # check_time_access: use to check user's access use did limited?
   # return:
