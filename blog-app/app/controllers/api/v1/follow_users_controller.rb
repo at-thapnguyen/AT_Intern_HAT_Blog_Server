@@ -11,6 +11,7 @@ class Api::V1::FollowUsersController < BaseController
       render json: { users: Array.new }
     end
   end
+
   # On click follow user
   def show
     user = User.find_by_username params[:user_username]
