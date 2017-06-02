@@ -1,11 +1,19 @@
 class Api::V1::FollowUsersController < BaseController
   #User follow. When user click button follow
-  before_action :authentication!
+  before_action :authentication!, only: [:show]
 
   def index
-    follower_ids = FollowUser.where(be_followed_id: current_user.id).pluck(:user_id)
-    render json: User.where(id: follower_ids)
+    user = User.find_by_username params[:user_username]
+    if user.present?
+      follower_ids = FollowUser.where(be_followed_id: user.id).pluck(:user_id)
+      render json: User.where(id: follower_ids)
+    else
+      render json: { users: Array.new }
+    end
   end
+
+
+
   # On click follow user
   def show
     user = User.find_by_username params[:user_username]

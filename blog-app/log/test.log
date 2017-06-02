@@ -8885,3 +8885,218 @@ Processing by Api::V1::AuthorizationsController#create as HTML
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
 Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.0ms)
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (13.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog_test`[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE DATABASE `blog_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (387.4ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `count_like` int DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1), `slug` varchar(255),  INDEX `fk_rails_af09d53ead` USING btree (`category_id`),  INDEX `index_articles_on_slug` USING btree (`slug`),  INDEX `fk_rails_3d31dad1cc` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (308.4ms)[0m  [1m[35mCREATE TABLE `articles_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `tag_id` int,  INDEX `fk_rails_74380b8667` USING btree (`article_id`),  INDEX `fk_rails_d3e30c5d45` USING btree (`tag_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (289.6ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1) DEFAULT 0, `isFollowed` tinyint(1) DEFAULT 0,  INDEX `fk_rails_f8c0064c5c` USING btree (`article_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (277.4ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1) DEFAULT 0) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (300.7ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `fk_rails_3bf61a60d3` USING btree (`article_id`),  INDEX `fk_rails_03de2dc08c` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (290.5ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `be_followed_id` int, `isChecked` tinyint(1) DEFAULT 0,  INDEX `fk_rails_6bfac4ba98` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (254.9ms)[0m  [1m[35mCREATE TABLE `notifications` (`id` int AUTO_INCREMENT PRIMARY KEY, `notificationable_id` int, `notificationable_type` varchar(255), `user_id` int, `message` varchar(255), `image` varchar(255), `isTrue` tinyint(1), `isChecked` tinyint(1) DEFAULT 1) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (233.6ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1) DEFAULT 0) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (243.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `email` varchar(255), `avatar` varchar(255), `description` varchar(255), `password_digest` varchar(255), `access_token` varchar(255), `confirm_token` varchar(255), `birthday` date, `access` tinyint(1) DEFAULT 0, `blocked` tinyint(1) DEFAULT 1, `email_confirmed` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (761.1ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (750.4ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (714.8ms)[0m  [1m[35mALTER TABLE `articles_tags` ADD CONSTRAINT `fk_rails_74380b8667`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (716.9ms)[0m  [1m[35mALTER TABLE `articles_tags` ADD CONSTRAINT `fk_rails_d3e30c5d45`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (614.3ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (704.9ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (728.9ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (603.3ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (233.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (43.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20170523085143)[0m
+  [1m[35m (33.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20170505024313),
+(20170515025335),
+(20170503012140),
+(20170505025335),
+(20170505015416),
+(20170505023604),
+(20170518133110),
+(20170505025154),
+(20170505023444);
+
+[0m
+  [1m[35m (255.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'test', '2017-06-02 09:52:08', '2017-06-02 09:52:08')[0m
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Tressie Schuppe' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dion_robel@haley.info' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Mario Cremin', 'Tressie Schuppe', 'dion_robel@haley.info', 'Faker::Avatar', 'no thing', '$2a$04$Ku5Wte09RhYBFw99mh/.mO0SldwU6yr5m50asPG1ZUbiueWRAw0rW', 'mZQ2sC4OwXLEtm5mp_zXTg', 1, 0, '2017-06-02 09:55:50', '2017-06-02 09:55:50')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` IS NULL LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`blocked` = 0[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.86ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (31.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Jonathon Borer' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'eugene.dicki@jenkinskuhlman.info' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Leo Bashirian', 'Jonathon Borer', 'eugene.dicki@jenkinskuhlman.info', 'Faker::Avatar', 'no thing', '$2a$04$AFBYz3.3Q62NwGayrCb8qe1Y03iW9Ohq.HSGG7.Xbt9kNyMyauPiy', 'p8ijOdN8IbiM6dIQXGi6jw', 1, 0, '2017-06-02 09:55:50', '2017-06-02 09:55:50')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (145.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Mr. Jaiden Wiegand' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jaron@fisherlarson.name' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Sheridan Prosacco', 'Mr. Jaiden Wiegand', 'jaron@fisherlarson.name', 'Faker::Avatar', 'no thing', '$2a$04$n9okyEPoQnk7dmz7RnFiJ.HsXvEz2hBG./md/jjUB4ylZNm/P4q2i', 'Yn12NKdfL3OZ8xzEkXQ78Q', 1, 0, '2017-06-02 09:55:50', '2017-06-02 09:55:50')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (30.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `blog_test`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `blog_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (386.2ms)[0m  [1m[35mCREATE TABLE `articles` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `title_image` varchar(255), `user_id` int, `category_id` int, `count_like` int DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `deleted` tinyint(1), `slug` varchar(255),  INDEX `fk_rails_af09d53ead` USING btree (`category_id`),  INDEX `index_articles_on_slug` USING btree (`slug`),  INDEX `fk_rails_3d31dad1cc` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (333.1ms)[0m  [1m[35mCREATE TABLE `articles_tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `tag_id` int,  INDEX `fk_rails_74380b8667` USING btree (`article_id`),  INDEX `fk_rails_d3e30c5d45` USING btree (`tag_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (377.5ms)[0m  [1m[35mCREATE TABLE `attentions` (`id` int AUTO_INCREMENT PRIMARY KEY, `article_id` int, `user_id` int, `isLiked` tinyint(1) DEFAULT 0, `isFollowed` tinyint(1) DEFAULT 0,  INDEX `fk_rails_f8c0064c5c` USING btree (`article_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (246.0ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1) DEFAULT 0) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (311.0ms)[0m  [1m[35mCREATE TABLE `comments` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `article_id` int, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `fk_rails_3bf61a60d3` USING btree (`article_id`),  INDEX `fk_rails_03de2dc08c` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (356.0ms)[0m  [1m[35mCREATE TABLE `follow_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `be_followed_id` int, `isChecked` tinyint(1) DEFAULT 0,  INDEX `fk_rails_6bfac4ba98` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (233.4ms)[0m  [1m[35mCREATE TABLE `notifications` (`id` int AUTO_INCREMENT PRIMARY KEY, `notificationable_id` int, `notificationable_type` varchar(255), `user_id` int, `message` varchar(255), `image` varchar(255), `isTrue` tinyint(1), `isChecked` tinyint(1) DEFAULT 1) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (232.9ms)[0m  [1m[35mCREATE TABLE `tags` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted` tinyint(1) DEFAULT 0) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (311.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `fullname` varchar(255), `username` varchar(255), `email` varchar(255), `avatar` varchar(255), `description` varchar(255), `password_digest` varchar(255), `access_token` varchar(255), `confirm_token` varchar(255), `birthday` date, `access` tinyint(1) DEFAULT 0, `blocked` tinyint(1) DEFAULT 1, `email_confirmed` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (715.4ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_af09d53ead`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (806.3ms)[0m  [1m[35mALTER TABLE `articles` ADD CONSTRAINT `fk_rails_3d31dad1cc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (671.1ms)[0m  [1m[35mALTER TABLE `articles_tags` ADD CONSTRAINT `fk_rails_74380b8667`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (670.1ms)[0m  [1m[35mALTER TABLE `articles_tags` ADD CONSTRAINT `fk_rails_d3e30c5d45`
+FOREIGN KEY (`tag_id`)
+  REFERENCES `tags` (`id`)
+[0m
+  [1m[35m (930.1ms)[0m  [1m[35mALTER TABLE `attentions` ADD CONSTRAINT `fk_rails_f8c0064c5c`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (671.4ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+  [1m[35m (647.9ms)[0m  [1m[35mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (1047.3ms)[0m  [1m[35mALTER TABLE `follow_users` ADD CONSTRAINT `fk_rails_6bfac4ba98`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (31.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20170523085143)[0m
+  [1m[35m (33.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20170505024313),
+(20170515025335),
+(20170503012140),
+(20170505025335),
+(20170505015416),
+(20170505023604),
+(20170518133110),
+(20170505025154),
+(20170505023444);
+
+[0m
+  [1m[35m (297.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'test', '2017-06-02 09:59:52', '2017-06-02 09:59:52')[0m
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Jack Bartoletti' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'jovanny.conroy@conroy.name' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Donnell Becker', 'Jack Bartoletti', 'jovanny.conroy@conroy.name', 'Faker::Avatar', 'no thing', '$2a$04$G/wFLeZuAhOGNzbH7nQF6eYRyFnW8VenJdClH7tQ5RkPbVs6XLG2m', 'vhmyykuENblCduXal9VolA', 1, 0, '2017-06-02 09:59:52', '2017-06-02 09:59:52')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` IS NULL LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`blocked` = 0[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.6ms)
+  [1m[35m (82.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Ms. Wilhelmine Yundt' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'haven@sipesbradtke.biz' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Marge Jaskolski', 'Ms. Wilhelmine Yundt', 'haven@sipesbradtke.biz', 'Faker::Avatar', 'no thing', '$2a$04$To4eFaI7gJYgMvVlfPQLberNwgzg.H9DeIKSB8xsjxUoB6sRHaGGK', '63FX6UrFcGoAyewnQbjlow', 1, 0, '2017-06-02 09:59:52', '2017-06-02 09:59:52')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (31.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Johnpaul Wilkinson' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'christopher@vonrueden.co' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Nellie Bailey', 'Johnpaul Wilkinson', 'christopher@vonrueden.co', 'Faker::Avatar', 'no thing', '$2a$04$ol9dwiZMsZCbOLwwGn9uKemWxS9xsGPjLSCCkG0by/xYSno4RKeMe', 'SHEZKFxHa_egjnHb-ikomQ', 1, 0, '2017-06-02 09:59:53', '2017-06-02 09:59:53')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (32.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Carlee Okuneva I' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'melya@dickensjones.co' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Ubaldo Rohan', 'Carlee Okuneva I', 'melya@dickensjones.co', 'Faker::Avatar', 'no thing', '$2a$04$U6KG3nN6AcPytHaH1wki.Owi0/F2mz/Bdr3eHnpjFgMncUY/ZY/QG', 'yghB80OrS_H3dgRFcM70fw', 1, 0, '2017-06-02 10:06:11', '2017-06-02 10:06:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`blocked` = 0 AND `users`.`access_token` IS NULL LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`blocked` = 0[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.49ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.5ms)
+  [1m[35m (41.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Bria Halvorson' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'andre@rogahnschuppe.biz' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Mrs. Mustafa Schmeler', 'Bria Halvorson', 'andre@rogahnschuppe.biz', 'Faker::Avatar', 'no thing', '$2a$04$29z82pEVdhcQic5bwwerr.cpal1UJvi.NVq08a3nZnHcWWwKJiPIS', 'qMynEh0fgxHmjNy6fzTx6Q', 1, 0, '2017-06-02 10:06:11', '2017-06-02 10:06:11')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (98.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Alivia Wolff' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'lonzo@legros.io' AND `users`.`blocked` = 0 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`fullname`, `username`, `email`, `avatar`, `description`, `password_digest`, `confirm_token`, `access`, `blocked`, `created_at`, `updated_at`) VALUES ('Moriah Goodwin', 'Alivia Wolff', 'lonzo@legros.io', 'Faker::Avatar', 'no thing', '$2a$04$cYK1xl14kqvxEPp9QHqHMOB9IRMjEP2H/WAn4GU/Fz8uCDXnWTTRW', 'Sr8z5z9525Sq0w9e4ZXP1w', 1, 0, '2017-06-02 10:06:11', '2017-06-02 10:06:11')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (33.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
