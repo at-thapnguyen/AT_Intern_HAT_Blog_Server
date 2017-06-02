@@ -12,6 +12,8 @@ class Api::V1::FollowUsersController < BaseController
     end
   end
 
+
+
   # On click follow user
   def show
     user = User.find_by_username params[:user_username]
