@@ -38,6 +38,7 @@ class Article < ApplicationRecord
 
   validates :title_image, presence: true
   validates :content, presence: true
+ 
 
   has_one :attention,-> {where(user_id: Article.user_id)}
 
@@ -45,6 +46,9 @@ class Article < ApplicationRecord
 
   mount_uploader :title_image, ImageUploader
   acts_as_paranoid column: :deleted, sentinel_value: false
+  def should_generate_new_friendly_id?
+  slug.blank? || title_changed?
+end
 
   scope :filter_category_tag_is_login, ->(category_id, tag_id, current_user){
     if current_user.blank?
@@ -71,9 +75,23 @@ class Article < ApplicationRecord
   scope :filter_tag, -> (id){ joins(:articles_tags).where("articles_tags.tag_id = ?", id)}
   # scope :filter_tag, lambda{|id| joins(:articles_tags).where("articles_tags.tag_id = ?", id)}
 
+  scope :create_tags, -> (article, list_tags) {
+    binding.pry
+    tags = list_tags.split(',')        
+    articles_tags = article.tags.pluck(:name)
+    (tags - articles_tags).each do |f|
+      tag = Tag.find_or_create_by(name: f)
+      article.articles_tags.create(tag_id: tag.id)
+    end
+    (articles_tags - tags).each do |f|
+      tag = Tag.find_by(name: f)
+      article.articles_tags.find_by(tag_id: tag.id).destroy
+    end
+  }
   private
   def count_comment
     self.comments.size
   end
+
 
 end

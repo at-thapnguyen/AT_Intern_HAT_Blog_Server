@@ -4,7 +4,10 @@ class Article::ShowSerializer < ActiveModel::Serializer
   has_many :tags,through: :articles_tags
   belongs_to :user, serializer: User::UserArticleSerializer
   belongs_to :category, serializer: CategorySerializer
-  belongs_to :comments,serializer: CommentSerializer
+  has_many :comments,serializer: CommentSerializer
   belongs_to :attentions, serializer: AttentionSerializer
+  def comments
+  	object.comments.order(created_at: :desc).limit(5)
+  end
 
 end
