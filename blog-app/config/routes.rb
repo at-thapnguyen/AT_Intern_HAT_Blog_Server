@@ -25,7 +25,7 @@ Rails.application.routes.draw do
         resources :comments
         resources :likes, only: [:index, :create]
         resources :follows, only: [:index,:create]
-
+      end
       resources :tags
     end
   end
