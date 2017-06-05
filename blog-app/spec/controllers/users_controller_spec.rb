@@ -11,40 +11,35 @@ describe Api::V1::UsersController do
     end
   end
 
-  describe "GET /api/v1/users/:user_id" do
-    describe "when get user is successfully" do
-      let!(:user) { FactoryGirl.create :user }
-      it "Status 200" do
-        get :show, id: user.id
-        expect(response).to be_success
-      end
-
-      it "Returns the information personal" do
-        get :show, id: user.id
-        user_response = JSON.parse(response.body)
-        expect(user_response['user'].except('birthday')).to eql except_user user
-      end
+  describe "GET /api/v1/users/:username" do
+    let!(:user) { FactoryGirl.create :user }
+    it "Status 200" do
+      get :show, username: user.username
+      expect(response).to be_success
     end
 
-    describe "when get user is fails" do
-      #...
+    it "Returns the information personal" do
+      get :show, username: user.id
+      user_response = JSON.parse(response.body)
+      binding.pry
+      expect(user_response['user'].except('birthday')).to eql except_user user
     end
   end
 
-  # describe "POST /api/v1/users" do
-  #   describe "when create new user is successfully" do
-  #     let!(:user) { FactoryGirl.attributes_for :user }
-  #     it "Status 200" do
-  #       post :create, { user: user }
-  #       expect(response).to be_success
-  #     end
+  describe "POST /api/v1/users" do
+    describe "when create new user is successfully" do
+      let!(:user) { FactoryGirl.attributes_for :user }
+      it "Status 200" do
+        post :create, { user: user }
+        expect(response).to be_success
+      end
 
-  #     it "returns the information personal" do
-  #       post :create, { user: user }
-  #       user_response = JSON.parse(response.body)
-  #       expect(user_response["user"].slice("username", "email").symbolize_keys).to eql user.slice(:username, :email)
-  #     end
-  #   end
-  # end
+      it "returns the information personal" do
+        post :create, { user: user }
+        user_response = JSON.parse(response.body)
+        expect(user_response["user"].slice("username", "email").symbolize_keys).to eql user.slice(:username, :email)
+      end
+    end
+  end
 
 end
