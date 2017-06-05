@@ -4,7 +4,6 @@ class Api::V1::FollowsController < BaseController
 
   def create
     attention = Attention
-    binding.pry 	
     attention.follow_action params[:article_slug], current_user
     render json: { status: 200 }
   end

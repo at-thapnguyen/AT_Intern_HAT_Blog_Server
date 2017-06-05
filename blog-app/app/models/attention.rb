@@ -139,5 +139,4 @@ class Attention < ApplicationRecord
     article.count_like
   }
 
-
 end
