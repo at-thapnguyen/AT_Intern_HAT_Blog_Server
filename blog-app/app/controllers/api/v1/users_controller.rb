@@ -29,19 +29,31 @@ class Api::V1::UsersController < BaseController
   end
 
   def update
-    params[:user][:avatar].original_filename = rename_file params[:user][:avatar].original_filename, @current_user.id
-    @current_user.fullname = params[:user][:fullname]
-    @current_user.description = params[:user][:description]
-    @current_user.birthday = params[:user][:birthday]
-    @current_user.avatar = "/uploads/avatar/"+ params[:user][:avatar].original_filename
-    if @current_user.valid?
-      @current_user.save
-      uploader = AvatarUploader.new
-      uploader.store!(params[:user][:avatar])
+   if @current_user.present?
+      if params[:avatar].class == String
+      @current_user.fullname = params[:fullname]
+      @current_user.description = params[:description]
+      @current_user.birthday = params[:birthday]
+       @current_user.save
+      else
+      #Handle rename filename uploaded to user_id.typefile
+      params[:avatar].original_filename = rename_file params[:avatar].original_filename, @current_user.id
+      @current_user.fullname = params[:fullname]
+      @current_user.description = params[:description]
+      @current_user.birthday = params[:birthday]
+      @current_user.avatar = "/uploads/avatar/"+ params[:avatar].original_filename
+      if @current_user.valid?
+        @current_user.save
+        uploader = AvatarUploader.new
+        uploader.store!(params[:avatar])
+      else
+        render json: { errors: [ status: 400, message: [ @current_user.errors.messages ]]}
+      end
+      end
+      render json: { status: 200,message: "your profile successfully updated"}
     else
-      render json: { errors: [ status: 400, message: [ @current_user.errors.messages ]]}
+      render json: auth_error
     end
-    render json: { status: 200 }
   end
 
   def detroy
@@ -59,7 +71,7 @@ class Api::V1::UsersController < BaseController
   end
 
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation, :birthday)
+    params.permit(:username, :email, :password, :password_confirmation, :birthday)
   end
 
 end

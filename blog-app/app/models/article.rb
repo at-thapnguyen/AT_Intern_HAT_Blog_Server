@@ -52,6 +52,7 @@ end
 
   scope :filter_category_tag_is_login, ->(category_id, tag_id, current_user){
     if current_user.blank?
+      self.user_id = nil
       filter_category_tag category_id, tag_id
     else
       self.user_id = current_user.id
@@ -65,6 +66,7 @@ end
     elsif category_id.blank? && tag_id.present?
       self.filter_tag(tag_id)
     elsif category_id.present? && tag_id.present?
+      binding.pry
       self.filter_category(category_id).filter_tag(tag_id) if category_id.present?
     else
       self.all
@@ -76,7 +78,7 @@ end
   # scope :filter_tag, lambda{|id| joins(:articles_tags).where("articles_tags.tag_id = ?", id)}
 
   scope :create_tags, -> (article, list_tags) {
-    binding.pry
+
     tags = list_tags.split(',')        
     articles_tags = article.tags.pluck(:name)
     (tags - articles_tags).each do |f|

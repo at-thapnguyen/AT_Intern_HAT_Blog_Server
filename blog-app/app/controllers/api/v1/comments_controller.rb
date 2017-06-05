@@ -12,7 +12,7 @@ class Api::V1::CommentsController < BaseController
       comment.article_id = @article.id
       comment.save
       message = "#{ current_user.username } commented your article"
-      comment.notifications.create user_id: current_user.id, message: message, image: current_user.avatar
+      comment.notifications.create user_id: @article.attributes["user_id"], message: message, image: current_user.avatar
 
       render json: {status: 200}
 

@@ -15,13 +15,20 @@ class Api::V1::ArticlesController < BaseController
     limit_item = params[:limit].to_i
     page = 1 if params[:current_page].to_i <= 0
     limit_item = 10 if params[:limit].to_i <= 0
-    articles = Article
+    articles = Article.includes(:comments, :attentions, :user,:category,:tags,:articles_tags)
     articles = articles.filter_category_tag_is_login params[:category_id], params[:tag_id], current_user
+    binding.pry
     render json: articles.offset(page*limit_item).limit(limit_item), each_serializer: ::Articles::ArticleHomePageForUserSerializer, meta: { total: articles.size, limit: limit_item }
   end
 
   def show
-    render json: Article.find_by_slug!(params[:slug]), serializer: Article::ShowSerializer
+    if current_user.blank? 
+    Article.user_id = nil
+    render json: Article.includes(:comments, :attentions, :user,:tags).find_by_slug!(params[:slug]), serializer: Article::ShowSerializer
+    else    
+    Article.user_id = current_user.id
+    render json: Article.includes(:comments, :attentions, :user,:tags).find_by_slug!(params[:slug]), serializer: Article::ShowSerializer
+    end
   end
 
   def create
@@ -43,15 +50,15 @@ class Api::V1::ArticlesController < BaseController
     def update
     if current_user
       article = Article.find_by_slug(params[:slug])
-      if params[:title_image].class == String
-      article.update title: params[:title], content:params[:content],category_id: params[:category_id], user_id: current_user.id
-      article.save
-      Article.create_tags article, params[:tags]
+        if params[:title_image].class == String
+        article.update title: params[:title], content:params[:content],category_id: params[:category_id], user_id: current_user.id
+        article.save
+        Article.create_tags article, params[:tags]
       render json: { id: article.id ,slug: article.slug,status: 200, message:"article was sucessfully update "}
       else
-      article.update title: params[:title], content: params[:content],title_image: params[:title_image],category_id: params[:category_id], user_id: current_user.id
-      article.save
-      Article.create_tags article, params[:tags]
+        article.update title: params[:title], content: params[:content],title_image: params[:title_image],category_id: params[:category_id], user_id: current_user.id
+        article.save
+        Article.create_tags article, params[:tags]
       render json: { id: article.id ,slug: article.slug,status: 200, message:"article was sucessfully update"}
       end
     else
@@ -60,13 +67,13 @@ class Api::V1::ArticlesController < BaseController
   end
 
     def destroy
-      if current_user.present?
-       article = Article.find_by_slug!(params[:slug])
-       article.update_columns deleted: true
-       render json: {status: 200 ,message:"deleted success"}
-      else
-       render json: {status: "unsuccess",message:"you must confirm email"}
-       end
+    if current_user.present?
+     article = Article.find_by_slug!(params[:slug])
+     article.update_columns deleted: true
+     render json: {status: 200 ,message:"deleted success"}
+    else
+     render json: {status: "unsuccess",message:"you must confirm email"}
+     end
     end
 
   private

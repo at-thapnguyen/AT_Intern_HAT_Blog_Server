@@ -7,14 +7,15 @@ class Api::V1::FollowUsersController < BaseController
     render json: User.where(id: follower_ids)
   end
   # On click follow user
-  def show
+  def create
+
     user = User.find_by_username params[:user_username]
-    follower = FollowUser.find_by user_id: user.id, be_followed_id: current_user.id
+    follower = FollowUser.find_by user_id: user.id , be_followed_id: current_user.id
     if follower.blank?
       #be_followed_id is people go follow orther people (current_user)
-      follow_user = FollowUser.create user_id: params[:id], be_followed_id: current_user.id
+      follow_user = FollowUser.create user_id: user.id , be_followed_id: current_user.id
       message = "#{ current_user.username } started following you"
-      follow_user.notifications.create user_id: params[:id], message: message, image: current_user.avatar
+      follow_user.notifications.create user_id: user.id, message: message, image: current_user.avatar
     else
       follower.destroy
     end

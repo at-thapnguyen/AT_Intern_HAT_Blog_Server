@@ -8,7 +8,7 @@ Rails.application.routes.draw do
         member do
           get "/user_articles", to: "users/user_articles#index"
         end
-        resources :follow_users, only: [:index, :show]
+        resources :follow_users, only: [:index, :create]
       end
       namespace :articles do
       resources :hot_articles, only: [:index]
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
       #Thap developer
       resources :articles, param: :slug,only: [:index,:create, :update, :show, :destroy] do
         resources :comments
-        resources :likes, only: [:index]
+        resources :likes, only: [:index, :create]
         resources :follows, only: [:index]
       end
       resources :tags
