@@ -21,7 +21,7 @@ Rails.application.routes.draw do
       resources :articles, param: :slug,only: [:index,:create, :update, :show, :destroy] do
         resources :comments
         resources :likes, only: [:index, :create]
-        resources :follows, only: [:index]
+        resources :follows, only: [:index,:create]
       end
       resources :tags
     end
