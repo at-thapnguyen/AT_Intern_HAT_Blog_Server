@@ -60,8 +60,8 @@ ActiveRecord::Schema.define(version: 20170523085143) do
 
   create_table "follow_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
-    t.integer "be_followed_id"
-    t.boolean "isChecked",      default: false
+    t.integer "follower_id"
+    t.boolean "isChecked",   default: false
     t.index ["user_id"], name: "fk_rails_6bfac4ba98", using: :btree
   end
 

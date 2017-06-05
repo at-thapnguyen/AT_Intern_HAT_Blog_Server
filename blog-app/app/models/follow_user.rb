@@ -2,10 +2,10 @@
 #
 # Table name: follow_users
 #
-#  id             :integer          not null, primary key
-#  user_id        :integer
-#  be_followed_id :integer
-#  isChecked      :boolean          default("0")
+#  id          :integer          not null, primary key
+#  user_id     :integer
+#  follower_id :integer
+#  isChecked   :boolean          default("0")
 #
 # Indexes
 #

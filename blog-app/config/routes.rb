@@ -5,7 +5,13 @@ Rails.application.routes.draw do
       #Huy developer
       resources :authorizations, except: [:index, :new, :edit]
       resources :users, param: :username, except: [:new, :edit] do
-        resources :follow_users, only: [:index, :show]
+        member do
+          get "/user_articles", to: "users/user_articles#index"
+        end
+        resources :follow_users, only: [:index, :create]
+      end
+      namespace :articles do
+      resources :hot_articles, only: [:index]
       end
       resources :tags, except: [:new, :edit]
       resources :categories, except: [:new, :edit]
@@ -15,10 +21,10 @@ Rails.application.routes.draw do
       end
 
       #Thap developer
-      resources :articles,only: [:index, :create, :update, :show, :destroy] do
-        resources :comments,only: [:index,:create,:show,:update,:destroy]
-        resources :likes, only: [:create]
-        resources :follows, only: [:create]
+      resources :articles, param: :slug,only: [:index,:create, :update, :show, :destroy] do
+        resources :comments
+        resources :likes, only: [:index, :create]
+        resources :follows, only: [:index,:create]
       end
       resources :tags
     end

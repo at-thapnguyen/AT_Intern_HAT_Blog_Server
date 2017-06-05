@@ -53,7 +53,7 @@ class User < ActiveRecord::Base
   end
 
   def follow? user_id
-    follow_user.pluck(:id).include? user_id
+    follow_user.pluck(:follower_id).include? user_id
   end
 
   private
