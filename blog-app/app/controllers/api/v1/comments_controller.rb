@@ -11,11 +11,13 @@ class Api::V1::CommentsController < BaseController
       comment.user_id = current_user.id
       comment.article_id = @article.id
       comment.save
+      if comment.user_id = @article.attributes["user_id"]
+        render json: comment,serializer: CommentSerializer
+      else 
       message = "#{ current_user.username } commented your article"
       comment.notifications.create user_id: @article.attributes["user_id"], message: message, image: current_user.avatar
-
-      render json: {status: 200}
-
+      render json: comment,serializer: CommentSerializer
+      end
     else
       render json: { status: "unsuccess",message:"you must login",code: 406 }
     end

@@ -50,7 +50,7 @@ class Api::V1::UsersController < BaseController
         render json: { errors: [ status: 400, message: [ @current_user.errors.messages ]]}
       end
       end
-      render json: { status: 200,message: "your profile successfully updated"}
+      render json: current_user,meta: { status: 200}
     else
       render json: auth_error
     end
