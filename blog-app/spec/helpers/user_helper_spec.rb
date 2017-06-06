@@ -3,7 +3,7 @@
 module UserHelperSpec
   def except_user user
     user.attributes.except('blocked', 'created_at', 'updated_at', 'password_digest',
-          'email_confirmed', 'confirm_token', 'birthday')
+          'email_confirmed', 'confirm_token', 'birthday', 'access')
   end
 end
 # RSpec.configure do |config|

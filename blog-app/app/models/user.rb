@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
   acts_as_paranoid column: :blocked, sentinel_value: false
 
   before_create :confirmation_token
+  after_save :send_mail
 
   has_many :articles, dependent: :destroy
   has_many :attentions
@@ -43,6 +44,14 @@ class User < ActiveRecord::Base
   # end
 
   # mount_uploader :avatar, AvatarUploader
+
+  def send_mail
+    UserMailer.registration_confirmation(self).deliver
+  end
+
+  def avatar
+    avatar.url
+  end
 
   def email_activate
     self.email_confirmed = true

@@ -16,7 +16,7 @@ class BaseController < ApplicationController
   end
 
   def authentication!
-    render json: auth_error if current_user.blank?
+    render json: auth_error, status: :unauthorized if current_user.blank?
   end
   # check_time_access: use to check user's access use did limited?
   # return:

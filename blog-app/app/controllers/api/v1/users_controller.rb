@@ -9,6 +9,7 @@ class Api::V1::UsersController < BaseController
   end
 
   def show
+    binding.pry
     user = User.find_by_username params[:username]
     render json: user
   end
@@ -16,26 +17,25 @@ class Api::V1::UsersController < BaseController
   def create
     user = User.new user_params
     if user.valid?
-      token = SecureRandom.hex  + user.created_at.to_i.to_s + user.id.to_s
+      token = SecureRandom.hex
       user.access_token = token
-      user.avatar = "/uploads/avatar/default-avatar.png"
+      # user.avatar = "/uploads/avatar/default-avatar.png"
       user.blocked = true
       user.save
-      UserMailer.registration_confirmation(user).deliver
+      # UserMailer.registration_confirmation(user).deliver
       render json: user
     else
-      render json: { errors: [ status: 400, message: [ user.errors.messages ]]}
+      render json: {errors: [ status: 400, message: [ user.errors.messages ]]}, status: :unauthorized
     end
   end
 
   def update
-   if @current_user.present?
-      if params[:avatar].class == String
+    if params[:avatar].class == String
       @current_user.fullname = params[:fullname]
       @current_user.description = params[:description]
       @current_user.birthday = params[:birthday]
-       @current_user.save
-      else
+      @current_user.save
+    else
       #Handle rename filename uploaded to user_id.typefile
       params[:avatar].original_filename = rename_file params[:avatar].original_filename, @current_user.id
       @current_user.fullname = params[:fullname]
@@ -49,11 +49,8 @@ class Api::V1::UsersController < BaseController
       else
         render json: { errors: [ status: 400, message: [ @current_user.errors.messages ]]}
       end
-      end
-      render json: current_user,meta: { status: 200}
-    else
-      render json: auth_error
     end
+    render json: { status: 200,message: "your profile successfully updated"}
   end
 
   def detroy
