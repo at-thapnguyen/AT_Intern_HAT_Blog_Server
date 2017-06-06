@@ -38,6 +38,7 @@ class Article < ApplicationRecord
 
   validates :title_image, presence: true
   validates :content, presence: true
+  validates :
  
 
   has_one :attention,-> {where(user_id: Article.user_id)}
