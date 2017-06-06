@@ -5,7 +5,7 @@ class Api::V1::FollowUsersController < BaseController
   def index
     user = User.find_by_username params[:user_username]
     if user.present?
-      follower_ids = FollowUser.where(be_followed_id: user.id).pluck(:user_id)
+      follower_ids = FollowUser.where(follower_id: user.id).pluck(:user_id)
       render json: User.where(id: follower_ids)
     else
       render json: { users: Array.new }

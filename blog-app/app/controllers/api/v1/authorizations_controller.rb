@@ -18,7 +18,7 @@ class Api::V1::AuthorizationsController < BaseController
   def create
     user = User.find_by(email: params[:email])
     if user.blank?
-      render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]}
+      render json: { errors: [ status: 400, message: [{ email: "Not match email" }] ]} #, status: :non_authoritative_information
     else
       if user.authenticate(params[:password]).blank?
         render json: { errors: [ status: 400, message: [{ password: "Not match password" }] ]}

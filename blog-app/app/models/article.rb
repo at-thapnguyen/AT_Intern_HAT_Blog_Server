@@ -38,7 +38,7 @@ class Article < ApplicationRecord
 
   validates :title_image, presence: true
   validates :content, presence: true
- 
+
 
   has_one :attention,-> {where(user_id: Article.user_id)}
 
@@ -66,7 +66,6 @@ end
     elsif category_id.blank? && tag_id.present?
       self.filter_tag(tag_id)
     elsif category_id.present? && tag_id.present?
-      binding.pry
       self.filter_category(category_id).filter_tag(tag_id) if category_id.present?
     else
       self.all
@@ -79,7 +78,7 @@ end
 
   scope :create_tags, -> (article, list_tags) {
 
-    tags = list_tags.split(',')        
+    tags = list_tags.split(',')
     articles_tags = article.tags.pluck(:name)
     (tags - articles_tags).each do |f|
       tag = Tag.find_or_create_by(name: f)
@@ -90,6 +89,12 @@ end
       article.articles_tags.find_by(tag_id: tag.id).destroy
     end
   }
+
+  scope :search, ->(key){
+    joins(:user).joins(:category).joins(:articles_tags).joins(:tags).
+    where("articles.title LIKE ? OR articles.content LIKE ? OR categories.name LIKE ? OR users.username LIKE ?", key, key, key, key)
+  }
+
   private
   def count_comment
     self.comments.size

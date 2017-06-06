@@ -13,5 +13,6 @@ FactoryGirl.define do
     token "hihi"
     access "true"
     blocked "false"
+    access_token "d2et3ge3aeo4idrio0"
   end
 end

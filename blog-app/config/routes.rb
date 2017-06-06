@@ -11,7 +11,7 @@ Rails.application.routes.draw do
         resources :follow_users, only: [:index, :create]
       end
       namespace :articles do
-      resources :hot_articles, only: [:index]
+        resources :hot_articles, only: [:index]
       end
       resources :tags, except: [:new, :edit]
       resources :categories, except: [:new, :edit]
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       namespace :articles do
         resources :hot_articles, only: [:index]
       end
+      resources :searchs, param: :key, only: [:show]
 
       #Thap developer
       resources :articles, param: :slug,only: [:index,:create, :update, :show, :destroy] do
