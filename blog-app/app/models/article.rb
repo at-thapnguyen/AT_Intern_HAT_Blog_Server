@@ -91,7 +91,12 @@ end
   }
 
   scope :search, ->(key){
-    joins(:user).joins(:category).joins(:articles_tags).joins(:tags).
+    # joins(:user).joins(:category).joins(:articles_tags).joins(:tags).
+    joins("LEFT JOIN users ON articles.user_id = users.id").
+    joins("LEFT JOIN categories ON articles.category_id = categories.id").
+    joins("LEFT JOIN articles_tags ON articles.id = articles_tags.article_id").
+    joins("LEFT JOIN tags ON articles_tags.tag_id = tags.id").
+    group("articles.id").
     where("articles.title LIKE ? OR articles.content LIKE ? OR categories.name LIKE ? OR users.username LIKE ?", key, key, key, key)
   }
 

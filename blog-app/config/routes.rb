@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       end
       resources :tags, except: [:new, :edit]
       resources :categories, except: [:new, :edit]
-      resources :notifications, only: [:show]
+      resources :notifications, only: [:index,:update]
       namespace :articles do
         resources :hot_articles, only: [:index]
       end
