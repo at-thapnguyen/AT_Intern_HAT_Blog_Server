@@ -48,6 +48,7 @@ class Api::V1::CommentsController < BaseController
   end
 
   private
+
   def comment_params
     params.require(:comments).permit(:content)
   end
