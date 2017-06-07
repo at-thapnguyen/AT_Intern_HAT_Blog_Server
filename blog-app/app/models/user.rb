@@ -49,9 +49,9 @@ class User < ActiveRecord::Base
     UserMailer.registration_confirmation(self).deliver
   end
 
-  def avatar
-    avatar.url
-  end
+  # def avatar
+  #   avatar.url
+  # end
 
   def email_activate
     self.email_confirmed = true

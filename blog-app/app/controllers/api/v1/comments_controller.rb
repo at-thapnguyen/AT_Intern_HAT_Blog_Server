@@ -13,7 +13,7 @@ class Api::V1::CommentsController < BaseController
       comment.save
       if comment.user_id = @article.attributes["user_id"]
         render json: comment,serializer: CommentSerializer
-      else 
+      else
       message = "#{ current_user.username } commented your article"
       comment.notifications.create user_id: @article.attributes["user_id"], message: message, image: current_user.avatar
       render json: comment,serializer: CommentSerializer
@@ -46,9 +46,9 @@ class Api::V1::CommentsController < BaseController
        end
     end
   private
-  
+
   def comment_params
     params.require(:comments).permit(:content)
   end
-  
+
 end
