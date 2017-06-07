@@ -66,13 +66,14 @@ ActiveRecord::Schema.define(version: 20170523085143) do
   end
 
   create_table "notifications", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "notificationable_id"
-    t.string  "notificationable_type"
-    t.integer "user_id"
-    t.string  "message"
-    t.string  "image"
-    t.boolean "isTrue"
-    t.boolean "isChecked",             default: true
+    t.integer  "notificationable_id"
+    t.string   "notificationable_type"
+    t.integer  "user_id"
+    t.string   "message"
+    t.string   "image"
+    t.boolean  "isChecked",             default: false
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

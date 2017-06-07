@@ -30,6 +30,7 @@ class User < ActiveRecord::Base
   has_many :articles, dependent: :destroy
   has_many :attentions
   has_many :follow_user
+  has_many :comments
   validates :username, uniqueness: true, presence: true #, format: { without: /\s/, message: "username don't white space" }
   validates :password, presence: true, length: { in: 6..15 }, on: :create
   validates :email, presence: true, uniqueness: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i , message: "Email don't validated" }
@@ -48,10 +49,6 @@ class User < ActiveRecord::Base
   def send_mail
     UserMailer.registration_confirmation(self).deliver
   end
-
-  # def avatar
-  #   avatar.url
-  # end
 
   def email_activate
     self.email_confirmed = true

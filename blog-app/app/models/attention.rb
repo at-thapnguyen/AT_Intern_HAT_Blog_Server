@@ -49,7 +49,7 @@ class Attention < ApplicationRecord
         # => truong hop nay ta chi cap nhat attention va add them thong bao
           attention.update_columns isFollowed: true
           message = Const::message article, current_user, "follow"
-          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image
+          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
         end
       else
         # Neu co attention nhung attention voi: isLike=true
@@ -76,14 +76,14 @@ class Attention < ApplicationRecord
           # => Attention sau khi cap nhat co isFollowed = true va isLike = true
           attention.update_columns isFollowed: true
           message = Const::message article, current_user, "follow"
-          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image
+          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
         end
       end
     else #end of if attention.present?
       #Neu chua co record trong bang attention thi tao moi
       attention = Attention.create article_id: article.id, user_id: current_user.id, isFollowed: 1
       message = Const::message article, current_user, "follow"
-      attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image
+      attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
     end
   }
 
@@ -106,7 +106,7 @@ class Attention < ApplicationRecord
           article.update_columns count_like: article.count_like + 1
           attention.update_columns isLiked: true
           message = Const::message article, current_user, "like"
-          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image
+          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
         end
       else
         if attention.isLiked == true
@@ -126,7 +126,7 @@ class Attention < ApplicationRecord
           attention.update_columns isLiked: true
           article.update_columns count_like: article.count_like + 1
           message = Const::message article, current_user, "like"
-          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image
+          attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
         end
       end
     else #end of if attention.present?
@@ -134,7 +134,7 @@ class Attention < ApplicationRecord
       article.update_columns count_like: article.count_like + 1
       message = Const::message article, current_user, "like"
       # message = "#{ current_user.username } liked your post #{ attention.article.content[0..10] }"
-      attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image
+      attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
     end
     article.count_like
   }
