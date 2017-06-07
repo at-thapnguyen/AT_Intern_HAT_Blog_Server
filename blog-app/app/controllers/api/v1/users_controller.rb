@@ -9,7 +9,6 @@ class Api::V1::UsersController < BaseController
   end
 
   def show
-    binding.pry
     user = User.find_by_username params[:username]
     render json: user
   end
@@ -19,7 +18,7 @@ class Api::V1::UsersController < BaseController
     if user.valid?
       token = SecureRandom.hex
       user.access_token = token
-      # user.avatar = "/uploads/avatar/default-avatar.png"
+      user.avatar = "/uploads/avatar/default-avatar.png"
       user.blocked = true
       user.save
       # UserMailer.registration_confirmation(user).deliver
@@ -50,7 +49,7 @@ class Api::V1::UsersController < BaseController
         render json: { errors: [ status: 400, message: [ @current_user.errors.messages ]]}
       end
     end
-    render json: { status: 200,message: "your profile successfully updated"}
+    render json: current_user,serializer: UserSerializer
   end
 
   def detroy

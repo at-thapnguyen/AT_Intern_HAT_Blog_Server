@@ -6,8 +6,8 @@ class CreateNotifications < ActiveRecord::Migration[5.0]
       t.integer :user_id
       t.string :message
       t.string :image
-      t.boolean :isTrue
-      t.boolean :isChecked, default: 1
+      t.boolean :isChecked, default: 0
+      t.timestamps
     end
   end
 end
