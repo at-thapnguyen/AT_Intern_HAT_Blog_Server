@@ -1,6 +1,6 @@
 class Api::V1::FollowsController < BaseController
   #User Login
-  before_action :authentication!
+  before_action :authentication!, only: [:create]
 
   def create
     attention = Attention

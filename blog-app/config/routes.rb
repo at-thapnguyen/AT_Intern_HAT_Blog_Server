@@ -9,6 +9,7 @@ Rails.application.routes.draw do
           get "/user_articles", to: "users/user_articles#index"
         end
         resources :follow_users, only: [:index, :create]
+        resources :notification_users, only: [:index]
       end
       namespace :articles do
         resources :hot_articles, only: [:index]

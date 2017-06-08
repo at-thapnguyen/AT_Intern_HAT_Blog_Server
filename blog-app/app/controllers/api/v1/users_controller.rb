@@ -21,7 +21,6 @@ class Api::V1::UsersController < BaseController
       user.avatar = "/uploads/avatar/default-avatar.png"
       user.blocked = true
       user.save
-      # UserMailer.registration_confirmation(user).deliver
       render json: user
     else
       render json: {errors: [ status: 400, message: [ user.errors.messages ]]}, status: :unauthorized

@@ -1,6 +1,6 @@
 class Api::V1::FollowUsersController < BaseController
   #User follow. When user click button follow
-  before_action :authentication!, only: [:index,:show]
+  before_action :authentication!, only: [:index,:create]
 
   def index
     user = User.find_by_username params[:user_username]
@@ -20,8 +20,10 @@ class Api::V1::FollowUsersController < BaseController
       follow_user = FollowUser.create user_id: user.id , follower_id: current_user.id
       message = "#{ current_user.username } started following you"
       follow_user.notifications.create user_id: user.id, message: message, image: current_user.avatar
+      user.update_columns count_notifications: user.count_notifications + 1
     else
       follower.destroy
+      user.update_columns count_notifications: user.count_notifications - 1
     end
     render json: { status: 200 }
   end
