@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20170523085143) do
     t.integer  "user_id"
     t.string   "message"
     t.string   "image"
+    t.integer  "count_notification"
     t.boolean  "isChecked",             default: false
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
@@ -91,11 +92,12 @@ ActiveRecord::Schema.define(version: 20170523085143) do
     t.string   "access_token"
     t.string   "confirm_token"
     t.date     "birthday"
-    t.boolean  "access",          default: false
-    t.boolean  "blocked",         default: true
-    t.boolean  "email_confirmed", default: false
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.integer  "count_notifications", default: 0
+    t.boolean  "access",              default: false
+    t.boolean  "blocked",             default: true
+    t.boolean  "email_confirmed",     default: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   add_foreign_key "articles", "categories"
