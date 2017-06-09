@@ -1,5 +1,5 @@
 class Api::V1::CommentsController < BaseController
-
+  before_action :authentication!
   def index
     @article = Article.find_by_slug!(params[:article_slug])
     render json: @comments = @article.comments.order(created_at: :desc)
@@ -7,21 +7,20 @@ class Api::V1::CommentsController < BaseController
 
   def create
     @article = Article.find_by_slug!(params[:article_slug])
-    if current_user
-      comment = Comment.new(comment_params)
-      comment.user_id = current_user.id
-      comment.article_id = @article.id
-      comment.save
-      if comment.user_id == @article.attributes["user_id"]
-      render json: comment,serializer: CommentSerializer
-      else 
-      message = "#{ current_user.username } commented your article"
-      comment.notifications.create user_id: @article.attributes["user_id"], message: message, image: current_user.avatar
-      render json: comment,serializer: CommentSerializer
-      end
-    else
-      render json: { status: "unsuccess",message:"you must login",code: 406 }
+    comment = Comment.new.tap do |comment|
+    comment.content = params[:content]
+    comment.user_id = current_user.id
+    comment.article_id = @article.id
+    comment.save
     end
+    if comment.user_id == @article.attributes["user_id"]
+    render json: comment,serializer: CommentSerializer
+    else 
+    message = "#{ current_user.username } commented your article"
+    comment.notifications.create user_id: @article.attributes["user_id"], message: message, image: current_user.avatar
+    render json: comment,serializer: CommentSerializer
+    end
+
   end
 
   def update

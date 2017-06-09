@@ -78,7 +78,7 @@ class Api::V1::ArticlesController < BaseController
   private
 
   def article_params
-    params.permit :title,:content,:title_image,:category_id
+    params.permit(:title,:content,:title_image,:category_id)
   end
 
 

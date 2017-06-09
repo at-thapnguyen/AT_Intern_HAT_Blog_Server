@@ -38,8 +38,6 @@ class Article < ApplicationRecord
 
   validates :title_image, presence: true
   validates :content, presence: true
-
-
   has_one :attention,-> {where(user_id: Article.user_id)}
 
   acts_as_paranoid column: :deleted, sentinel_value: false
