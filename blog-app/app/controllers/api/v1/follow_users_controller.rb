@@ -4,12 +4,8 @@ class Api::V1::FollowUsersController < BaseController
 
   def index
     user = User.find_by_username params[:user_username]
-    if user.present?
-      follower_ids = FollowUser.where(follower_id: current_user.id).pluck(:user_id)
+      follower_ids = FollowUser.where(follower_id: user.id).pluck(:user_id)
       render json: User.where(id: follower_ids)
-    else
-      render json: { users: Array.new }
-    end
   end
   # On click follow user
   def create
@@ -23,7 +19,7 @@ class Api::V1::FollowUsersController < BaseController
       user.update_columns count_notifications: user.count_notifications + 1
     else
       follower.destroy
-      user.update_columns count_notifications: user.count_notifications - 1
+      user.update_columns count_notifications: user.count_notifications - 1 if user.count_notifications > 0
     end
     render json: { status: 200 }
   end

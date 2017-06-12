@@ -10,13 +10,13 @@ Rails.application.routes.draw do
         end
         resources :follow_users, only: [:index, :create]
         resources :notification_users, only: [:index]
+        resources :notifications, only: [:index,:update]
       end
       namespace :articles do
         resources :hot_articles, only: [:index]
       end
       resources :tags, except: [:new, :edit]
       resources :categories, except: [:new, :edit]
-      resources :notifications, only: [:index,:update]
       namespace :articles do
         resources :hot_articles, only: [:index]
       end

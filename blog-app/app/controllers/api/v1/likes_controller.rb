@@ -1,5 +1,5 @@
 class Api::V1::LikesController < BaseController
-  bbefore_action :authentication!, only: [:create]
+  before_action :authentication!, only: [:create]
 
   def create
     attention = Attention

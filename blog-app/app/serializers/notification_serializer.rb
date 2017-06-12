@@ -6,9 +6,9 @@ class NotificationSerializer < ActiveModel::Serializer
   end
   def param
     if object.notificationable_type == FollowUser.name
-      object.notificationable.follower_id
+      User.find(object.notificationable.follower_id).username
     else
-      object.notificationable.article_id
+      Article.find(object.notificationable.article_id).slug
     end
   end
 

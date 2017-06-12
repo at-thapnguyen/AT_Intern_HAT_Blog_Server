@@ -44,7 +44,7 @@ class Attention < ApplicationRecord
         # => truong hop nay ta xoa di record nay.
         if attention.isFollowed == true
           attention.destroy
-          user.update_columns count_notifications: user.count_notifications - 1
+          user.update_columns count_notifications: user.count_notifications - 1 if user.count_notifications > 0
         else
         # Neu co attention nhung attention voi: isLike=false va isFollow=false.
         # thi khi cap nhat isFollow = false thi:
@@ -63,7 +63,7 @@ class Attention < ApplicationRecord
           # Vi notification_type va notification_id cua 2 hanh dong like va follow la giong nhau
           # => Nen ta chi xoa 1 trong 2 record
           # => Ta chi con cach dua vao message de chon cai can xoa
-          delete_notification article, attention, users, "follow"
+          delete_notification article, attention, user, "follow"
         else
           # Cap nhat trang thai cua isFollowed = false => true
           # => Attention sau khi cap nhat co isFollowed = true va isLike = true
@@ -96,7 +96,7 @@ class Attention < ApplicationRecord
         if attention.isLiked == true
           article.update_columns count_like: article.count_like - 1
           attention.destroy
-          user.update_columns count_notifications: user.count_notifications - 1
+          user.update_columns count_notifications: user.count_notifications - 1 if user.count_notifications > 0
         else
           article.update_columns count_like: article.count_like + 1
           attention.update_columns isLiked: true
@@ -134,7 +134,7 @@ class Attention < ApplicationRecord
   end
 
   # create_notification function
-  # => Usage:
+  # => Usage:S
   # =>  - Delete new notification
   # =>  - Update count_notifications in users table
 
@@ -149,7 +149,7 @@ class Attention < ApplicationRecord
     else
       notifications.first.destroy
     end
-    user.update_columns count_notifications: user.count_notifications - 1
+    user.update_columns count_notifications: user.count_notifications - 1 if user.count_notifications > 0
   end
 
 end
