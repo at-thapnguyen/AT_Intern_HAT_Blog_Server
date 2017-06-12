@@ -127,10 +127,12 @@ class Attention < ApplicationRecord
   # =>  - Update count_notifications in users table
 
   def self.create_notification attention, current_user, article, attention_type
-    message = Const::message article, current_user, attention_type
-    attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
-    user = User.find(article.attributes["user_id"])
-    user.update_columns count_notifications: user.count_notifications + 1
+    if current_user.id != article.attributes["user_id"] 
+      message = Const::message article, current_user, attention_type
+      attention.notifications.create user_id: article.attributes["user_id"], message: message, image: article.title_image if current_user.id != article.attributes["user_id"]
+      user = User.find(article.attributes["user_id"])
+      user.update_columns count_notifications: user.count_notifications + 1
+    end
   end
 
   # create_notification function

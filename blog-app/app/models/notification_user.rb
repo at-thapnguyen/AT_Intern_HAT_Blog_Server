@@ -1,2 +1,2 @@
-class notification_user < user
+class NotificationUser < User
 end
