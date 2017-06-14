@@ -21,6 +21,19 @@ class Comment < ApplicationRecord
   validates :content, presence: true
   has_many :notifications, as: :notificationable, dependent: :destroy
   
- 
+  # Check final comment of current user that author checked yet?
+# => Have 2 options:
+# =>  - opt1: this comment have notification, check this notification author checked?
+# =>  - opt2: this comment haven't notification because this this author  not yet check comment before that
+  def self.author_checked_before_notification current_user, article
+    comment_for_article_to_current_user = Comment.where(user_id: current_user.id, article_id: article.id)
+    return true if comment_for_article_to_current_user.blank?
+    comment_for_article_to_current_user.each do |comment|
+      comment.notifications.each do |notification|
+        return false if notification.isChecked == false
+      end
+    end
+    return true
+  end
 end
 

@@ -1,6 +1,6 @@
 class Api::V1::FollowUsersController < BaseController
   #User follow. When user click button follow
-  before_action :authentication!, only: [:index,:create]
+  before_action :authentication!, only: [:create]
 
   def index
     user = User.find_by_username params[:user_username]
